@@ -17,7 +17,7 @@ img {
  }
 
 
- @media screen and (max-width: 800px) {
+ @media all and (orientation: portrait) {
     .images {
         display: block;
         width: 100%;
@@ -27,7 +27,7 @@ img {
 }
 
 /* Desktop */
-@media screen and (min-width: 800px) {
+@media all and (orientation: landscape) {
     .images .row1 {
         width:100%;
         display: grid;
