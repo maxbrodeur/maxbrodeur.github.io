@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../stylesheet2.css">
     </head>
 
     <body>
@@ -13,8 +14,9 @@
             </div>
             <img class="img_display" id="img0">
         </div>
-    
-        <h1> a selection of my favorite film pictures. </h1>
+        <div class="name" id="name">max brodeur</div>
+        <div class="typewriter" id="typewriter" text="a selection of my favorite film pictures."></div>
+        
         <div class="images" id="images">
 
             <div class="row1">
@@ -215,6 +217,41 @@
                 div0.onclick = function() {
                     this.style.display = "none"
                     this.style.visibility = "hidden"
+                }
+
+                //Title 
+                var blinkborder = function() {
+                    titlename = document.getElementById("typewriter")
+                    col = titlename.style.borderColor
+                    if (col === "black"){
+                        titlename.style.borderColor = "transparent"
+                    }else{
+                        titlename.style.borderColor = "black"
+                    }
+                    
+                }
+
+                var addLetter = function() {
+                    titlename = document.getElementById("typewriter")
+                    nametext = titlename.getAttribute("text")
+                    titlename.textContent += nametext[0]
+                    nametext = nametext.substr(1)
+                    titlename.setAttribute("text", nametext)
+                    if (nametext === ""){
+                        clearInterval(titlename.getAttribute("interval"))
+                        setInterval(blinkborder, 400)
+                        console.log("cleared interval")
+                    }
+                }
+
+                window.onload = function() {
+                    titlename = document.getElementById("typewriter")
+                    nametext = titlename.getAttribute("text")
+                    len = nametext.length
+                    var interval = setInterval(addLetter, 100)
+                    titlename.setAttribute("interval", interval)
+
+
                 }
                 
             </script>

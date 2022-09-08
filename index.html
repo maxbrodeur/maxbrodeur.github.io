@@ -3,9 +3,114 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheet2.css">
     </head>
     <body>
-        <h1> max brodeur </h1>
-        <a href="./photography/index.html">film photography</a>
+        <div class="typewriter" id="typewriter" text="hi, i'm max brodeur."></div>
+        <div class="sections">
+            <div class="section section1">
+                <a class="link link1" href="./photography/index.html" id="film_link">film photography</a>
+                <div class="section_images" id="film_images">
+                    <img src="./photography/images/caribbean_boat.JPG" alt="" class="chaos_img0">
+                    <img src="./photography/images/caribbean_mommy_bird.JPG" alt="" class="chaos_img1">
+                    <img src="./photography/images/paris_invalides_1.JPG" alt="" class="chaos_img2">
+                </div>
+            </div>
+            <div class="section section2">
+                <a class="link link2" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">nonlinear dynamics & chaos research</a>
+                <div class="section_images" id="chaos_images">
+                    <img src="./chaos/IFS_dragon.jpeg" alt="" class="chaos_img0">
+                    <img src="./chaos/sierpinski_triangle.jpeg" alt="" class="chaos_img1">
+                    <img src="./chaos/starfish.png" alt="" class="chaos_img2">
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            //CHAOS
+            chaos_link = document.getElementById("chaos_link")
+            chaos_link.onmouseover = function() {
+                this.style.color = "#fff"
+                chaos_images = document.getElementById("chaos_images")
+                chaos_images.style.opacity = 1
+            }
+
+            chaos_link.onmouseout = function() {
+                this.style.color = "";
+                chaos_images = document.getElementById("chaos_images")
+                chaos_images.style.opacity = 0
+            }
+            
+
+            //FILM
+            film_link = document.getElementById("film_link")
+            film_link.onmouseover = function() {
+                this.style.color = "#fff";
+                film_images = document.getElementById("film_images")
+                film_images.style.opacity = 1
+            }
+
+            film_link.onmouseout = function() {
+                this.style.color = "cadetblue";
+                film_images = document.getElementById("film_images")
+                film_images.style.opacity = 0
+            }
+
+            //Title 
+            var blinkborder = function() {
+                titlename = document.getElementById("typewriter")
+                col = titlename.style.borderColor
+                if (col === "black"){
+                    titlename.style.borderColor = "transparent"
+                }else{
+                    titlename.style.borderColor = "black"
+                }
+                
+            }
+
+            var addLetter = function() {
+                titlename = document.getElementById("typewriter")
+                nametext = titlename.getAttribute("text")
+                titlename.textContent += nametext[0]
+                nametext = nametext.substr(1)
+                titlename.setAttribute("text", nametext)
+                if (nametext === ""){
+                    clearInterval(titlename.getAttribute("interval"))
+                    setInterval(blinkborder, 400)
+                    console.log("cleared interval")
+                }
+            }
+
+            window.onload = function() {
+                titlename = document.getElementById("typewriter")
+                nametext = titlename.getAttribute("text")
+                len = nametext.length
+                var interval = setInterval(addLetter, 100)
+                titlename.setAttribute("interval", interval)
+
+
+            }
+
+
+
+
+            // chaos_link.onmouseleave = function() {
+            //     chaos_images = document.getElementById("chaos_images")
+            //     chaos_images.classList.add("remove")
+            //     //chaos_images.style.display = "none"
+            // }
+            // chaos_images = document.getElementById("chaos_images")
+            // chaos_images.onanimationend = function() {
+            //     if (this.classList.includes("add")){
+            //         this.style.opacity = 1
+            //     } else {
+            //         this.style.opacity = 0
+            //     }
+            //     this.classList.remove("add")
+            //     this.classList.remove("remove")
+            // }
+        </script>
+
     </body>
 </html>

@@ -10,7 +10,6 @@ carribean_pigeon2.JPG
 massif_sunset.JPG
 mtl_church.JPG
 mtl_duluth.JPG
-names.txt
 paris_invalides.jpeg
 paris_invalides_1.JPG
 paris_place_de_la_concorde.jpg
