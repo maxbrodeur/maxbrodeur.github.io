@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="../stylesheet.css">
         <link rel="stylesheet" href="../stylesheet2.css">
+        <link rel="stylesheet" href="../menu.css">
+
     </head>
 
     <body>
@@ -14,10 +16,58 @@
                 <p class="body"></p>
             </div>
         </div>
-        <h1 class="name pagetitle"id="name"><a href="../index.html">max brodeur</a></h1>
+        <div class="menu">
+            <h1 class="name pagetitle"id="name">film photography.</h1>
+            <div class="menu_items">
+                <p class="homelink">
+                    <a class="link" href="../index.html"> back home </a>
+                </p>
+            </div>
+        </div>
         <h3 class="typewriter pagesubtitle" id="typewriter" text="here is a selection of my favorite film pictures."> </h2>
 
         <script>
+            var paths = ["./images/caribbean_boat.JPG",
+                            "./images/caribbean_diamond.JPG",
+                            "./images/caribbean_mommy_bird.JPG",
+                            "./images/carribean_pigeon1.JPG",
+                            "./images/carribean_pigeon2.JPG",
+                            "./images/PEI_beach.JPG",
+                            "./images/PEI_bridge.JPG",
+                            "./images/PEI_shack.JPG",
+                            "./images/wedding_car.JPG",
+                            "./images/wedding_nana.JPG",
+                            "./images/mtl_church.JPG",
+                            "./images/sunset_family.JPG",
+                            "./images/caribbean_leo.JPG",
+                            "./images/paris_invalides.jpeg",
+                            "./images/massif_sunset.JPG",
+                            "./images/PEI_rocks.JPG",
+                            "./images/paris_invalides_1.JPG",
+                            "./images/paris_place_de_la_concorde.jpg",
+                            "./images/paris_tuileries.jpeg",
+                            "./images/mtl_duluth.JPG",
+                            "./images/carribean_bird.JPG"]
+
+            var containers = document.getElementsByClassName("film_img")
+
+            var addImages = function() {
+                for (let i = 0; i<paths.length; ++i){
+                    let c = containers[i]
+                    c.setAttribute("src", paths[i])
+                    c.style.display = "block"
+                }
+            }
+
+            // // remove broken images --> wait for typewriter to display
+            // var errordisplay = function() {
+            //     for (let i = 0; i<paths.length; ++i){
+            //         let c = containers[i]
+            //         c.setAttribute("onerror", "this.style.display='none'")
+            //     }
+            // }
+
+
             //Title 
             var blinkborder = function() {
                 titlename = document.getElementById("typewriter")
@@ -37,9 +87,14 @@
                 nametext = nametext.substr(1)
                 titlename.setAttribute("text", nametext)
                 if (nametext === ""){
+                    
                     clearInterval(titlename.getAttribute("interval"))
                     setInterval(blinkborder, 400)
                     console.log("cleared interval")
+                    
+                    /* so it loads after displaying text */
+                    addImages()
+
                 }
             }
 
@@ -49,30 +104,29 @@
                 len = nametext.length
                 var interval = setInterval(addLetter, 100)
                 titlename.setAttribute("interval", interval)
-
-
             }
+
         </script>
         
         <div class="images" id="images">
 
             <div class="row1">
                 <div class="img_wrap">
-                    <img src="./images/caribbean_boat.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Martinique </p>
                         <p> <font size="-1">A boat off of the dock of Saint Pierre. </font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/caribbean_diamond.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Martinique </p>
                         <p> <font size="-1">The famous Martinique Diamond rock which once was officially commissioned in the British navy. </font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/caribbean_mommy_bird.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description"> 
                         <p> Martinique </p>  
                         <p> <font size="-1">A Brown booby bird flying over the sailboat. </font></p>
@@ -82,14 +136,14 @@
             
             <div class="row2">
                 <div class="img_wrap">
-                    <img src="./images/carribean_pigeon1.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>St. Lucia </p>  
                         <p> <font size="-1">Pigeon island.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/carribean_pigeon2.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>St. Lucia </p>  
                         <p> <font size="-1">Pigeon island.</font></p>
@@ -100,21 +154,21 @@
             
             <div class="row1">
                 <div class="img_wrap">
-                    <img src="./images/PEI_beach.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Prince Edward Island </p>
                         <p> <font size="-1">A northen coast beach in Lower Darnley.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/PEI_bridge.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description"> 
                         <p>Prince Edward Island</p>
                         <p> <font size="-1">View of the confederation bridge from the New Brunswick side.</font>  </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/PEI_shack.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Prince Edward Island</p> 
                         <p> <font size="-1"> The shanty. </font>
@@ -124,7 +178,7 @@
             
             <div class="row3">
                 <div class="img_wrap">
-                    <img src="./images/wedding_car.JPG" class="single">
+                    <img src="" class="single film_img" onerror="this.style.display='none'">
                     <div class="img_description"> 
                         <p>Ontario</p>
                         <p> <font size="-1"> Vintage Packard from my cousin's wedding.</font> </p>
@@ -134,21 +188,21 @@
             
             <div class="row1">
                 <div class="img_wrap">
-                    <img src="./images/wedding_nana.JPG" >
+                    <img src=""  class="film_img" onerror="this.style.display='none'">
                     <div class="img_description"> 
                         <p>Ontario</p>
                         <p> <font size="-1"> Nana and Mom at my cousin's wedding. </font> </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/mtl_church.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Montreal </p>
                         <p> <font size="-1">The Saint-Jean Baptiste Catholic Church in the Plateau. </font> </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/sunset_family.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Home </p>
                         <p> <font size="-1">My family and a sunset. </font></p>
@@ -158,14 +212,14 @@
             
             <div class="row2">
                 <div class="img_wrap">
-                    <img src="./images/caribbean_leo.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Martinique</p>
                         <p> <font size="-1"> My brother tidying the main sail. </font></p>
                         </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/paris_invalides.jpeg">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Le dôme des invalides. Napoleon's tomb. </font></p>
@@ -175,14 +229,14 @@
             
             <div class="row2">
                 <div class="img_wrap">
-                    <img src="./images/massif_sunset.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description"> 
                         <p>Baie-Saint-Paul</p>
                         <p><font size="-1">Sunset.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/PEI_rocks.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Prince Edward Island </p>
                         <p> <font size="-1">the view from a cave in PEI.</font></p>
@@ -193,21 +247,21 @@
             
             <div class="row1">
                 <div class="img_wrap">
-                    <img src="./images/paris_invalides_1.JPG">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Paris </p> 
                         <p> <font size="-1">Les invalides, which contains Napoleon's tomb.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/paris_place_de_la_concorde.jpg">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Place de la concorde and the Egyptian Obelisk in its center. </font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="./images/paris_tuileries.jpeg">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Jardin des Tuileries.</font></p>
@@ -216,14 +270,14 @@
             </div>
             
             <div class="img_wrap">
-                <img src="./images/mtl_duluth.JPG">
+                <img src="" class="film_img" onerror="this.style.display='none'">
                 <div class="img_description">
                     <p> Montreal </p>
                     <p> <font size="-1" >Duluth street on the Plateau </font></p>
                 </div>
             </div>
             <div class="img_wrap">
-                <img src="./images/carribean_bird.JPG">
+                <img src="" class="film_img" onerror="this.style.display='none'">
                 <div class="img_description">
                     <p> St. Lucia </p>
                     <p><font size="-1">A sparrow hawk</font></p>
@@ -261,15 +315,6 @@
             
 
         </div>
-        <!-- <script>
-            var names = ["PEI_beach.JPG", "PEI_bridge.JPG", "caribbean_boat.JPG", "caribbean_diamond.JPG", "caribbean_leo.JPG", "caribbean_mommy_bird.JPG", "carribean_bird.JPG", "carribean_pigeon1.JPG", "carribean_pigeon2.JPG", "massif_sunset.JPG", "mtl_church.JPG", "mtl_duluth.JPG", "paris_invalides.jpeg", "paris_invalides_1.JPG", "paris_place_de_la_concorde.jpg", "paris_tuileries.jpeg", "sunset_family.JPG", "wedding_car.JPG", "wedding_nana.JPG"];
-            element = document.getElementById("images");
-            function addImage(item, image) {
-                element.innerHTML = element.innerHTML + "<img src=./images/" + item + ">"
-            }
-            names.forEach(addImage)
-        </script> -->
-        
         
     </body>
 </html>

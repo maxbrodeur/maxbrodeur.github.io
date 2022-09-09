@@ -46,6 +46,10 @@
     width: fit-content;
 }
 
+.section_link {
+    text-align: center;
+}
+
 .section_images {
     z-index: -1;
     position: relative;
