@@ -2,9 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../stylesheet.css">
-        <link rel="stylesheet" href="../stylesheet2.css">
-        <link rel="stylesheet" href="../menu.css">
-
+        <link rel="stylesheet" href="../filmgallery.css">
     </head>
 
     <body>
@@ -16,9 +14,9 @@
                 <p class="body"></p>
             </div>
         </div>
-        <div class="menu">
+        <div class="menu film_menu">
             <h1 class="name pagetitle"id="name">film photography.</h1>
-            <div class="menu_items">
+            <div class="menu_items film_menu_items">
                 <p class="homelink">
                     <a class="link" href="../index.html"> back home </a>
                 </p>
@@ -51,22 +49,18 @@
 
             var containers = document.getElementsByClassName("film_img")
 
+            var gallery_img_appear = function() {
+                this.style.opacity = "1"
+            }
+
             var addImages = function() {
                 for (let i = 0; i<paths.length; ++i){
                     let c = containers[i]
                     c.setAttribute("src", paths[i])
                     c.style.display = "block"
+                    c.onload = gallery_img_appear
                 }
             }
-
-            // // remove broken images --> wait for typewriter to display
-            // var errordisplay = function() {
-            //     for (let i = 0; i<paths.length; ++i){
-            //         let c = containers[i]
-            //         c.setAttribute("onerror", "this.style.display='none'")
-            //     }
-            // }
-
 
             //Title 
             var blinkborder = function() {
@@ -102,7 +96,7 @@
                 titlename = document.getElementById("typewriter")
                 nametext = titlename.getAttribute("text")
                 len = nametext.length
-                var interval = setInterval(addLetter, 100)
+                var interval = setInterval(addLetter, 60)
                 titlename.setAttribute("interval", interval)
             }
 
