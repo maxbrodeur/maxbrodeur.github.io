@@ -47,6 +47,11 @@ img {
         grid-gap: 0px;
         align-items: center;
     }
+
+    .img_display_div {
+        opacity: 0;
+        height: 0px;
+    }
 }
 
 /* Desktop */
@@ -84,6 +89,50 @@ img {
         margin-right: auto;
     }
 
+    .img_display {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .img_display_div {
+        visibility: hidden;
+        display: none;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background-color: rgba(0,0,0,0.75);
+    }
+
+    /* Add Animation */
+    .img_display_div {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.3s;
+        animation-name: zoom;
+        animation-duration: 0.3s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {opacity:0} 
+        to {opacity:1}
+        
+      }
+      
+      @keyframes zoom {
+        from {opacity: 0;} 
+        to {opacity: 1}
+      }
+    
+
 }
 
 /* TEXT */
@@ -115,18 +164,6 @@ img {
     filter: brightness(40%);
 }
 
-.img_display_div {
-    visibility: hidden;
-    display: none;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    background-color: rgba(0,0,0,0.75);
-}
 
 /* .img_display {
     position: relative;
@@ -140,16 +177,6 @@ img {
     grid-column: 1 / 3;
 } */
 
-.img_display {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    width: auto;
-    height: auto;
-    max-width: 90%;
-    max-height: 90%;
-}
 
 /* .img_caption {
     width: fit-content;
@@ -175,21 +202,3 @@ img {
     width: fit-content;
 }
 
-/* Add Animation */
-.img_display_div {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.3s;
-    animation-name: zoom;
-    animation-duration: 0.3s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {opacity:0} 
-    to {opacity:1}
-    
-  }
-  
-  @keyframes zoom {
-    from {opacity: 0;} 
-    to {opacity: 1}
-  }
