@@ -9,6 +9,30 @@
         <h1 class="typewriter pagetitle" id="typewriter" text="hi, i'm max."></h1>
 
         <script>
+
+            var gallery_img_appear = function() {
+                this.style.opacity = "1"
+            }
+
+            var paths = ["./photography/images/caribbean_boat.JPG",
+                            "./photography/images/caribbean_mommy_bird.JPG",
+                            "./photography/images/paris_invalides_1.JPG",
+                            "./chaos/starfish.png",
+                            "./chaos/sierpinski_triangle.jpeg",
+                            "./chaos/IFS_dragon.jpeg"]
+
+            var containers = document.getElementsByClassName("section_image")
+            var addImages = function() {
+                for (let i = 0; i<paths.length; ++i){
+                    let c = containers[i]
+                    c.setAttribute("src", paths[i])
+                    c.style.display = "block"
+                    c.onload = gallery_img_appear
+                }
+            }
+
+
+
             //Title 
             var blinkborder = function() {
                 titlename = document.getElementById("typewriter")
@@ -31,6 +55,7 @@
                     clearInterval(titlename.getAttribute("interval"))
                     setInterval(blinkborder, 400)
                     console.log("cleared interval")
+                    addImages()
                 }
             }
 
@@ -51,9 +76,9 @@
                     <h2><a class="link link1 section_link" href="./photography/index.html" id="film_link">film photography.</a></h2>
                 </div>
                 <div class="section_images" id="film_images">
-                    <img src="./photography/images/caribbean_boat.JPG" alt="" class="film_img0 section_image">
-                    <img src="./photography/images/caribbean_mommy_bird.JPG" alt="" class="film_img1 section_image">
-                    <img src="./photography/images/paris_invalides_1.JPG" alt="" class="film_img2 section_image">
+                    <img src="" alt="" class="film_img0 section_image" onerror="this.style.display='none'">
+                    <img src="" alt="" class="film_img1 section_image" onerror="this.style.display='none'">
+                    <img src="" alt="" class="film_img2 section_image" onerror="this.style.display='none'">
                 </div>
             </div>
             <div class="section section2">
@@ -61,9 +86,9 @@
                     <h2><a class="link link2 section_link" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">nonlinear dynamics & chaos research.</a></h2>
                 </div>
                 <div class="section_images" id="chaos_images">
-                    <img src="./chaos/starfish.png" alt="" class="chaos_img0 section_image">
-                    <img src="./chaos/sierpinski_triangle.jpeg" alt="" class="chaos_img1 section_image">
-                    <img src="./chaos/IFS_dragon.jpeg" alt="" class="chaos_img2 section_image">
+                    <img src="" alt="" class="chaos_img0 section_image" onerror="this.style.display='none'">
+                    <img src="" alt="" class="chaos_img1 section_image" onerror="this.style.display='none'">
+                    <img src="" alt="" class="chaos_img2 section_image" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
