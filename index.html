@@ -95,16 +95,15 @@
 
 
         <script>
+
             //CHAOS
             chaos_link = document.getElementById("chaos_link")
             chaos_link.onmouseover = function() {
-                this.style.color = "#fff"
                 chaos_images = document.getElementById("chaos_images")
                 chaos_images.style.opacity = 1
             }
 
             chaos_link.onmouseout = function() {
-                this.style.color = "";
                 chaos_images = document.getElementById("chaos_images")
                 chaos_images.style.opacity = 0.20
             }
@@ -113,21 +112,13 @@
             //FILM
             film_link = document.getElementById("film_link")
             film_link.onmouseover = function() {
-                this.style.color = "#fff";
                 film_images = document.getElementById("film_images")
                 film_images.style.opacity = 1
             }
 
             film_link.onmouseout = function() {
-                this.style.color = "cadetblue";
                 film_images = document.getElementById("film_images")
                 film_images.style.opacity = 0.20
-            }
-
-            film_images = document.getElementById("film_images")
-            film_images.onclick = function() {
-                film_section = document.getElementById("film_section")
-                film_section.style.height = "100%"
             }
 
         </script>
