@@ -16,14 +16,14 @@
             </div>
         </div>
         <div class="menu film_menu">
-            <h1 class="name pagetitle"id="name">film photography.</h1>
+            <h1 class="name pagetitle"id="name">Film Photography.</h1>
             <div class="menu_items film_menu_items">
                 <p class="homelink">
-                    <a class="link" href="../index.html"> back home </a>
+                    <a class="link" href="../index.html"> Home </a>
                 </p>
             </div>
         </div>
-        <h3 class="typewriter pagesubtitle" id="typewriter" text="here is a selection of my favorite film pictures."> </h3>
+        <h3 class="typewriter pagesubtitle" id="typewriter" text="Here is a selection of my favorite film pictures."> </h3>
 
         <script>
             var paths = ["./images/caribbean_boat.JPG",
@@ -54,7 +54,7 @@
                 this.style.opacity = "1"
             }
 
-            var addImages = function() {
+            var after_task = function() {
                 for (let i = 0; i<paths.length; ++i){
                     let c = containers[i]
                     c.setAttribute("src", paths[i])
@@ -63,45 +63,15 @@
                 }
             }
 
-            //Title 
-            var blinkborder = function() {
-                titlename = document.getElementById("typewriter")
-                col = titlename.style.borderColor
-                if (col === "darkgreen"){
-                    titlename.style.borderColor = "transparent"
-                }else{
-                    titlename.style.borderColor = "darkgreen"
-                }
-                
-            }
-
-            var addLetter = function() {
-                titlename = document.getElementById("typewriter")
-                nametext = titlename.getAttribute("text")
-                titlename.textContent += nametext[0]
-                nametext = nametext.substr(1)
-                titlename.setAttribute("text", nametext)
-                if (nametext === ""){
-                    
-                    clearInterval(titlename.getAttribute("interval"))
-                    setInterval(blinkborder, 400)
-                    console.log("cleared interval")
-                    
-                    /* so it loads after displaying text */
-                    addImages()
-
-                }
-            }
-
-            window.onload = function() {
-                titlename = document.getElementById("typewriter")
-                nametext = titlename.getAttribute("text")
-                len = nametext.length
-                var interval = setInterval(addLetter, 60)
-                titlename.setAttribute("interval", interval)
-            }
+            // CONSTANTS
+            var BLINK_SPEED = 400
+            var TYPE_SPEED = 30
+            var COMMA_BLINKS = 2
 
         </script>
+        
+        <script type="text/javascript" src="../typewriter.js"></script>
+
         
         <div class="images" id="images">
 
@@ -264,21 +234,24 @@
                 </div>
             </div>
             
-            <div class="img_wrap">
-                <img src="" class="film_img" onerror="this.style.display='none'">
-                <div class="img_description">
-                    <p> Montreal </p>
-                    <p> <font size="-1" >Duluth street on the Plateau </font></p>
+            <div class="row4">
+                <div class="img_wrap">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <div class="img_description">
+                        <p> Montreal </p>
+                        <p> <font size="-1" >Duluth street on the Plateau-Mont-Royal.</font></p>
+                    </div>
                 </div>
             </div>
-            <div class="img_wrap">
-                <img src="" class="film_img" onerror="this.style.display='none'">
-                <div class="img_description">
-                    <p> St. Lucia </p>
-                    <p><font size="-1">A sparrow hawk</font></p>
+            <div class="row4">
+                <div class="img_wrap">
+                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <div class="img_description">
+                        <p> St. Lucia </p>
+                        <p><font size="-1">A sparrow hawk.</font></p>
+                    </div>
                 </div>
             </div>
-        
         
             <script>
 
@@ -294,6 +267,7 @@
                         div0.style.display = "block"
                         div0.style.visibility = "visible"
                         img0.src = this.children[0].src
+                        div0.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('"+img0.src+"')"
                         cap0.children[0].innerHTML = this.children[1].children[0].innerHTML
                         cap0.children[1].innerHTML = this.children[1].children[1].innerHTML
 

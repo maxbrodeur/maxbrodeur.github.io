@@ -6,89 +6,100 @@
         <title>Home</title>
     </head>
     <body>
-        <h1 class="typewriter pagetitle" id="typewriter" text="hi, i'm max."></h1>
 
-        <script>
+        <div class="menu">
+            <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max."> </h1>
+        </div>
 
-            var gallery_img_appear = function() {
-                this.style.opacity = "1"
-            }
+        <script> 
+            // CONSTANTS
+            var BLINK_SPEED = 400
+            var TYPE_SPEED = 150
+            var COMMA_BLINKS = 1
 
-            var paths = ["./photography/images/caribbean_boat.JPG",
-                            "./photography/images/caribbean_mommy_bird.JPG",
+            var paths = ["./photography/images/caribbean_mommy_bird.JPG",
+                            "./photography/images/caribbean_boat.JPG",
                             "./photography/images/paris_invalides_1.JPG",
                             "./chaos/starfish.png",
                             "./chaos/sierpinski_triangle.jpeg",
                             "./chaos/IFS_dragon.jpeg"]
 
-            var containers = document.getElementsByClassName("section_image")
-            var addImages = function() {
+            var section_image_list_init = document.getElementsByClassName("section_image")
+            var section_images_list_init = document.getElementsByClassName("section_images")
+
+            for (let i = 0; i < section_images_list_init.length; i++) {
+                    const section_images_init = section_images_list_init[i];
+                    section_images_init.setAttribute("loaded",0)
+            }
+
+            var comma_task = function() {
                 for (let i = 0; i<paths.length; ++i){
-                    let c = containers[i]
+                    let c = section_image_list_init[i]
                     c.setAttribute("src", paths[i])
                     c.style.display = "block"
-                    c.onload = gallery_img_appear
+                    c.onload = function() {
+                        this.style.opacity = 1
+                    }
+                }
+
+                for (let i = 0; i < section_images_list_init.length; i++) {
+                    const section_images = section_images_list_init[i];
+                    section_images.style.opacity = 0.20
+                }
+
+            }
+
+            var after_task = function(){
+                for (let i = 0; i < section_images_list_init.length; i++) {
+                    const section_images_init = section_images_list_init[i];
+                    section_images_init.setAttribute("loaded",1)
+                    if (section_images_init.getAttribute("mouse") === "in"){
+                        section_images_init.onmouseover()
+                    }
                 }
             }
 
+        </script>
 
+        <script type="text/javascript" src="./typewriter.js"></script>
 
-            //Title 
-            var blinkborder = function() {
-                titlename = document.getElementById("typewriter")
-                col = titlename.style.borderColor
-                if (col === "darkgreen"){
-                    titlename.style.borderColor = "transparent"
-                }else{
-                    titlename.style.borderColor = "darkgreen"
-                }
-                
-            }
+        <script>
 
-            var addLetter = function() {
-                titlename = document.getElementById("typewriter")
-                nametext = titlename.getAttribute("text")
-                titlename.textContent += nametext[0]
-                nametext = nametext.substr(1)
-                titlename.setAttribute("text", nametext)
-                if (nametext === ""){
-                    clearInterval(titlename.getAttribute("interval"))
-                    setInterval(blinkborder, 400)
-                    console.log("cleared interval")
-                    addImages()
-                }
-            }
+    
 
-            window.onload = function() {
-                titlename = document.getElementById("typewriter")
-                nametext = titlename.getAttribute("text")
-                len = nametext.length
-                var interval = setInterval(addLetter, 100)
-                titlename.setAttribute("interval", interval)
-
-
-            }
         </script>
 
         <div class="sections">
             <div class="section section1" id="film_section">
                 <div class="link_wrap">
-                    <h2><a class="link link1 section_link" href="./photography/index.html" id="film_link">film photography.</a></h2>
+                    <h2><a class="link link1 section_link" href="./photography/index.html" id="film_link">Film Photography.</a></h2>
                 </div>
                 <div class="section_images" id="film_images">
-                    <img src="" alt="" class="film_img0 section_image" onerror="this.style.display='none'">
-                    <img src="" alt="" class="film_img1 section_image" onerror="this.style.display='none'">
-                    <img src="" alt="" class="film_img2 section_image" onerror="this.style.display='none'">
+                    <div class="img_wrap0">
+                        <img src="" alt="" class="film_img0 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap1">
+                        <img src="" alt="" class="film_img1 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap2">
+                        <img src="" alt="" class="film_img2 section_image" onerror="this.style.display='none'">
+                    </div>
                 </div>
             </div>
             <div class="section section2">
                 <div class="link_wrap" id="chaos_link_wrap">
-                    <h2><a class="link link2 section_link" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">nonlinear dynamics & chaos research.</a></h2>
+                    <h2><a class="link link2 section_link" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">Nonlinear Dynamics & Chaos research.</a></h2>
                 </div>
                 <div class="section_images" id="chaos_images">
-                    <img src="" alt="" class="chaos_img0 section_image" onerror="this.style.display='none'">
-                    <img src="" alt="" class="chaos_img1 section_image" onerror="this.style.display='none'">
-                    <img src="" alt="" class="chaos_img2 section_image" onerror="this.style.display='none'">
+                    <div class="img_wrap0">
+                        <img src="" alt="" class="chaos_img0 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap1">
+                        <img src="" alt="" class="chaos_img1 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap2">
+                        <img src="" alt="" class="chaos_img2 section_image" onerror="this.style.display='none'">
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,30 +107,52 @@
 
         <script>
 
-            //CHAOS
-            chaos_link = document.getElementById("chaos_link")
-            chaos_link.onmouseover = function() {
-                chaos_images = document.getElementById("chaos_images")
-                chaos_images.style.opacity = 1
-            }
+            const HOVER_DELAY = 2000
+            const OPACITY = 0.20
+            const LINK_COLOR = "white"
 
-            chaos_link.onmouseout = function() {
-                chaos_images = document.getElementById("chaos_images")
-                chaos_images.style.opacity = 0.20
-            }
-            
 
-            //FILM
-            film_link = document.getElementById("film_link")
-            film_link.onmouseover = function() {
-                film_images = document.getElementById("film_images")
-                film_images.style.opacity = 1
-            }
+            var section_links = document.getElementsByClassName("section_link")
+            var section_images_list = document.getElementsByClassName("section_images")
+            var len = section_images_list.length
 
-            film_link.onmouseout = function() {
-                film_images = document.getElementById("film_images")
-                film_images.style.opacity = 0.20
-            }
+            for (let i = 0; i < len; i++) {
+
+                const section_link = section_links[i];
+                section_link.onmouseover = function() {
+                    imgs = this.parentElement.parentElement.parentElement.children[1]
+                    if (imgs.getAttribute("loaded")==1) {
+                        imgs.style.opacity = 1 
+                        this.style.color = LINK_COLOR;
+                    }
+                    this.style.textDecoration = "underline";
+                    
+                }
+                section_link.onmouseout= function() {
+                    section_link.style.textDecoration = ''
+                }
+
+                const section_images = section_images_list[i];
+                section_images.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                    if (this.getAttribute("loaded")==1){
+                        this.style.opacity = 1
+                        this.parentElement.children[0].children[0].children[0].style.color = "white"
+                    }
+                }
+                section_images.onmouseout = function() {
+                    console.log("MOUSE OUT")
+                    this.setAttribute("mouse","out")
+                    setTimeout(function(link, imgs){
+                        if (link.style.textDecoration !== 'underline' && imgs.getAttribute("mouse")==="out"){
+                            console.log("helo")
+                            link.style.color = ""
+                            imgs.style.opacity = OPACITY
+                        }                   
+                    }, HOVER_DELAY, this.parentElement.children[0].children[0].children[0], this)
+                }
+                
+            }            
 
         </script>
 

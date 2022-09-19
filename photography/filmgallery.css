@@ -1,3 +1,4 @@
+
 /* mobile */
 @media all and (orientation: portrait) {
 
@@ -16,14 +17,17 @@
 
 /* Desktop */
 @media all and (orientation: landscape) {
-    
+
+    .row1, .row2, .row4 {
+        padding: 0px 2% 20px 2%;
+        width: 96%;
+    }
+
     .images .row1 {
-        width:100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         align-items: center;
-        padding: 0px 0px 20px;
     }
 
     .images .row2 {
@@ -31,7 +35,6 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         align-items: center;
-        padding: 0px 0px 20px;
     }
 
     .images .row3 {
@@ -41,6 +44,8 @@
         grid-gap: 40px;
         padding: 0px 0px 20px;
     }
+
+
 
     .single {
         display: block;
@@ -71,7 +76,14 @@
         top: 0;
         left: 0;
         margin: 0;
-        background-color: rgba(0,0,0,0.75);
+    }
+
+    .img_display_div {
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment:fixed;
+        background-size: cover;
     }
 
     /* Add Animation */
@@ -100,11 +112,11 @@
 img {
     width: 100%;
     height: 100%;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .images {
@@ -114,6 +126,11 @@ img {
 
 .img_wrap {
     position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .img_description {
@@ -160,6 +177,11 @@ img {
 
 /* menu  */
 
+.pagesubtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .homelink {
     position: absolute;
     width: fit-content;
@@ -167,8 +189,12 @@ img {
     top: 50%;
     transform: translate(0, -50%);
     right: 0;
-    margin-right: 20px;
+    margin-right: 30px;
     transition: all 0.5s ease;
+}
+
+.link {
+    color: black;
 }
 
 .film_menu_items {
@@ -184,6 +210,7 @@ img {
 .homelink:hover {
     -webkit-filter: brightness(150%);
     filter: brightness(150%);
+    text-decoration: underline;
 }
 
 
