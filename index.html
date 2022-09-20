@@ -6,73 +6,72 @@
         <title>Home</title>
     </head>
     <body>
-
+  
         <div class="menu">
-            <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max."> </h1>
+            <h1 class="typewriter pagetitle" id="typewriter" text="Hi, this is Max.">>> </h1>
         </div>
-
+        
         <script> 
-            // CONSTANTS
-            var BLINK_SPEED = 400
-            var TYPE_SPEED = 150
-            var COMMA_BLINKS = 1
-
-            var paths = ["./photography/images/caribbean_mommy_bird.JPG",
-                            "./photography/images/caribbean_boat.JPG",
-                            "./photography/images/paris_invalides_1.JPG",
-                            "./chaos/starfish.png",
-                            "./chaos/sierpinski_triangle.jpeg",
-                            "./chaos/IFS_dragon.jpeg"]
-
-            var section_image_list_init = document.getElementsByClassName("section_image")
-            var section_images_list_init = document.getElementsByClassName("section_images")
-
+        // CONSTANTS
+        var BLINK_SPEED = 400
+        var TYPE_SPEED = 150
+        var COMMA_BLINKS = 1
+        
+        var paths = ["./photography/images/caribbean_mommy_bird.JPG",
+        "./photography/images/caribbean_boat.JPG",
+        "./photography/images/paris_invalides_1.JPG",
+        "./chaos/starfish.png",
+        "./chaos/sierpinski_triangle.jpeg",
+        "./chaos/IFS_dragon.jpeg",
+        "./rl/blog_images/castle_view_vehicle.png",
+        "./rl/blog_images/ubi.png",
+        "./rl/blog_images/vehiclepath3.png"]
+        
+        var section_image_list_init = document.getElementsByClassName("section_image")
+        var section_images_list_init = document.getElementsByClassName("section_images")
+        
+        for (let i = 0; i < section_images_list_init.length; i++) {
+            const section_images_init = section_images_list_init[i];
+            section_images_init.setAttribute("loaded",0)
+        }
+        
+        var comma_task = function() {
+            for (let i = 0; i<paths.length; ++i){
+                let c = section_image_list_init[i]
+                c.setAttribute("src", paths[i])
+                c.style.display = "block"
+                c.onload = function() {
+                    this.style.opacity = MAX_OPACITY
+                }
+            }
+            
             for (let i = 0; i < section_images_list_init.length; i++) {
-                    const section_images_init = section_images_list_init[i];
-                    section_images_init.setAttribute("loaded",0)
+                const section_images = section_images_list_init[i];
+                section_images.style.opacity = OPACITY
             }
-
-            var comma_task = function() {
-                for (let i = 0; i<paths.length; ++i){
-                    let c = section_image_list_init[i]
-                    c.setAttribute("src", paths[i])
-                    c.style.display = "block"
-                    c.onload = function() {
-                        this.style.opacity = 1
-                    }
-                }
-
-                for (let i = 0; i < section_images_list_init.length; i++) {
-                    const section_images = section_images_list_init[i];
-                    section_images.style.opacity = 0.20
-                }
-
-            }
-
-            var after_task = function(){
-                for (let i = 0; i < section_images_list_init.length; i++) {
-                    const section_images_init = section_images_list_init[i];
-                    section_images_init.setAttribute("loaded",1)
-                    if (section_images_init.getAttribute("mouse") === "in"){
-                        section_images_init.onmouseover()
-                    }
+            
+        }
+        
+        var after_task = function(){
+            for (let i = 0; i < section_images_list_init.length; i++) {
+                const section_images_init = section_images_list_init[i];
+                section_images_init.setAttribute("loaded",1)
+                if (section_images_init.getAttribute("mouse") === "in"){
+                    section_images_init.onmouseover()
                 }
             }
-
+        }
+        
         </script>
 
         <script type="text/javascript" src="./typewriter.js"></script>
 
-        <script>
-
-    
-
-        </script>
-
         <div class="sections">
+            
+            <!-- FILM -->
             <div class="section section1" id="film_section">
                 <div class="link_wrap">
-                    <h2><a class="link link1 section_link" href="./photography/index.html" id="film_link">Film Photography.</a></h2>
+                    <h2><a class="link link1 section_link section_title" href="./photography/index.html" id="film_link">Film Photography.</a></h2>
                 </div>
                 <div class="section_images" id="film_images">
                     <div class="img_wrap0">
@@ -86,9 +85,11 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- CHAOS -->
             <div class="section section2">
                 <div class="link_wrap" id="chaos_link_wrap">
-                    <h2><a class="link link2 section_link" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">Nonlinear Dynamics & Chaos research.</a></h2>
+                    <h2><a class="link link2 section_link section_title" href="https://maxbrodeur.github.io/fractal-generator/" id="chaos_link">Nonlinear Dynamics & Chaos research.</a></h2>
                 </div>
                 <div class="section_images" id="chaos_images">
                     <div class="img_wrap0">
@@ -102,13 +103,109 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- RL -->
+            <div class="section section3">
+                <div class="link_wrap">
+                    <h2><a class="link link3 section_link section_title" href="./temp.html">Reinforcement Learning research.</a></h2>
+                </div>
+                <div class="section_images" id="rl_images">
+                    <div class="img_wrap0">
+                        <img src="" alt="" class="rl_img0 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap1">
+                        <img src="" alt="" class="rl_img1 section_image" onerror="this.style.display='none'">
+                    </div>
+                    <div class="img_wrap2">
+                        <img src="" alt="" class="rl_img2 section_image" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ABOUT -->
+            <div class="about_section">
+                <div class="section_title about_title">
+                    <h2 class="about_title_text" >About me.</h2>
+                </div>
+                <div class="about">
+                    <div class="about_text">
+                        <p> My name is Max Brodeur.</p>
+                        <p> <br> I am from Montréal, Québec. <br> I study Mathematics & Computer Science at McGill University.</p>
+                    </div>
+                    <img class="about_img0" src="./about/nana_wedding.JPG" alt="">
+                </div>
+            </div>
+            
+            <!-- TIMELINE -->
+            <div class="timeline_section">
+                <div class="section_title timeline_title">
+                    <h2 class="timeline_title_text">Timeline.</h2>
+                </div>
+                
+                <div class="timeline_grid">
+                    
+                    <div class="first_gradient_thing"></div>
+                    
+                    <div class="grad0"></div>
+                    <div class="timeline_segment sgmt0">
+                        <div class="timeline_year"> <h2>2022</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad1"></div>
+                    <div class="timeline_segment sgmt1">
+                        <div class="timeline_year"> <h2>2021</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad2"></div>
+                    <div class="timeline_segment sgmt2">
+                        <div class="timeline_year"> <h2>2020</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad3"></div>
+                    <div class="timeline_segment sgmt3">
+                        <div class="timeline_year"> <h2>2019</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad4"></div>
+                    <div class="timeline_segment sgmt4">
+                        <div class="timeline_year"> <h2>2018</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad5"></div>
+                    <div class="timeline_segment sgmt5">
+                        <div class="timeline_year"> <h2>2017</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="grad6"></div>
+                    <div class="timeline_segment sgmt6">
+                        <div class="timeline_year"> <h2>2000</h2> </div>
+                        <div class="timeline_text"></div>
+                        <div class="timeline_media"></div>
+                    </div>
+                    
+                    <div class="last_gradient_thing"></div>
+                    
+                </div>
+            </div>
         </div>
 
-
-        <script>
-
-            const HOVER_DELAY = 2000
-            const OPACITY = 0.20
+<script>
+    
+            const HOVER_DELAY = 500
+            const OPACITY = 0.00
+            const MAX_OPACITY = 0.60
             const LINK_COLOR = "white"
 
 
@@ -122,7 +219,7 @@
                 section_link.onmouseover = function() {
                     imgs = this.parentElement.parentElement.parentElement.children[1]
                     if (imgs.getAttribute("loaded")==1) {
-                        imgs.style.opacity = 1 
+                        imgs.style.opacity = MAX_OPACITY 
                         this.style.color = LINK_COLOR;
                     }
                     this.style.textDecoration = "underline";
@@ -141,11 +238,9 @@
                     }
                 }
                 section_images.onmouseout = function() {
-                    console.log("MOUSE OUT")
                     this.setAttribute("mouse","out")
                     setTimeout(function(link, imgs){
                         if (link.style.textDecoration !== 'underline' && imgs.getAttribute("mouse")==="out"){
-                            console.log("helo")
                             link.style.color = ""
                             imgs.style.opacity = OPACITY
                         }                   

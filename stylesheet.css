@@ -1,26 +1,43 @@
 /* colors */
 
-body, html {
-    background-color: rgb(29, 30, 31);
+html {
+    background-color: rgb(0, 58, 41);
+    max-width: 100%;
+
+}
+
+body {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: url("./assets/background.JPG");
+    /* perspective: 1px; */
+    /* perspective-origin: 0 0; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-attachment: fixed;
 }
 
 
 /* TEXT STYLE -------------------------------------------------------------------------------------------- */
 
-* {
+html {
     margin: 0;
-    padding: 0;
+}
+
+* {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Colors */
 
-h1, h2, h3, a {
-    color:rgb(184, 184, 184);
+p, h1, h2, h3, a {
+    color:rgb(210, 210, 210);
 }
 
 .typewriter {
-    border-right: 1.5px solid rgb(255, 137, 34) ;
+    border-right: 0.5em solid rgb(150, 150, 150) ;
 }
 
 .link {
@@ -30,21 +47,21 @@ h1, h2, h3, a {
 @media all and (orientation: portrait) {
 
     p {
-        font-size: 27px;
+        font-size: 34px;
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 50px;
     }
 
 
     h2 {
-        font-size: 30px;
+        font-size:  45px;
     }
 
 
     h3 {
-        font-size: 27px;
+        font-size: 40px;
     }
 }
 
@@ -74,7 +91,7 @@ h1, h2, h3, a {
 
 .pagesubtitle {
     position: relative;
-    margin: 0px 0px 20px 20px;
+    /* margin: 0px 0px 20px 20px; */
 }
 
 
@@ -84,24 +101,24 @@ h1, h2, h3, a {
 
 .menu {
     position: relative;
-    width: 100%;
+    width: 94%;
     display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.menu {
-    background: url("./assets/background.JPG");
-    background-position: center;
-}
-
-.menu {
-    border-bottom: 3px solid rgb(184, 184, 184);;
+.hr {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    background: white;
 }
 
 .pagetitle {
     text-align: left;
-    margin: 20px 0px 20px 20px;
+    /* margin: 20px 0px 20px 20px; */
     width: fit-content;
-    color:black;
 }
 
 .menu_items {
