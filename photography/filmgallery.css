@@ -1,4 +1,8 @@
 
+.img_display_caption {
+    opacity: 0;
+}
+
 /* mobile */
 @media all and (orientation: portrait) {
 
@@ -49,10 +53,11 @@
 
     .single {
         display: block;
-        padding: 10px 0px 35px;
         max-width: 75%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
 
     .img_display {
@@ -141,7 +146,7 @@ img {
     transform: translate(-50%, -50%);
     visibility: hidden;
     opacity: 0;
-    transition: opacity .2s, visibility .2s;
+    transition: opacity 1s, visibility 1s;
 }
 
 .img_wrap:hover .img_description {
@@ -151,8 +156,8 @@ img {
 
 
 .img_wrap:hover img {
-    -webkit-filter: brightness(40%);
-    filter: brightness(40%);
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
 }
 
 
@@ -172,7 +177,8 @@ img {
 .film_img {
     display: none;
     opacity: 0;
-    transition: opacity 3s ease;
+
+    border: 2px solid  white
 }
 
 /* menu  */
@@ -180,6 +186,7 @@ img {
 .pagesubtitle {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 3%;
 }
 
 .homelink {
@@ -212,6 +219,8 @@ img {
     filter: brightness(150%);
     text-decoration: underline;
 }
+
+
 
 
 
