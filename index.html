@@ -36,6 +36,17 @@
         }
         
         var comma_task = function() {
+            
+            // for (let i = 0; i < section_images_list_init.length; i++) {
+            //     const section_images = section_images_list_init[i];
+            //     section_images.style.opacity = OPACITY
+            // }
+            
+        }
+
+        var after_task = function() {
+
+            // add sources
             for (let i = 0; i<paths.length; ++i){
                 let c = section_image_list_init[i]
                 c.setAttribute("src", paths[i])
@@ -44,27 +55,8 @@
                     this.style.opacity = MAX_OPACITY
                 }
             }
-            
-            for (let i = 0; i < section_images_list_init.length; i++) {
-                const section_images = section_images_list_init[i];
-                section_images.style.opacity = OPACITY
-            }
-            
-        }
-        
-        // var after_task = function(){
-        //     for (let i = 0; i < section_images_list_init.length; i++) {
-        //         const section_images_init = section_images_list_init[i];
-        //         section_images_init.setAttribute("loaded",1)
-        //         if (section_images_init.getAttribute("mouse") === "in"){
-        //             section_images_init.onmouseover()
-        //         }
-        //     }
-        // }
 
-        var after_task = function() {
             var sections = document.getElementsByClassName("sections")[0]
-            // sections.style.display = "block";
             sections.style.opacity = 1;
             for (let i = 0; i < section_images_list_init.length; i++) {
                 const section_images_init = section_images_list_init[i];
@@ -73,6 +65,8 @@
                     section_images_init.onmouseover()
                 }
             }
+
+
         }
         
         </script>
@@ -207,7 +201,7 @@
                     <div class="timeline_segment sgmt2">
                         <div class="timeline_segment_title"> <h3>McGill University</h3> </div>
                         <div class="timeline_text"> 
-                            <p>Started my bachelors degree in Mathematics & Computer Science</p>
+                            <p>Started my bachelors degree in Mathematics & Computer Science.</p>
                         </div>
                     </div>
 
