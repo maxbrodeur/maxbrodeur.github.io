@@ -22,13 +22,19 @@
     grid-column: 1/1;
     white-space: nowrap;
     z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    border: 2px solid white ;
+    padding-left: 3%;
+    padding-right: 3%;
+    transition: all 0.5s ease;
 }
 
 .section_title {
     font-weight: normal;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
 }
 
 .section_images {
@@ -36,7 +42,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
     z-index: 0;
-
     border: 2px solid white ;
 }
 
@@ -95,6 +100,10 @@
     -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+/* .section:hover .link_wrap {
+    border: 2px solid transparent;
+}  */
 
 
 /* ABOUT */
@@ -304,11 +313,6 @@
 .sgmt6, .grad6, .media6, .year_5 {
     grid-row: 8;
 }
-
-/* .menu, .sections, .pagetitle  {
-    transform-origin: 0 0;
-    transform: translateZ(-2px) scale(3);   
-} */
 
 
 /* TIMELINE BLURRED IMAGE THINGS */

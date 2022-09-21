@@ -9,7 +9,7 @@ var blinkborder = function() {
     }
     
     var comma = titlename.getAttribute("comma") 
-    if (comma != null && comma !== "done") {
+    if (comma !== null && comma !== "done") {
         if (comma > 0) {
             titlename.setAttribute("comma", comma - 1)
         } else {
@@ -37,15 +37,14 @@ var addLetter = function() {
     // a comma is like taking an oral break, let's take a digital break shall we :)
     if (titlename.textContent.at(-1) === ','){
         clearInterval(titlename.getAttribute("interval"))
-
         titlename.setAttribute("comma", COMMA_BLINKS)  // cursor will blink the specified number of times before resuming 
         interval = setInterval(blinkborder, BLINK_SPEED) 
         titlename.setAttribute("interval", interval)
     }
+
     if (nametext === ""){
         clearInterval(titlename.getAttribute("interval"))
         setInterval(blinkborder, BLINK_SPEED)
-        console.log("cleared interval")
         after_task()
     }
 }
