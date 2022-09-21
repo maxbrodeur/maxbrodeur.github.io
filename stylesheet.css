@@ -93,7 +93,6 @@ p, h1, h2, h3, a {
 
 .pagesubtitle {
     position: relative;
-    /* margin: 0px 0px 20px 20px; */
 }
 
 
@@ -119,7 +118,6 @@ p, h1, h2, h3, a {
 
 .pagetitle {
     text-align: left;
-    /* margin: 20px 0px 20px 20px; */
     width: fit-content;
 }
 

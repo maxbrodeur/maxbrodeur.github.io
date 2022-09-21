@@ -52,7 +52,20 @@
             
         }
         
-        var after_task = function(){
+        // var after_task = function(){
+        //     for (let i = 0; i < section_images_list_init.length; i++) {
+        //         const section_images_init = section_images_list_init[i];
+        //         section_images_init.setAttribute("loaded",1)
+        //         if (section_images_init.getAttribute("mouse") === "in"){
+        //             section_images_init.onmouseover()
+        //         }
+        //     }
+        // }
+
+        var after_task = function() {
+            var sections = document.getElementsByClassName("sections")[0]
+            // sections.style.display = "block";
+            sections.style.opacity = 1;
             for (let i = 0; i < section_images_list_init.length; i++) {
                 const section_images_init = section_images_list_init[i];
                 section_images_init.setAttribute("loaded",1)

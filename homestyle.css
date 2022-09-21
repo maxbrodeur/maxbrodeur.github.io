@@ -1,7 +1,10 @@
 
 .sections {
+    /* display: none; */
     position: relative;
     width: 100%;
+    opacity: 0;
+    transition: opacity 3s ease;
 }
 
 .section {
