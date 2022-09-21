@@ -29,20 +29,12 @@
         
         var section_image_list_init = document.getElementsByClassName("section_image")
         var section_images_list_init = document.getElementsByClassName("section_images")
-        
         for (let i = 0; i < section_images_list_init.length; i++) {
             const section_images_init = section_images_list_init[i];
             section_images_init.setAttribute("loaded",0)
         }
         
-        var comma_task = function() {
-            
-            // for (let i = 0; i < section_images_list_init.length; i++) {
-            //     const section_images = section_images_list_init[i];
-            //     section_images.style.opacity = OPACITY
-            // }
-            
-        }
+        var comma_task = function() {}
 
         var after_task = function() {
 
@@ -64,6 +56,15 @@
                 if (section_images_init.getAttribute("mouse") === "in"){
                     section_images_init.onmouseover()
                 }
+            }
+
+            var link_wrap_list_init = document.getElementsByClassName("link_wrap")
+            for (let i = 0; i < link_wrap_list_init.length; i++) {
+                var link_wrap_init = link_wrap_list_init[i]
+                if (link_wrap_init.getAttribute("mouse")!=="in"){
+                    link_wrap_list_init[i].setAttribute("mouse", "out");
+                }
+
             }
 
 
@@ -314,14 +315,6 @@
                     section_link.style.textDecoration = ''
                 }
 
-                const link_wrap = link_wraps[i]
-                link_wrap.onmouseover = function() {
-                    this.setAttribute("mouse", "in")
-                }
-                link_wrap.onmouseout = function() {
-                    this.setAttribute("mouse", "out")
-                }
-
                 // SECTION IMAGES
                 const section_images = section_images_list[i];
                 section_images.onmouseover = function() {
@@ -342,6 +335,15 @@
                             link_wrap_temp.style.border = "2px solid white"
                         }                   
                     }, HOVER_DELAY, this.parentElement.children[0].children[0].children[0], this)
+                }
+
+                // LINK WRAP
+                const link_wrap = link_wraps[i]
+                link_wrap.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                }
+                link_wrap.onmouseout = function() {
+                    this.setAttribute("mouse", "out")
                 }
                 
             }            
