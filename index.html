@@ -12,10 +12,17 @@
         </div>
         
         <script> 
+
         // CONSTANTS
-        var BLINK_SPEED = 400
-        var TYPE_SPEED = 80
-        var COMMA_BLINKS = 1
+        const BLINK_SPEED = 400
+        const TYPE_SPEED = 80
+        const COMMA_BLINKS = 0
+        const HOVER_DELAY = 500
+        const OPACITY = 0.00
+        const MAX_OPACITY = 0.80
+        const MID_OPACITY = 0.40
+        const LINK_COLOR = "white"   
+
         
         var paths = ["./photography/images/caribbean_mommy_bird.JPG",
         "./photography/images/caribbean_boat.JPG",
@@ -48,8 +55,6 @@
                 }
             }
 
-            var sections = document.getElementsByClassName("sections")[0]
-            sections.style.opacity = 1;
             for (let i = 0; i < section_images_list_init.length; i++) {
                 const section_images_init = section_images_list_init[i];
                 section_images_init.setAttribute("loaded",1)
@@ -67,7 +72,63 @@
 
             }
 
+            var sections = document.getElementsByClassName("sections")[0]
+            sections.style.opacity = 1;
+            var sections = document.getElementsByClassName("section")
+            
 
+            // LISTENERS
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                var link_wrap = section.children[0]
+                var link = link_wrap.children[0]
+                var imgs = section.children[1]
+
+                // SECTION LINK
+                link.onmouseover = function() {
+                    var imgs = this.parentElement.parentElement.parentElement.children[1]
+                    if (imgs.getAttribute("loaded")==1) {
+                        imgs.style.opacity = MID_OPACITY 
+                        this.style.color = LINK_COLOR;
+                    }
+                    this.style.textDecoration = "underline";
+                    
+                }
+                link.onmouseout= function() {
+                    link.style.textDecoration = ''
+                }
+
+                // SECTION IMAGES
+                imgs.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                    if (this.getAttribute("loaded")==1){
+                        this.style.opacity = MAX_OPACITY
+                        this.parentElement.children[0].children[0].children[0].style.color = "white"
+                        this.parentElement.children[0].style.border = "2px solid transparent"
+                    }
+                }
+                imgs.onmouseout = function() {
+                    this.setAttribute("mouse","out")
+                    setTimeout(function(link, imgs){
+                        var link_wrap = imgs.parentElement.children[0]
+                        if (link_wrap.getAttribute("mouse")==="out" && link.style.textDecoration !== 'underline' && imgs.getAttribute("mouse")==="out"){
+                            link.children[0].style.color = ""
+                            imgs.style.opacity = OPACITY
+                            link_wrap.style.border = "2px solid white"
+                        }                   
+                    }, HOVER_DELAY, this.parentElement.children[0].children[0].children[0], this)
+                }
+
+                // LINK WRAP
+                link_wrap.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                    this.parentElement.children[1].onmouseover()
+                }
+                link_wrap.onmouseout = function() {
+                    this.setAttribute("mouse", "out")
+                }
+            }
+ 
         }
         
         </script>
@@ -283,72 +344,6 @@
                 </div>
             </div>
         </div>
-
-<script>
-    
-            const HOVER_DELAY = 500
-            const OPACITY = 0.00
-            const MAX_OPACITY = 0.80
-            const MID_OPACITY = 0.40
-            const LINK_COLOR = "white"
-
-
-            var section_links = document.getElementsByClassName("section_link")
-            var link_wraps = document.getElementsByClassName("link_wrap")
-            var section_images_list = document.getElementsByClassName("section_images")
-            var len = section_images_list.length
-
-            for (let i = 0; i < len; i++) {
-
-                // SECTION LINK
-                const section_link = section_links[i];
-                section_link.onmouseover = function() {
-                    imgs = this.parentElement.parentElement.parentElement.children[1]
-                    if (imgs.getAttribute("loaded")==1) {
-                        imgs.style.opacity = MID_OPACITY 
-                        this.style.color = LINK_COLOR;
-                    }
-                    this.style.textDecoration = "underline";
-                    
-                }
-                section_link.onmouseout= function() {
-                    section_link.style.textDecoration = ''
-                }
-
-                // SECTION IMAGES
-                const section_images = section_images_list[i];
-                section_images.onmouseover = function() {
-                    this.setAttribute("mouse", "in")
-                    if (this.getAttribute("loaded")==1){
-                        this.style.opacity = MAX_OPACITY
-                        this.parentElement.children[0].children[0].children[0].style.color = "white"
-                        this.parentElement.children[0].style.border = "2px solid transparent"
-                    }
-                }
-                section_images.onmouseout = function() {
-                    this.setAttribute("mouse","out")
-                    setTimeout(function(link, imgs){
-                        var link_wrap_temp = imgs.parentElement.children[0]
-                        if (link_wrap_temp.getAttribute("mouse")==="out" && link.style.textDecoration !== 'underline' && imgs.getAttribute("mouse")==="out"){
-                            link.style.color = ""
-                            imgs.style.opacity = OPACITY
-                            link_wrap_temp.style.border = "2px solid white"
-                        }                   
-                    }, HOVER_DELAY, this.parentElement.children[0].children[0].children[0], this)
-                }
-
-                // LINK WRAP
-                const link_wrap = link_wraps[i]
-                link_wrap.onmouseover = function() {
-                    this.setAttribute("mouse", "in")
-                }
-                link_wrap.onmouseout = function() {
-                    this.setAttribute("mouse", "out")
-                }
-                
-            }            
-
-        </script>
 
     </body>
 </html>
