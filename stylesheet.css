@@ -120,7 +120,7 @@ html {
 
 .pagetitle {
     text-align: left;
-    width: 100%;
+    width: fit-content;
 }
 
 .menu_items {
