@@ -67,8 +67,11 @@
 }
 
 .film_img0 {
+    width: 100%;
+    object-fit: cover;
+    /* right: 0 !important;
     top: 60%;
-    transform: translateY(-60%);
+    transform: translateY(-60%); */
 }
 
 .chaos_img0, .chaos_img1, .chaos_img2 {
