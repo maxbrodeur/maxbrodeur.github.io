@@ -19,7 +19,7 @@
 }
 
 .sections {
-    height: 100vh;
+    height: fit-content;
     position: relative;
     width: 90%;
     margin-left: 5%;
