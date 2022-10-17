@@ -50,6 +50,7 @@ var addLetter = function() {
 }
 
 var typewrite = function() {
+    before_task()
     titlename = document.getElementById("typewriter")
     var interval = setInterval(addLetter, TYPE_SPEED)
     titlename.setAttribute("interval", interval)

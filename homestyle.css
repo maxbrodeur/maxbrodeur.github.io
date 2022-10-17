@@ -1,7 +1,7 @@
 /* COLORS */
 
 .sections *, .about_section * {
-    color: rgb(55, 55, 55);
+    color: rgb(85, 85, 85);
 }
 
 .timeline_section * {
@@ -13,16 +13,43 @@
 } */
 
 .sections {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sections {
     height: 100vh;
     position: relative;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    opacity: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* opacity: 0; */
     transition: opacity 3s ease;
+}
+
+.projects{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.project_title{
+    width: 100%;
+    height: fit-content;
+}
+
+.project_title_text{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
 }
 
 .section {
@@ -40,8 +67,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     /* background-color: rgba(0, 0, 0, 0.05); */
-    border: 2px solid white ;
-    border-radius: 10px;
+    /* border: 2px solid white ;
+    border-radius: 10px; */
     padding-left: 3%;
     padding-right: 3%;
     transition: all 0.5s ease;
@@ -76,11 +103,22 @@
     min-height: 100%;
 }
 
-.film_img_wrap{
+
+.film_img_wrap, .chaos_img_wrap, .rl_img_wrap{
     grid-column: 1/4;
 }
 
-.film_img0 {
+.chaos_img0{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rl_img0{
+    top: 90%;
+    transform: translateY(-90%);
+}
+
+.film_img0, .chaos_img0, .rl_img0 {
     width: 100%;
     object-fit: cover;
     /* right: 0 !important;
@@ -88,10 +126,12 @@
     transform: translateY(-60%); */
 }
 
-.chaos_img0, .chaos_img1, .chaos_img2 {
+/* .chaos_img0  */
+
+/* .chaos_img0, .chaos_img1, .chaos_img2 {
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 .rl_img1 {
     top: 50%;
@@ -446,4 +486,22 @@
     -webkit-filter: blur(0px);
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+/* MENU */
+
+.menu {
+    grid-template-columns: 60% 40%;
+}
+
+.home_menu_items {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects_link:hover {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-decoration: underline;
 }
