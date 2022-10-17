@@ -1,3 +1,16 @@
+/* COLORS */
+
+.sections *, .about_section * {
+    color: rgb(55, 55, 55);
+}
+
+.timeline_section * {
+    color: white;
+}
+
+/* .about_section * {
+    color: black;
+} */
 
 .sections {
     display: flex;
@@ -28,6 +41,7 @@
     transform: translate(-50%, -50%);
     /* background-color: rgba(0, 0, 0, 0.05); */
     border: 2px solid white ;
+    border-radius: 10px;
     padding-left: 3%;
     padding-right: 3%;
     transition: all 0.5s ease;

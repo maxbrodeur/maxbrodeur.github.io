@@ -17,7 +17,7 @@
         const BLINK_SPEED = 400
         const TYPE_SPEED = 80
         const COMMA_BLINKS = 0
-        const HOVER_DELAY = 500
+        const HOVER_DELAY = 10000
         const OPACITY = 0.00
         const MAX_OPACITY = 0.80
         const MID_OPACITY = 0.40
@@ -30,7 +30,7 @@
         "./chaos/starfish.png",
         "./chaos/sierpinski_triangle.jpeg",
         "./chaos/IFS_dragon.jpeg",
-        "./photography/images/PEI_beach_horizontal.JPG"
+        "./photography/images/massif_sunset.JPG"
         ]
         
         var section_image_list_init = document.getElementsByClassName("section_image")
@@ -109,14 +109,15 @@
                 }
                 imgs.onmouseout = function() {
                     this.setAttribute("mouse","out")
-                    setTimeout(function(link, imgs){
-                        var link_wrap = imgs.parentElement.children[0]
-                        if (link_wrap.getAttribute("mouse")==="out" && link.style.textDecoration !== 'underline' && imgs.getAttribute("mouse")==="out"){
-                            link.children[0].style.color = ""
-                            imgs.style.opacity = OPACITY
+                    setTimeout(function(link, imgs_var){
+                        var link_wrap = imgs_var.parentElement.children[0]
+                        if (link_wrap.getAttribute("mouse")==="out" && link_wrap.children[0].style.textDecoration === '' && imgs_var.getAttribute("mouse")==="out"){
+                            console.log("hello");
+                            link_wrap.children[0].style.color = ""
+                            imgs_var.style.opacity = OPACITY
                             link_wrap.style.border = "2px solid white"
                         }                   
-                    }, HOVER_DELAY, this.parentElement.children[0].children[0].children[0], this)
+                    }, HOVER_DELAY, this.parentElement.children[0].children[0], this)
                 }
 
                 // LINK WRAP
