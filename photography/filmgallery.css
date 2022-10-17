@@ -186,17 +186,9 @@ img {
 .pagesubtitle {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 3%;
 }
 
 .homelink {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 0;
-    margin-right: 30px;
     transition: all 0.5s ease;
 }
 
