@@ -34,13 +34,13 @@ var addLetter = function() {
     nametext = nametext.substr(1) // remove last letter and add to text
     titlename.setAttribute("text", nametext)
 
-    // a comma is like taking an oral break, let's take a digital break shall we :)
-    if (titlename.textContent.at(-1) === ','){
-        clearInterval(titlename.getAttribute("interval"))
-        titlename.setAttribute("comma", COMMA_BLINKS)  // cursor will blink the specified number of times before resuming 
-        interval = setInterval(blinkborder, BLINK_SPEED) 
-        titlename.setAttribute("interval", interval)
-    }
+    // // a comma is like taking an oral break, let's take a digital break shall we :)
+    // if (titlename.textContent.at(-1) === ','){
+    //     clearInterval(titlename.getAttribute("interval"))
+    //     titlename.setAttribute("comma", COMMA_BLINKS)  // cursor will blink the specified number of times before resuming 
+    //     interval = setInterval(blinkborder, BLINK_SPEED) 
+    //     titlename.setAttribute("interval", interval)
+    // }
 
     if (nametext === ""){
         clearInterval(titlename.getAttribute("interval"))
