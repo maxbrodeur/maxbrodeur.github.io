@@ -52,25 +52,25 @@ html {
 @media all and (orientation: portrait) {
 
     .MathJax {
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
 
     p,li {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
 
     h2 {
-        font-size:  40px;
+        font-size:  35px;
     }
 
 
     h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -147,7 +147,8 @@ html {
 }
 
 .menu{
-    height: 20vh;
+    min-height: 20vh;
+    height: fit-content;
 }
 
 
