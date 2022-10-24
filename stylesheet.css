@@ -51,7 +51,11 @@ html {
 
 @media all and (orientation: portrait) {
 
-    p {
+    .MathJax {
+        font-size: 30px !important;
+    }
+
+    p,li {
         font-size: 30px;
     }
 
@@ -72,7 +76,11 @@ html {
 
 @media all and (orientation: landscape) {
 
-    p {
+    .MathJax {
+        font-size: 20px !important;
+    }
+
+    p,li {
         font-size: 20px;
     }
 
@@ -127,6 +135,7 @@ html {
 .menu_items {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
 }
@@ -139,4 +148,38 @@ html {
 
 .menu{
     height: 20vh;
+}
+
+
+
+/* MENU LINKS */
+
+@media all and (orientation: portrait) {
+    
+    .menu_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+    
+}
+
+@media all and (orientation: landscape) {
+
+    .menu {
+        grid-template-columns: 60% auto;
+    }
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}
+
+.menu_link:hover {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-decoration: underline;
 }

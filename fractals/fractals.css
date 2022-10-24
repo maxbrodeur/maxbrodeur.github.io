@@ -1,0 +1,129 @@
+/* menu  */
+
+.homelink {
+    transition: all 0.5s ease;
+    text-align: right;
+    width: 100%;
+    height: fit-content;
+}
+
+.film_menu_items {
+    position: relative;
+    grid-template-columns: auto;
+    width:100%;
+}
+
+.film_menu {
+    grid-template-columns: auto auto;
+}
+
+.homelink:hover {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-decoration: underline;
+}
+
+.fractal_title{
+    text-align: center;
+}
+
+/* body */
+
+.section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    justify-items: center; 
+    margin-bottom: 5%;
+    padding-bottom: 2.5%;
+    padding-top: 1%;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.section_text{
+    text-align: justify;
+}
+
+/* TABLE */
+
+li {
+    margin-bottom: 1%;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* IMGS */
+
+.section_images {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fractal_img_wrap {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fractal_img, .fractal_img_txt {
+    max-width: 100%;
+}
+
+.fractal_img_txt {
+    text-align: center;
+    font-style: italic;
+}
+
+.IFS_imgs {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.TRANSF_imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.fractal_table {
+    display: flex;
+    justify-content: center;
+
+}
+
+mjx-math {
+    font-size: 10;
+}
+
