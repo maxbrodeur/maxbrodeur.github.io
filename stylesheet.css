@@ -106,7 +106,6 @@ html {
 .menu {
     position: relative;
     width: 90%;
-    margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     display: grid; 
@@ -130,4 +129,14 @@ html {
     justify-content: center;
     position: relative;
     width: 100%;
+}
+
+.title_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu{
+    height: 20vh;
 }
