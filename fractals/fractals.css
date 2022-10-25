@@ -144,6 +144,7 @@ td, th {
 
 .fractal_img, .fractal_img_txt {
     max-width: 100%;
+    height: 100%;
 }
 
 .fractal_img_txt {
