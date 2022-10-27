@@ -52,11 +52,11 @@ html {
 @media all and (orientation: portrait) {
 
     html {
-        background-size: auto auto;
+        background-size: cover;
     }
     
     body {
-        background-size: auto auto;
+        background-size: cover;
     }
 
     .MathJax {
