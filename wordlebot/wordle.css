@@ -1,3 +1,40 @@
+@media all and (orientation: portrait) {
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+    
+}
+
+@media all and (orientation: landscape) {
+
+    .menu {
+        grid-template-columns: 60% auto;
+    }
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .menu_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+    
+}
+
 /* body */
 
 .date {
