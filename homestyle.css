@@ -16,7 +16,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
     background: linear-gradient(to bottom, transparent, black);
 }
@@ -114,7 +115,7 @@
 }
 
 
-.film_img_wrap, .chaos_img_wrap, .rl_img_wrap{
+.img_wrap0 {
     grid-column: 1/4;
 }
 
@@ -128,7 +129,12 @@
     transform: translateY(-90%);
 }
 
-.film_img0, .chaos_img0, .rl_img0 {
+.wordle_img {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section_image {
     width: 100%;
     object-fit: cover;
     /* right: 0 !important;
