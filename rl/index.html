@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RL research</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="rl.css">
+</head>
+<body>
+
+    <div class="menu">
+        <h1 class="pagetitle typewriter" id="typewriter" text="Constrained RL for vehicle navigation."></h1>
+    </div>
+    
+    <script>
+
+            var before_task = function() {}
+            
+            // Values for typewriter js
+            var after_task = function() {
+                var array = document.getElementsByClassName("rl_section")
+                for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+                    element.style.display = "block"
+                    element.style.opacity = 1
+                }
+            }
+
+            // CONSTANTS
+            var BLINK_SPEED = 400
+            var TYPE_SPEED = 30
+            var COMMA_BLINKS = 2
+    </script>
+
+    <script type="text/javascript" src="../typewriter.js"></script>
+
+    <div class="rl_section">
+        <h3 class="rl_subtitle"> Intro </h3>
+        <p class="research_text">
+            Reinforcement Learning (RL) is pretty darn useful. 
+            With it, we can teach complex tasks to computers in a similar process as teaching cool tricks to a dog. 
+            For example, in the context of video games, we can teach an RL model to navigate a vehicle in complex terrain. 
+        
+        <p class="research_text">
+            However, setting up a good RL training proves to be a difficult task. 
+            In particular, the reward shaping process is one of its hindering aspects. 
+            The <a href="https://arxiv.org/abs/2112.12228">Constrained Reinforcement Learning framework</a> developed by Julien Roy et al. at <a href="https://montreal.ubisoft.com/en/our-engagements/research-and-development/">Ubisoft La Forge</a> aims to alleviate the reward shaping problem by simplifying the behavior metrics and automating the weighting process.  
+        </p>
+
+        </p>   
+
+        <p class="research_text">
+            This project, realized by Joshua Romoff, Gabriel Robert and myself, aimed to demonstrate the effectiveness of the Constrained RL framework.
+            Our approach was to develop a general use implementation of the framework, and apply it to the problem of vehicle navigation in video games.
+            After a summer of work, in collaboration with Colin Gaudreau, Julien Varnier and other collaborators of the SmartDrive initiative, we demonstrated that our generalized implementation greatly simplifies the reward shaping process.
+            This is a promising approach to improve the productivity of Ubisoft game developers. 
+        </p>
+
+        <p class="research_text">
+            In this blog post, we provide a brief overview of the vehicle navigation problem, the reward shaping process, and  
+            Constrained RL theory (if you want to know more about this, you should definitely look into <a href="https://arxiv.org/abs/2112.12228">the paper</a> or <a href="https://montreal.ubisoft.com/en/direct-behavior-specification-via-constrained-reinforcement-learning/">this blog post</a>).
+            Then we showcase the vehicle navigation Constrained RL implementation – with cool videos!
+        </p>
+
+    </div>
+    
+    <div class="rl_section">
+        <h3 class="rl_subtitle"> Vehicle Navigation </h3>
+        <p class="research_text">
+            There are many uses for a vehicle-operating RL model. 
+            Such as game testing, where game designers can launch models on a variety of paths and verify their feasibility. 
+            A more obvious example is game NPCs, where an RL model navigates in a seemingly more organic way than other solutions.
+            For this project, we train vehicles in an environment that contains a variety of different terrains which range in difficulty and geometry.
+        </p>
+        <div class="research_display research_display2">
+            <div class="media_wrap">
+                <img class="rl_media mapoverview" src="./blog_images/map_overview2_annotated.png" alt="">
+            </div>
+        </div>
+    
+        <div class="research_display research_display3">
+            <div class="media_wrap">
+                <img class="rl_media" src="./blog_images/canyon.png" alt="">
+            </div>
+            <div class="media_wrap">
+                <img class="rl_media" src="./blog_images/castle.png" alt="">
+            </div>
+            <div class="media_wrap">
+                <img class="rl_media" src="./blog_images/hill.png" alt="">
+            </div>
+            <div class="media_wrap">
+                <img class="rl_media" src="./blog_images/spikes.png" alt="">
+            </div>
+        </div>
+    
+        <p class="research_text">
+            The vehicles are spawned at arbitrary locations in the map, and are given randomly generated paths and target speeds. 
+            Their task consists of navigating to the end of the path, at the correct speed. 
+            The model is given enough environment information to "understand" the problem, such as the distance from the path, elevation angles, obstacle distances, etc. 
+        </p>
+    
+    
+    
+        <div class="research_display research_display2">
+            <div class="media_wrap">
+                <img class="rl_media vehiclepath5" src="./blog_images/vehiclepath5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="rl_section">
+        <h3 class="rl_subtitle">Reward Shaping</h3>
+
+        <p class="research_text">
+            Reward shaping consists of carefully crafting a mathematical function to evaluates the success of an action our model has taken. 
+            The reward is somewhat equivalent to a tasty doggie treat after a successful cool trick, or a dire "bad dog!" after an episode failure.
+        </p>
+
+        <div class="research_display research_display1">
+            <div class="media_wrap">
+                <img class="rl_media dog_gif" src="./blog_images/good.gif" alt="">
+                <h3 class="good_txt">f(x) = Doggie treat</h3>
+            </div>
+            <div class="media_wrap">
+                <img class="rl_media dog_gif" src="./blog_images/suicide_cars.gif" alt="">
+                <h3 class="bad_txt">f(x) = "Bad dog!"</h3>
+            </div>
+        </div>
+
+        <p class="research_text">
+            It is easy to imagine how complex this mathematical function can get for some tasks. 
+            The example of self driving vehicles in video games is one that requires a substantial reward function.
+            In fact, one of them I've seen at Ubisoft took almost 400 lines of code.
+        </p>
+        
+        <p class="research_text">            
+            First, let's establish the concept of a reward function. 
+            It provides a way to specify a desired behavior to the model by evaluating the success of an action. 
+            For the vehicle navigation problem, we want the model to drive on the provided path at a certain target speed. 
+            For these behaviors, we will define the following reward function: 
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_reward_function.png" alt="">
+        </div> 
+            
+        <p class="research_text">  
+            In general, the goal of an RL training is to maximize the expected value of the reward function. 
+            Now that we have a function, we can better define the notion of <i class="research_text">reward shaping</i>.
+            Simply put, reward shaping is the tweaking of the reward function's components. 
+            It consists of finding the best metrics <math:h> b<sub class="research_text">0</sub> & b<sub class="research_text">1</sub> </math:h> to express the desired behaviors and of finding the best weights <math:h> w<sub>0</sub> & w<sub>1</sub> </math:h> to apply to these metrics. 
+         </p>
+         <p class="research_text">
+            A common situation which necessitates the weighting of behaviors is the following.
+            Let's assume we launch an unweighted training, i.e. <math:h> w<sub class="research_text">0</sub> = 1 & w<sub class="research_text">1</sub> = 1</math:h>.
+            Upon initialization, the vehicle is already on the path, but is definitely not driving at the correct target speed.
+            Due to the difference in frequency of these two behaviors, the model is likely to concentrate too much on one, while neglecting the other. 
+            (Which depends on the chosen sign of their reward.)
+            A knowledgeable developer would take into account these caveats, and immediately construct a reward function with less weight on the most frequent behavior. 
+            However, with increasingly complex tasks, an observation of the model's performance is often required to determine how to change the weighting.
+            In this case, our vehicle navigation problem can require over a dozen hours of training before yielding significant performances. 
+            In the end, unless you are amongst the RL gods, some reward shaping will almost always be required to get the best results, which could take days, or even weeks!  
+        </p>
+ 
+    </div>
+
+    <div class="rl_section">
+        <h3 class="rl_subtitle">Constrained Reinforcement Learning</h3>
+        <p class="research_text">
+            Our Constrained RL framework was developed to alleviate the reward shaping process and hopefully lead to a solution which requires no further parameter tweaking. 
+            Instead of providing a reward as a single value through a well crafted reward function, our framework automatically weights binary behaviors.
+            
+        </p>
+        <p class="research_text">  
+            For the sake of automating the weighting process, it is difficult to mathematically interpret behavior values when they are expressed as continuous scalars. 
+            For example, how should we interpret the following values? 
+        </p>
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_continuous.png" alt="">
+        </div>
+        <p class="research_text">
+            Is 0.5 good or bad? 
+            We would need some knowledge of what their behavior corresponds to in the environment. 
+            The key step in the research was to express the behaviors as binary values. 
+            This provides a format to interpret behavior values, regardless of their context in the environment.
+            We define a binary constraint to be a behavior expressed in the following manner:
+        </p>
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_binary_constraints.png" alt="">
+        </div>
+        
+        <p class="research_text">
+            The negation in the definition is by design - the implementation aims to minimize the constraint occurences. 
+            Indeed, when they're expressed as binary constraints, all behavior values have the same meaning, and therefore we can easily compare them. 
+        </p>
+
+        <p class="research_text">
+            But how do we compare them? 
+        </p>
+
+        <p class="research_text">
+            This is where the magic happens. 
+            Consider constraint values for <i class="research_text">N</i> time steps. 
+            We can evaluate the constraint performances with the following definition: 
+        </p>
+
+        <div class="media_wrap media_wrap_tex" >
+            <img class="rl_media" src="./blog_images/tex_constraint_percentages.png" alt="">
+        </div>
+
+        <p class="research_text">
+            Which is really just a fancy way of defining the <i class="research_text">percentage of time the behavior is occuring in a sample</i>.
+            We can now compare constraints in terms of their performances i.e. c<sub class="research_text">i</sub> = 30% indicates the behavior b<sub class="research_text">i</sub> occured 30% of the time in your sampled batch. 
+        </p>
+           
+        <p class="research_text"> 
+            What about automating the weighting of the constraints?   
+            To solve this we need <i class="research_text">thresholds</i>. 
+            For each constraint c<sub class="research_text">i</sub> we define a threshold t<sub class="research_text">i</sub> which represents a target performance.
+            As we know, for each binary constraint b<sub class="research_text">i</sub> we have a weight w<sub class="research_text">i</sub>.
+            Using some fancy ML gradient descent tools (Adam Optimization for this implementation), we minimize the following error function with respect to the w<sub class="research_text">i</sub> weight dimensions:
+        </p>
+        
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_error.png" alt="">
+        </div>
+
+        <p class="research_text">
+            The weights are passed through a softmax layer. 
+            Gradient descent through a softmax layer results in the weight update being relative to the magnitude of the other weights, which proves to be useful for assigning priority to poorly performing constraints.
+        </p>
+
+        <p class="research_text">
+            The final component required as input for the Constrained RL implementation (along with binary constraints and thresholds) is the sparse reward. 
+            Unlike the constraints, training will maximize the expected value of the sparse reward. 
+        </p>
+        
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_sparse.png" alt="">
+        </div>
+
+        <p class="research_text">
+            An extra weight w<sub class="research_text">r</sub> is added to the weight vector for the sparse reward (this is similar to the paper's "dummy weight"). 
+            However, we let <i class="research_text">Err( w<sub class="research_text">r</sub> ) = 0 </i> for all weight updates. 
+            This way, the sparse reward's weight update will only depend on the softmax gradient. 
+            Thus, the weight will only increase once the other weights have decreased enough.
+            In other words, once the constraints are satisfied, the training concentrates on maximizing the sparse reward. 
+        </p>
+
+        <p class="research_text">
+            Instead of a scalar value, the reward is now a multidimensional vector with the binary constraints and the sparse reward as values. 
+            This reward is computed at every time step during training. 
+            Along with the threshold vector, this is the only information needed for training. 
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_constrained_reward_function.png" alt="">
+        </div>
+
+    </div>
+    
+    <div class="rl_section">
+        <h3 class="rl_subtitle">Results</h3>
+        
+        <p class="research_text">
+            Consider the following configuration with the previously defined path and speed behaviors:
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_constraints_1.png" alt="">
+        </div>
+
+        <p class="research_text">
+            We see two peculiar properties in this configuration: the two speed constraints and their high valued thresholds. 
+            Indeed, the first approach could be to set these thresholds at a lower value since we want the vehicle to be on target sped as much as possible.
+            But the reason for both of these properties stems from the fact that it is impossible for the vehicle to be exactly on the target speed.
+        </p>
+
+        <p class="research_text">
+            The speed behavior was split in two constraints because it cannot be expressed as a single constraint.
+            For example, if the constraint were defined as: 
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_target_speed.png" alt="">
+        </div>
+
+        <p class="research_text">
+            Then b<sub class="research_text">1</sub> = 1 for all time steps. The constraint's weight would blow up and the model would get stuck trying to learn this impossible behavior.
+        </p>
+
+        <p class="research_text">
+            It could be argued that the speed behavior could be defined as a single constraint like so:
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_target_speed_2.png" alt="">
+        </div>
+
+        <p class="research_text">
+            But defining the width of the range is equivalent to defining a threshold for the behavior.
+            A lesser width is harder to satisfy than a larger width, as a lesser threshold is harder to satisfy than a larger one. 
+            However, our constraint percentages are compared to thresholds, not ranges.
+            It is difficult to reason about a threshold value for this ranged constraint definition.
+        </p>
+
+        <p class="research_text">
+            Instead, by splitting this behavior in two constraints, we're actually splitting an equality in two inequalities. 
+            In the context of constraints and thresholds, inequalities are much easier to reason with. 
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_target_speed_3.png" alt="">
+        </div>
+
+        <p class="research_text">
+            For the high valued thresholds t<sub class="research_text">1</sub> & t<sub class="research_texgt">2</sub>, we start from the above identity.
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_target_speed_4.png" alt="">
+        </div>
+
+        <p class="research_text">
+            The first implication comes from the fact that the vehicle is 100% of the time either above or under the target speed.
+            The second implication comes from the fact that we want our thresholds to be feasible. 
+            If their values summed to less than 100%, then the model would be trying to attain an impossible performance!
+            <!-- It follows that we have a 60% + 60% - 100% = 20% tolerance for our target speed behavior.  -->
+        </p>
+
+        <p class="research_text">
+            We launch the training, and now comes the time to take a deep breath, go for a nap, get coffee, text your mom, or watch the Ubisoft sunrise...
+        </p>
+
+        <div class="research_display2">
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/view_2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <p class="research_text">
+            A few hours into training, the vehicles start driving in an unexpected way...
+        </p>
+
+        <div class="research_display2">
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/on_path_on_speed.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            
+        <div class="research_display2">
+
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/suicide_cars.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            
+        <p class="research_text">
+            I hear you wondering: "This will cost millions in repairs! Will you get fired?"
+        </p>
+
+        <p class="research_text">
+            First of all, the trucks are <i class="research_text">virtual</i>, which means I can hide the results and no one will ever discover my failure. 
+            Second of all, we realize the vehicles are in fact satisfying the constraints. 
+            The path constraint is calculated by taking the lateral distance of the vehicle to the path. 
+            The vehicle was staying on the path with respect to the path's left-right axis, but the path constraint wasn't giving any information to the model about the path's front-backward axis. 
+            In fact, the model is executing an optimal behavior with this configuration: upon initialization, turn around and drive at the target speed until the episode ends. 
+        </p>
+
+        <p class="research_text">
+            Let's solve this by adding a new constraint! 
+            Let's give the model a the notion of direction by simply adding a binary constraint indicating the behavior of consuming the path.
+        </p>
+
+        <div class="media_wrap media_wrap_tex">
+            <img class="rl_media" src="./blog_images/tex_constraints_2.png" alt="">
+        </div>
+
+        <p class="research_text">
+            Here are the results after around 20h of training with this configuration:
+        </p>
+
+        <div class="research_display2">
+
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/complete_path_view_1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            <div class="research_display2">
+
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/end_path_2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            
+        <p class="research_text">
+            Pretty impressive for a simple reward function!
+
+        </p>
+        
+        <p class="research_text">
+            Lastly, the following is a great example of the effectiveness of the Reinforcement Learning paradigm. 
+            It was never explicitly specified to the model that if it spawned backwards, it should turn around. 
+            In fact, the vehicle was never prevented from driving down the path backwards.
+            The only given metrics were the four binary constraints and the sparse reward. 
+            With this, training was able to deduce this optimal behavior. 
+        </p>
+
+        <div class="research_display2">
+
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/reverse_2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            
+        <div class="research_display2">
+
+            <div class="media_wrap video_wrap">
+                <video class="rl_media" muted autoplay loop>
+                    <source src="./blog_images/reverse_spawn.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="rl_section">
+        <h3 class="rl_subtitle">What next?</h3>
+
+        <p class="research_text">
+            In this project we demonstrated that our Constrained RL framework is a promising simplified approach for training RL models. 
+            At the end of the summer, we presented our results to the SmartDrive initiative. 
+            The conclusion was that this could be a useful tool for game developers, but needs further testing to ensure its robustness. 
+            We also believe it would be useful to apply our implementation to other complex problems for further improvements.
+        </p>
+
+    </div>
+
+</body>
+</html>
