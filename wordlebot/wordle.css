@@ -1,5 +1,10 @@
 /* body */
 
+.date {
+    position: relative;
+    width: 90%;
+}
+
 .section {
     position: relative;
     display: flex;
