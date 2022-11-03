@@ -1,6 +1,0 @@
-p.about_img_descr {
-    margin-top: 0;
-    font-size: x-small;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
