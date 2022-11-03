@@ -36,7 +36,14 @@
     margin-top: 20px;
 }
 
-.beast_videos {
+
+.examples {
     display: grid;
     grid-template-columns: auto auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+video, iframe {
+    border-radius: 10px;
 }
