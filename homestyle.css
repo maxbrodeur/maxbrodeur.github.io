@@ -635,6 +635,11 @@ p.about_img_descr {
 /* MENU */
 
 
+.menu {
+    position: sticky;
+}
+
+
 @media all and (orientation: portrait) {
     
     .home_menu_items {
