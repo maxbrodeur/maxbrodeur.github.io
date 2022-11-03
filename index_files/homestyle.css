@@ -258,18 +258,8 @@
 
 .about_img0 {
     object-fit: cover;
-    height: 100%;
 }
 
-p.about_img_descr {
-    margin-top: 0;
-    font-size: x-small;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
-
-
-/* TIMELINE */
 
 
 .timeline_section {

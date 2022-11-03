@@ -1,0 +1,242 @@
+/* colors */
+
+html {
+    background: url("./assets/background.JPG");
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: white;
+    max-width: 100%;
+    margin: 0;
+}
+
+body {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: url("./assets/background.JPG");
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-attachment: fixed;
+}
+
+
+/* TEXT STYLE -------------------------------------------------------------------------------------------- */
+
+html {
+    margin: 0;
+}
+
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu *{
+    color: rgb(37, 37, 37);
+}
+
+/* Colors */
+
+/* p, h1, h2, h3, a {
+    color:rgb(72, 72, 72);
+} */
+
+.typewriter {
+    border-right: 0.5em solid rgb(150, 150, 150) ;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media all and (orientation: portrait) {
+
+    html {
+        background-size: cover;
+    }
+    
+    body {
+        background-size: cover;
+    }
+
+    .MathJax {
+        font-size: 25px !important;
+        font: "TeX" !important;
+    }
+
+    p,li {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+
+    h2 {
+        font-size:  35px;
+    }
+
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media all and (orientation: landscape) {
+
+    html {
+        background-size: 100vw auto;
+    }
+    
+    body {
+        background-size: 100vw auto;
+    }
+    
+
+    .MathJax {
+        font-size: 20px !important;
+        font: "TeX" !important;
+    }
+
+    p,li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+
+    h2 {
+        font-size: 27px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+    }
+
+}
+
+/* MENU -------------------------------------------------------------------------------------------- */
+
+/* MENU LINKS */
+@media all and (orientation: portrait) {
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    
+}
+
+@media all and (orientation: landscape) {
+
+    .menu {
+        grid-template-columns: 60% auto;
+    }
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}
+
+.pagesubtitle {
+    position: relative;
+}
+
+
+.typewriter {
+    width: fit-content;
+}
+
+.menu {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid; 
+}
+
+.hr {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    background: white;
+}
+
+.pagetitle {
+    text-align: left;
+    width: fit-content;
+}
+
+.menu_items {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.title_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu{
+    min-height: 20vh;
+    height: fit-content;
+}
+
+.menu_link:hover {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-decoration: underline;
+}
+
+
+/* CONTENT  */
+
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    justify-items: center; 
+    margin-bottom: 5%;
+    padding-bottom: 2.5%;
+    padding-top: 1%;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.section_text{
+    text-align: justify;
+}
+
+
+
