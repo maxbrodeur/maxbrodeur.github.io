@@ -4,3 +4,7 @@
     transform: translateX(-50%);
     width: fit-content;
 }
+
+iframe {
+    border-radius: 10px;
+}
