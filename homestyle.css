@@ -137,9 +137,6 @@
 .section_image {
     width: 100%;
     object-fit: cover;
-    /* right: 0 !important;
-    top: 60%;
-    transform: translateY(-60%); */
 }
 
 
