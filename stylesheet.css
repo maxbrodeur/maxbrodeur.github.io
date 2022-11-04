@@ -109,6 +109,7 @@ html {
         overflow-x: visible;
         overflow-y: scroll;
         background-attachment: fixed;
+        background-size: cover;
     }
 
     
