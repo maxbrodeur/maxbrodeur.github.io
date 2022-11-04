@@ -177,13 +177,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .about_content {
     width: 60%;
     display: flex;
-    gap: 5%
+    gap: 5%;
 }
 
     
@@ -204,6 +203,10 @@
     justify-content: space-between;
 }
 
+.about_title_text {
+    margin-top: 0;
+}
+
 .about_text *, .about_img_descr *{
     color: black; 
 }
@@ -215,6 +218,10 @@
 
 
 @media all and (orientation: portrait) {
+
+    .about_section{
+        justify-items: center;
+    }
 
     .about_img0 {
         height: 90%;
@@ -238,6 +245,12 @@
 }
 
 @media all and (orientation: landscape) {
+
+    .about_content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     .about_img0 {
         height: 100%;

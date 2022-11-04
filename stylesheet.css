@@ -210,7 +210,8 @@ html {
 }
 
 .menu{
-    height: 20vh;
+    margin-top: 1%;
+    max-height: 20vh;
     height: fit-content;
 }
 
