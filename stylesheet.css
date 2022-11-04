@@ -210,7 +210,7 @@ html {
 }
 
 .menu{
-    min-height: 20vh;
+    height: 20vh;
     height: fit-content;
 }
 
