@@ -166,21 +166,63 @@
 
 /* ABOUT */
 
-.about_section{
-    position: relative;
-    width: 100%;
-    min-height: 80vh;
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
+.about_content {
+    padding: 3%;
+    background-color: white;
+    border-radius: 10px;
 }
+
+.about_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about_content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    gap: 5%
+}
+
+    
+.about_img_wrap, .about_img0, .about_content, .about_section {
+    max-width: 100%;
+}
+
+.about_img0 {
+    object-fit:cover;
+    border-radius: 10px;
+    height: 95%;
+}
+
+.about_img_descr {
+    margin-top: 0;
+    text-align: center;
+    font-size: x-small;
+}
+
+.about_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_text *, .about_img_descr *{
+    color: black; 
+}
+
 
 
 @media all and (orientation: portrait) {
 
-    .about_content{
-        display: grid;
-        grid-template-columns: auto;
+    .about_section {
+        height: fit-content;
+    }
+
+    .about_content {
+        flex-direction: column;
     }
 
     .about_text {
@@ -193,81 +235,19 @@
 }
 
 @media all and (orientation: landscape) {
+
+    .about_section {
+        max-height: 50vh;
+    }
+
     
-
-    .about_text {
-        max-width: 100%;
-        margin-right: 5%;
-    }
-
-    .about_img0 {
-        max-width: 100%;
-    }
-
-    .about_content{
-        display: grid;
-        grid-template-columns: auto auto;
+    .about_img_wrap{
+        height: 100%;
+        width: 50%;
     }
 
 }
 
-.about_content{
-    max-height: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    position: relative;
-}
-
-.about_content{
-    width: 70%;
-    margin-left: 13%;
-    margin-right: 13%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: rgba(255, 255, 255, 1);
-    border: 10px solid white;
-    border-radius: 10px; 
-}
-
-
-.about_title, .about_text, .about_img0{
-    position: relative;
-}
-
-.about_title_text {
-    width: fit-content;
-}
-
-.about_title_text, .about_text {
-    color: black;
-}
-
-.about_title {
-    width: 50%;
-}
-
-.about_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.about_text_text{
-    text-align: justify;
-    color: black; 
-}
-
-.about_img0 {
-    object-fit: cover;
-    height: 100%;
-}
-
-p.about_img_descr {
-    margin-top: 0;
-    font-size: x-small;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
 
 
 /* TIMELINE */
