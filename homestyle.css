@@ -190,12 +190,6 @@
     max-width: 100%;
 }
 
-.about_img0 {
-    object-fit:cover;
-    border-radius: 10px;
-    height: 95%;
-}
-
 .about_img_descr {
     margin-top: 0;
     text-align: center;
@@ -213,9 +207,17 @@
     color: black; 
 }
 
+.about_img0 {
+    object-fit:cover;
+    border-radius: 10px;
+}
 
 
 @media all and (orientation: portrait) {
+
+    .about_img0 {
+        height: 90%;
+    }
 
     .about_section {
         height: fit-content;
@@ -235,6 +237,10 @@
 }
 
 @media all and (orientation: landscape) {
+
+    .about_img0 {
+        height: 100%;
+    }
 
     .about_section {
         max-height: 50vh;
