@@ -170,6 +170,7 @@
     position: relative;
     width: 100%;
     min-height: 80vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
 }
