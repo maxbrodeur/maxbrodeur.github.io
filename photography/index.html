@@ -72,15 +72,17 @@
                 this.style.opacity = "1"
             }
 
-            var before_task = function(){}
-
-            var after_task = function() {
+            var before_task = function(){
                 for (let i = 0; i<paths.length; ++i){
                     let c = containers[i]
                     c.setAttribute("src", paths[i])
                     c.style.display = "block"
                     c.onload = gallery_img_appear
                 }
+            }
+
+            var after_task = function() {
+
             }
 
             // CONSTANTS
