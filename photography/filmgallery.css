@@ -21,6 +21,10 @@
     .row {
         flex-wrap: wrap;
     }
+
+    img, .img_wrap {
+        width: 100%;
+    }
 }
 
 /* Desktop */
@@ -61,6 +65,10 @@
         margin-top: 3%;
         margin-bottom: 3%;
     } */
+
+    .film_img {
+        max-height: 100vh;
+    }
 
     .img_display {
         position: absolute;
@@ -193,7 +201,6 @@ img {
 .film_img {
     display: none;
     opacity: 0;
-    max-height: 100vh;
     border: 2px solid  white
 }
 
