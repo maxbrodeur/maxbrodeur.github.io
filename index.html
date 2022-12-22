@@ -46,7 +46,8 @@
             "./assets/mapleleaf.jpg",
             "./assets/massif_sunset.jpg",
             "./assets/wordle.jpg",
-            "./assets/piano.jpg"
+            "./assets/piano.jpg",
+            "./assets/game-of-life.jpg"
         ]
         
         var section_image_list_init = document.getElementsByClassName("section_image")
@@ -127,7 +128,6 @@
                                 setTimeout(function(link, imgs_var){
                                     var link_wrap = imgs_var.parentElement.children[0]
                                     if (link_wrap.getAttribute("mouse")==="out" && link_wrap.children[0].style.textDecoration === '' && imgs_var.getAttribute("mouse")==="out"){
-                                        console.log("hello");
                                         link_wrap.children[0].children[0].style.color = SECTION_COLOR
                                         imgs_var.style.opacity = OPACITY
                                         // link_wrap.style.border = "2px solid white"
@@ -246,6 +246,18 @@
                 <div class="section_images" id="">
                     <div class="img_wrap0 film_img_wrap">
                         <img src="" alt="" class="section_image wordle_img" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- GAME OF LIFE -->
+            <div class="section">
+                <div class="link_wrap">
+                    <h2><a class="link link1 section_link section_title" href="https://maxbrodeur.github.io/game-of-life/">Game of Life</a></h2>
+                </div>
+                <div class="section_images">
+                    <div class="img_wrap0">
+                        <img src="" alt="" class="section_image" onerror="this.style.display='none'">
                     </div>
                 </div>
             </div>
