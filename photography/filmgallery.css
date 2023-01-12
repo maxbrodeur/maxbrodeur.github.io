@@ -154,6 +154,7 @@ img {
 }
 
 .img_wrap {
+    cursor: pointer;
     position: relative;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
