@@ -7,7 +7,7 @@
     </head>
     <body>
   
-        <div class="menu">
+        <!-- <div class="menu">
             <div class="title_wrap">
                 <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max Brodeur.">>> </h1>
             </div>
@@ -25,7 +25,7 @@
                     <a class="link" href="#timeline"> Timeline </a>
                 </p>
             </div>
-        </div>
+        </div> -->
         
         <script> 
 
@@ -57,122 +57,142 @@
             const section_images_init = section_images_list_init[i];
             section_images_init.setAttribute("loaded",0)
         }
-
+        
+        // This function is called before the typewriter starts typing
+        // It is used to initialize the page
         var before_task = function() {
             // add sources
             for (let i = 0; i<paths.length; ++i){
-                            let c = section_image_list_init[i]
-                            c.setAttribute("src", paths[i])
-                            c.style.display = "block"
-                            c.onload = function() {
-                                this.style.opacity = MAX_OPACITY
-                            }
-                        }
+                let c = section_image_list_init[i]
+                c.setAttribute("src", paths[i])
+                c.style.display = "block"
+                c.onload = function() {
+                    this.style.opacity = MAX_OPACITY
+                }
+            }
 
-                        for (let i = 0; i < section_images_list_init.length; i++) {
-                            const section_images_init = section_images_list_init[i];
-                            section_images_init.setAttribute("loaded",1)
-                            if (section_images_init.getAttribute("mouse") === "in"){
-                                section_images_init.onmouseover()
-                            }
-                        }
+            for (let i = 0; i < section_images_list_init.length; i++) {
+                const section_images_init = section_images_list_init[i];
+                section_images_init.setAttribute("loaded",1)
+                if (section_images_init.getAttribute("mouse") === "in"){
+                    section_images_init.onmouseover()
+                }
+            }
 
-                        var link_wrap_list_init = document.getElementsByClassName("link_wrap")
-                        for (let i = 0; i < link_wrap_list_init.length; i++) {
-                            var link_wrap_init = link_wrap_list_init[i]
-                            if (link_wrap_init.getAttribute("mouse")!=="in"){
-                                link_wrap_list_init[i].setAttribute("mouse", "out");
-                            }
+            var link_wrap_list_init = document.getElementsByClassName("link_wrap")
+            for (let i = 0; i < link_wrap_list_init.length; i++) {
+                var link_wrap_init = link_wrap_list_init[i]
+                if (link_wrap_init.getAttribute("mouse")!=="in"){
+                    link_wrap_list_init[i].setAttribute("mouse", "out");
+                }
 
-                        }
+            }
 
-                        var sections = document.getElementsByClassName("sections")[0]
-                        sections.style.opacity = 1;
-                        var sections = document.getElementsByClassName("section")
-                        
+            var sections = document.getElementsByClassName("sections")[0]
+            sections.style.opacity = 1;
+            var sections = document.getElementsByClassName("section")
+            
 
-                        // LISTENERS
-                        for (let i = 0; i < sections.length; i++) {
-                            const section = sections[i];
-                            var link_wrap = section.children[0]
-                            var link = link_wrap.children[0]
-                            var imgs = section.children[1]
+            // LISTENERS
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                var link_wrap = section.children[0]
+                var link = link_wrap.children[0]
+                var imgs = section.children[1]
 
-                            // SECTION LINK
-                            link.onmouseover = function() {
-                                var imgs = this.parentElement.parentElement.parentElement.children[1]
-                                if (imgs.getAttribute("loaded")==1) {
-                                    imgs.style.opacity = MID_OPACITY 
-                                    this.style.color = LINK_COLOR;
-                                }
-                                this.style.textDecoration = "underline";
-                                
-                            }
-                            link.onmouseout= function() {
-                                this.style.textDecoration = ''
-                            }
-
-                            // SECTION IMAGES
-                            imgs.style.opacity = OPACITY;
-
-                            imgs.onmouseover = function() {
-                                this.setAttribute("mouse", "in")
-                                if (this.getAttribute("loaded")==1){
-                                    this.style.opacity = MAX_OPACITY
-                                    this.parentElement.children[0].children[0].children[0].style.color = "white"
-                                    // this.parentElement.children[0].style.border = "2px solid transparent"
-                                }
-                            }
-                            imgs.onmouseout = function() {
-                                this.setAttribute("mouse","out")
-                                setTimeout(function(link, imgs_var){
-                                    var link_wrap = imgs_var.parentElement.children[0]
-                                    if (link_wrap.getAttribute("mouse")==="out" && link_wrap.children[0].style.textDecoration === '' && imgs_var.getAttribute("mouse")==="out"){
-                                        link_wrap.children[0].children[0].style.color = SECTION_COLOR
-                                        imgs_var.style.opacity = OPACITY
-                                        // link_wrap.style.border = "2px solid white"
-                                    }                   
-                                }, HOVER_DELAY, this.parentElement.children[0].children[0], this)
-                            }
-
-                            // LINK WRAP
-                            link_wrap.onmouseover = function() {
-                                this.setAttribute("mouse", "in")
-                                this.parentElement.children[1].onmouseover()
-                            }
-                            link_wrap.onmouseout = function() {
-                                this.setAttribute("mouse", "out")
-                            }
-                        }
+                // SECTION LINK
+                link.onmouseover = function() {
+                    var imgs = this.parentElement.parentElement.parentElement.children[1]
+                    if (imgs.getAttribute("loaded")==1) {
+                        imgs.style.opacity = MID_OPACITY 
+                        this.style.color = LINK_COLOR;
                     }
+                    this.style.textDecoration = "underline";
                     
-                    var comma_task = function() {}
-                    
-                    var after_task = function() {}
-                    
-                    </script>
+                }
+                link.onmouseout= function() {
+                    this.style.textDecoration = ''
+                }
 
-<script type="text/javascript" src="./assets/typewriter.js"></script>
+                // SECTION IMAGES
+                imgs.style.opacity = OPACITY;
+
+                imgs.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                    if (this.getAttribute("loaded")==1){
+                        this.style.opacity = MAX_OPACITY
+                        this.parentElement.children[0].children[0].children[0].style.color = "white"
+                        // this.parentElement.children[0].style.border = "2px solid transparent"
+                    }
+                }
+                imgs.onmouseout = function() {
+                    this.setAttribute("mouse","out")
+                    setTimeout(function(link, imgs_var){
+                        var link_wrap = imgs_var.parentElement.children[0]
+                        if (link_wrap.getAttribute("mouse")==="out" && link_wrap.children[0].style.textDecoration === '' && imgs_var.getAttribute("mouse")==="out"){
+                            link_wrap.children[0].children[0].style.color = SECTION_COLOR
+                            imgs_var.style.opacity = OPACITY
+                            // link_wrap.style.border = "2px solid white"
+                        }                   
+                    }, HOVER_DELAY, this.parentElement.children[0].children[0], this)
+                }
+
+                // LINK WRAP
+                link_wrap.onmouseover = function() {
+                    this.setAttribute("mouse", "in")
+                    this.parentElement.children[1].onmouseover()
+                }
+                link_wrap.onmouseout = function() {
+                    this.setAttribute("mouse", "out")
+                }
+            }
+        }
+                    
+        var comma_task = function() {}
+        
+        var after_task = function() {}
+        
+        // Function call logic not used when typewriter disabled
+        window.onload = before_task
+
+        window.addEventListener('scroll', function() {
+            var arrow = document.querySelector('.arrow-down');
+            if (window.scrollY > 50) { // Adjust scroll threshold as needed
+                arrow.style.opacity = '0'; // Fade out the arrow
+            } else {
+                arrow.style.opacity = '1'; // Restore visibility if user scrolls back up
+            }
+        });
+
+        </script>
+
+<!-- <script type="text/javascript" src="./assets/typewriter.js"></script> -->
 
 <!-- ABOUT -->
 <div class="about_section" id="about">
     <div class="about_content">
         <div class="about_text">
-            <div class="about_title">
+            <!-- <div class="about_title">
                 <h2 class="about_title_text" >About me.</h2>
-            </div>
-            <p class="about_text_text"> I'm a student from Montr&eacute;al, Qu&eacute;bec and am currently pursuing a bachelor's degree in Mathematics & Computer Science at McGill University.</p>
-            <p class="about_text_text"> I am fascinated by the study of Nonlinear Dynamics, and its extensive breadth of applications.</p>
+            </div> -->
+            <p class="about_text_text"> 
+                Hey there! 
+            </p>
+            <p class="about_text_text"> 
+                I'm from Montr&eacute;al, Qu&eacute;bec, but now living in Lausanne, Switzerland where I'm pursuing a Master's degree in Computational Science & Engineering at EPFL. My studies mainly revolve around PDEs and dynamical systems, exploring the various fields they touch upon. I'm particularly interested in Knot Theory, as well as Reinforcement Learning.
+            </p>
         </div>
 
         <div class="about_img_wrap">
             <a href="https://www.youtube.com/watch?v=k-BBfhWLfAQ">
                 <img class="about_img0" src="./assets/maxbrodeur.jpg" alt="">
             </a>
-            <p class="about_img_descr">My Nana and myself at my cousin's wedding &#8212; July 2022.</p>
+            <p class="about_img_descr">The Basel Problem in the EPFL metro station</p>
         </div>
     </div>
 </div>
+
+<div class="arrow-down"></div>
 
 <div class="projects_section" id="sections">
 

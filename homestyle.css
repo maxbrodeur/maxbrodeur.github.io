@@ -22,7 +22,6 @@
     background: linear-gradient(to bottom, transparent, black);
 }
 
-
 .sections {
     margin-top: 3%;
     background-color: white;
@@ -163,12 +162,11 @@
     transition: all 1s ease;
 }
 
-
 /* ABOUT */
 
 .about_content {
     padding: 3%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
 }
 
@@ -181,12 +179,18 @@
 
 .about_content {
     display: flex;
-    gap: 5%;
+    gap: 15%;
 }
 
     
 .about_img_wrap, .about_img0, .about_content, .about_section {
     max-width: 100%;
+}
+
+.about_img_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about_img_descr {
@@ -198,7 +202,9 @@
 .about_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* justify text */
+    text-align: justify;
 }
 
 .about_title_text {
@@ -210,10 +216,9 @@
 }
 
 .about_img0 {
-    object-fit:cover;
+    object-fit:contain;
     border-radius: 10px;
 }
-
 
 @media all and (orientation: portrait) {
 
@@ -223,10 +228,6 @@
 
     .about_content{
         height: fit-content;
-    }
-
-    .about_img0 {
-        height: 90%;
     }
 
     .about_section {
@@ -245,8 +246,9 @@
         width: 100%;
     }
 
+
     .about_content {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -258,15 +260,10 @@
         transform: translateY(-50%);
     }
 
-    .about_img0 {
-        height: 100%;
-    }
-
     .about_content {
         max-height: 50vh;
     }
 
-    
     .about_img_wrap{
         height: 100%;
         width: 50%;
@@ -277,15 +274,12 @@
     }
 
     .about_content {
-        width: 60%;
+        width: 80%;
     }
 
 }
 
-
-
 /* TIMELINE */
-
 
 .timeline_section {
     position: relative;
@@ -690,4 +684,21 @@
         text-decoration: underline;
     }
     
+}
+
+
+/* Styles for the arrow shape */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Adjust arrow size as needed */
+    border-right: 10px solid transparent;
+    border-top: 20px solid #000000; /* Arrow color */
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    left: 50%; /* Position horizontally centered */
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    z-index: 999; /* Ensure arrow is above other content */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    opacity: 1; /* Initially visible */
 }
