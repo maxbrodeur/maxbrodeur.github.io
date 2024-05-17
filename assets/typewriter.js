@@ -56,4 +56,5 @@ var typewrite = function() {
     titlename.setAttribute("interval", interval)
 }
 
-window.onload = typewrite
+// window.onload = typewrite
+window.onload = before_task

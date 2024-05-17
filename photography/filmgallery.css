@@ -228,10 +228,19 @@ img {
     position: relative;
     grid-template-columns: auto;
     width:100%;
+    display: flex;
+    justify-content: right;
+    /* put space between them */
+    gap: 20px;
+
+
 }
 
 .film_menu {
     grid-template-columns: auto auto;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .homelink:hover {

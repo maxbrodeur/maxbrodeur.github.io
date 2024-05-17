@@ -118,7 +118,7 @@
     grid-column: 1/4;
 }
 
-.chaos_img0{
+.chaos_img0, .untangle_img0{
     top: 50%;
     transform: translateY(-50%);
 }
@@ -645,7 +645,7 @@
 
 
 .menu {
-    position: sticky;
+    position: absolute;
 }
 
 
@@ -668,9 +668,9 @@
 
 @media all and (orientation: landscape) {
 
-    .menu {
+    /* .menu {
         grid-template-columns: 60% auto;
-    }
+    } */
     
     .home_menu_items {
         justify-content: space-between;
