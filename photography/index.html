@@ -819,12 +819,23 @@
 
                 slideshowButton.addEventListener('click', function() {
                     if (slideshowIntervalId === null) {
+                        updateImage();
                         slideshowIntervalId = setInterval(updateRandomImage, 10000);
                         slideshowButton.textContent = "Stop slideshow";
                     } else {
                         clearInterval(slideshowIntervalId);
                         slideshowIntervalId = null;
                         slideshowButton.textContent = "Start slideshow";
+                    }
+                });
+
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === "ArrowLeft") {
+                        currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : img_wraps.length - 1;
+                        updateImage();
+                    } else if (event.key === "ArrowRight") {
+                        currentImageIndex = currentImageIndex < img_wraps.length - 1 ? currentImageIndex + 1 : 0;
+                        updateImage();
                     }
                 });
 
@@ -845,8 +856,6 @@
                 
             </script>
             
-            
-
         </div>
         
     </body>
