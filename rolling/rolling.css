@@ -1,0 +1,165 @@
+/* menu  */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.homelink {
+    transition: all 0.5s ease;
+    text-align: right;
+    width: 100%;
+    height: fit-content;
+}
+
+.film_menu_items {
+    position: relative;
+    grid-template-columns: auto;
+    width:100%;
+}
+
+.film_menu {
+    grid-template-columns: auto auto;
+}
+
+.homelink:hover {
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-decoration: underline;
+}
+
+.fractal_title{
+    position: relative;
+    text-align: center;
+}
+
+@media all and (orientation: portrait) {
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+    
+}
+
+@media all and (orientation: landscape) {
+
+    /* .menu {
+        grid-template-columns: 60% auto;
+    } */
+    
+    .menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .menu_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+    
+}
+
+/* body */
+
+.date {
+    position: relative;
+    width: 90%;
+}
+
+
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 5% !important;
+    margin-top: 5% !important;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.section_text{
+    text-align: justify;
+}
+
+/* TABLE */
+
+.link_items {
+    position: relative;
+    display: flex;
+    /* space between */
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;
+    /* margin-bottom: 5%; */
+}
+
+.knot_imgs {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
+}
+
+.knot_img {
+    position: relative;
+    width: 20%;
+    height: auto;
+}
+
+.rolling_knot_gif {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 2%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.section {
+    height: 80%;
+}
+
+.link_item {
+    /* align vertical center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+}

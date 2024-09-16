@@ -119,6 +119,11 @@
     transform: translateY(-50%);
 }
 
+.rolling_img{
+    top: 50%;
+    transform: translateY(-53%);
+}
+
 .rl_img0{
     top: 90%;
     transform: translateY(-90%);
