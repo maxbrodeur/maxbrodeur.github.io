@@ -68,13 +68,13 @@ html {
     body {
         /* background:rgb(219, 219, 219); */
         background: url("./assets/background.jpg");
-        background-size: cover;
+        background-size: contain;
         height: 100%;
         width: 100%;
         margin: 0;
         overflow-x: visible;
         overflow-y: auto;
-        background-attachment: fixed;
+        /* background-attachment:; */
     }
 
     .MathJax {
