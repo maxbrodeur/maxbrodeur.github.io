@@ -67,7 +67,9 @@ html {
 
     body {
         /* background:rgb(219, 219, 219); */
-        background: url("./assets/background.jpg");
+        /* background: url("./assets/background.jpg"); */
+        /* background gradient from light blue to dark blue */
+        background: linear-gradient(180deg, rgb(182, 216, 255) 0%, rgba(0, 0, 0, 0.5) 100%);
         background-size: contain;
         height: 100%;
         width: 100%;
