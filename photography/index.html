@@ -3,6 +3,7 @@
     <head>
         <title>Gallery</title>
         <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" id="main-style" href="../stylesheet_desktop.css">
         <link rel="stylesheet" href="filmgallery.css">
     </head>
 
@@ -122,6 +123,7 @@
             }
 
             var before_task = function(){
+                
                 for (let i = 0; i<paths.length; ++i){
                     let c = containers[i]
                     c.setAttribute("src", paths[i])

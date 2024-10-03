@@ -1,0 +1,84 @@
+
+body {
+    background: url("./assets/background.jpg");
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: visible;
+    overflow-y: scroll;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.MathJax {
+    font-size: 20px !important;
+    font: "TeX" !important;
+}
+
+p,li {
+    font-size:large;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+
+h2 {
+    font-size: 27px;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+
+
+/* HOMESTYLE */
+
+
+.about_content {
+    max-height: 50vh;
+}
+
+.about_img_wrap{
+    height: 100%;
+    width: 50%;
+}
+
+.about_text {
+    width: 50%;
+}
+
+.about_content {
+    width: 80%;
+}
+
+    /* .menu {
+        grid-template-columns: 60% auto;
+    } */
+    
+    .home_menu_items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .projects_link:hover {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%);
+        text-decoration: underline;
+    }
+
+
+/* TIMELINE */
+
+.timeline_entry {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

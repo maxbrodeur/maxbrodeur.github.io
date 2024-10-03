@@ -64,6 +64,11 @@
     width: 100%;
 }
 
+
+.home_menu {
+    height: 10vh;
+}
+
 .link_wrap {
     position: absolute;
     grid-column: 1/1;
@@ -172,15 +177,17 @@
 }
 
 .about_section {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about_content {
     display: flex;
     gap: 15%;
+    transform: translateY(-10vh);
 }
 
     
@@ -220,112 +227,6 @@
     object-fit:contain;
     border-radius: 10px;
 }
-
-@media all and (orientation: portrait) {
-
-    .about_section{
-        align-items: center;
-    }
-
-    .about_content{
-        height: fit-content;
-    }
-
-    .about_section {
-        height: 90vh;
-    }
-
-    .about_content {
-        flex-direction: column;
-    }
-
-    .about_text {
-        width: 100%;
-    }
-
-    .about_img0 {
-        width: 100%;
-    }
-
-
-    .about_content {
-        width: 80%;
-    }
-}
-
-@media all and (orientation: landscape) {
-
-    .about_content {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .about_content {
-        max-height: 50vh;
-    }
-
-    .about_img_wrap{
-        height: 100%;
-        width: 50%;
-    }
-
-    .about_text {
-        width: 50%;
-    }
-
-    .about_content {
-        width: 80%;
-    }
-
-}
-
-
-/* MENU */
-
-
-.menu {
-    position: absolute;
-}
-
-
-@media all and (orientation: portrait) {
-    
-    .home_menu_items {
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .projects_link:hover {
-        -webkit-filter: brightness(150%);
-        filter: brightness(150%);
-        text-decoration: underline;
-    }
-    
-}
-
-@media all and (orientation: landscape) {
-
-    /* .menu {
-        grid-template-columns: 60% auto;
-    } */
-    
-    .home_menu_items {
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .projects_link:hover {
-        -webkit-filter: brightness(150%);
-        filter: brightness(150%);
-        text-decoration: underline;
-    }
-    
-}
-
 
 /* Styles for the arrow shape */
 .arrow-down {

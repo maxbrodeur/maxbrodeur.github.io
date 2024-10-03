@@ -27,6 +27,11 @@
     margin-left: 8%;
 }
 
+.timeline_media_container {
+    max-width: 50vw;
+    width: fit-content;
+}
+
 .year_text{
     color: white;
 }
@@ -47,163 +52,48 @@
     text-align: center;
 }
 
-/* @media all and (orientation: portrait) {
 
-    .timeline_year {
-        left: 10%;
-    }
+.timeline_year {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
-    .timeline_segment {
-        height: 80vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .timeline_media {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .sgmt0, .sgmt2, .sgmt4, .sgmt6, .media1, .media3, .media5 {
-        grid-column: 2/3;
-    }
-    
-    .sgmt0 .timeline_year, .sgmt2 .timeline_year, .sgmt4 .timeline_year, .sgmt6 .timeline_year {
-        text-align: center;
-        
-    }
-    
-    .sgmt1, .sgmt3, .sgmt5, .media0, .media2, .media4, .media6 {
-        grid-column: 2/3;
-    }
-    
-    .sgmt1 .timeline_year, .sgmt3 .timeline_year, .sgmt5 .timeline_year{
-        text-align: center;
-    }
-    
-    .timeline_column {
-        grid-column: 1;
-    }
-
-    .year_1, .year_3, .year_5 {
-        grid-column: 1;
-        text-align: left;
-    }
-    
-    .year_0, .year_2, .year_4, .year_6 {
-        grid-column: 1;
-        text-align: left;
-    }
-    
-    .year_1::after, .year_3::after, .year_0::after, .year_2::after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 5px;
-        width: 20%;
-        background-color: white;
-        top: 50%;
-        border-radius: 1px;
-        transform: translateY(-50%);
-    }
-    
-    .year_0::after, .year_2::after {
-        left: -20%;
-    }
-    
-    .year_1::after, .year_3::after {
-        left: -20%;
-    }
-    
-    /* .year_3 {
-        border-left: 5px;
-    } */
-
-    /* .timeline_media_link_img_wrap {
-
-        position: relative;
-        width: 100%;
-        height: fit-content;
-        bottom: 0;
-    }
-
-    .timeline_text {
-        max-height: 50%;
-        transform: translateY(-50%);
-    }
-    .timeline_media_link {
-        max-height: 50%;
-        width: fit-content;
-        transform: translateY(50%);  
-    }
-
-} */ 
-
-@media all and (orientation: portrait) {
-
-    .timeline_entry {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+    /* bottom border */
+    border-bottom: 1px solid white;
+    /* bottom border at a distance */
 }
 
-@media all and (orientation: landscape) {
-    .timeline_entry {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+.timeline_entry {
+    max-height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-@media all {
+.timeline_media_link_img_wrap {
+    /* position: absolute; */
+    width: 100%;
+    /* height: fit-content; */
+    /* transform: translateY(-50%); */
+}
 
-    .timeline_year {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+.timeline_segment{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100vh; */
+}
 
-        /* bottom border */
-        border-bottom: 1px solid white;
-        /* bottom border at a distance */
-    }
-    
-    .timeline_entry {
-
-        height: 50vh;
-    
-    }
-    .timeline_media_link_img_wrap {
-        /* position: absolute; */
-        width: 100%;
-        /* height: fit-content; */
-        /* transform: translateY(-50%); */
-    }
-
-    .timeline_segment{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /* height: 100vh; */
-    }
-    
-    .timeline_media_container, .timeline_media {
-        /* height: 100vh; */
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
+.timeline_media_container, .timeline_media {
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* TIMELINE BLURRED IMAGE THINGS */

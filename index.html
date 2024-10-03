@@ -2,29 +2,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="./stylesheet.css">
+        <link rel="stylesheet" id="main-style" href="./stylesheet_desktop.css">
         <link rel="stylesheet" href="./homestyle.css">
         <link rel="stylesheet" href="./timeline.css">
         <title>Max Brodeur</title>
     </head>
     <body>
-  
-        <div class="menu">
-            <!-- <div class="title_wrap">
-                <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max Brodeur.">>> </h1>
-            </div> -->
-            <div class="menu_items home_menu_items">
-                <p class="projects_link">
-                    <a class="link" href="https://github.com/maxbrodeur"> GitHub </a>
-                </p>
-                <!-- <p class="projects_link">
-                    <a class="link" href="#about"> About </a>
-                </p> -->
-                <p class="projects_link">
-                    <a class="link" href="#sections"> Projects </a>
-                </p>
-                <p class="projects_link">
-                    <a class="link" href="#timeline"> Timeline </a>
-                </p>
+        
+        <div class="menu_section">
+            <div class="menu home_menu">
+                <!-- <div class="title_wrap">
+                    <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max Brodeur.">>> </h1>
+                </div> -->
+                <div class="menu_items home_menu_items">
+                    <p class="projects_link">
+                        <a class="link" href="https://github.com/maxbrodeur"> GitHub </a>
+                    </p>
+                    <!-- <p class="projects_link">
+                        <a class="link" href="#about"> About </a>
+                    </p> -->
+                    <p class="projects_link">
+                        <a class="link" href="#sections"> Projects </a>
+                    </p>
+                    <p class="projects_link">
+                        <a class="link" href="#timeline"> Timeline </a>
+                    </p>
+                </div>
             </div>
         </div>
         
@@ -64,6 +67,7 @@
         // This function is called before the typewriter starts typing
         // It is used to initialize the page
         var before_task = function() {
+
             // add sources
             for (let i = 0; i<paths.length; ++i){
                 let c = section_image_list_init[i]
@@ -155,9 +159,6 @@
         
         var after_task = function() {}
         
-        // Function call logic not used when typewriter disabled
-        window.onload = before_task
-
         window.addEventListener('scroll', function() {
             var arrow = document.querySelector('.arrow-down');
             if (window.scrollY > 50) { // Adjust scroll threshold as needed
@@ -169,7 +170,7 @@
 
         </script>
 
-        <!-- <script type="text/javascript" src="./assets/typewriter.js"></script> -->
+        <script type="text/javascript" src="./assets/typewriter.js"></script>
 
         <!-- ABOUT -->
         <div class="about_section" id="about">
@@ -182,12 +183,12 @@
                         Hey there! 
                     </p>
                     <p class="about_text_text"> 
-                        I'm from Montr&eacute;al, Qu&eacute;bec, but now living in Lausanne, Switzerland where I'm pursuing a Master's degree in Computational Science & Engineering at EPFL. My studies mainly revolve around PDEs and dynamical systems, exploring the various fields they touch upon. I'm particularly interested in Knot Theory, as well as Reinforcement Learning.
+                        I'm from Montr&eacute;al, Qu&eacute;bec, but now living in Lausanne, Switzerland where I'm pursuing a Master's degree in Computational Science & Engineering at EPFL. My interests mainly revolve around problems requiring mathematical insight and a sturdy algorithmic toolbox. I've recently been studying topics in NeuroAI, RL, and Knot Theory.
                     </p>
                 </div>
 
                 <div class="about_img_wrap">
-                    <a href="https://www.youtube.com/watch?v=k-BBfhWLfAQ">
+                    <a href="https://www.youtube.com/watch?v=k-BBfhWLfAQ" class="about_img_container">
                         <img class="about_img0" src="./assets/maxbrodeur.jpg" alt="">
                     </a>
                     <p class="about_img_descr">Hiking in Zermatt, with a view on the Matterhorn.</p>

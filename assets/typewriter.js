@@ -49,6 +49,26 @@ var addLetter = function() {
     }
 }
 
+var device_check = function() {
+    console.log('Checking device type...');
+    function isMobileDevice() {
+        return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        // return true;
+    }
+    if (isMobileDevice()) {
+            console.log('Mobile device detected. Switching to mobile stylesheet.');
+            // Remove the default stylesheet
+            var mainStyle = document.getElementById('main-style');
+            mainStyle.parentNode.removeChild(mainStyle);
+    
+            // Create a new link element for mobile stylesheet
+            var mobileStyle = document.createElement('link');
+            mobileStyle.rel = 'stylesheet';
+            mobileStyle.href = 'stylesheet_mobile.css'; // Path to your mobile stylesheet
+            document.head.appendChild(mobileStyle);
+    }
+}
+
 var typewrite = function() {
     before_task()
     titlename = document.getElementById("typewriter")
@@ -57,4 +77,8 @@ var typewrite = function() {
 }
 
 // window.onload = typewrite
-window.onload = before_task
+window.onload = function() {
+    device_check()
+    before_task()
+}
+
