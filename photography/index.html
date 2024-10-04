@@ -116,18 +116,29 @@
                             // "./images/mtl_duluth.JPG"
                         ]
 
-            var containers = document.getElementsByClassName("film_img")
-
+            
+            total_images = paths.length
+            loaded_img_count = 0
+            
             var gallery_img_appear = function() {
-                this.style.opacity = "1"
+                loaded_img_count += 1
+                var loading = document.getElementById("loading")
+                // add progress count
+                loading.innerHTML = "Loading " + loaded_img_count + " / " + total_images
+                if (loaded_img_count == total_images){
+                    images.classList.remove("hidden")
+                    loading.style.display = "none"
+                }
             }
-
+            
             var before_task = function(){
-                
+
+                var containers = document.getElementsByClassName("film_img")
+                var images = document.getElementById("images")
+
                 for (let i = 0; i<paths.length; ++i){
                     let c = containers[i]
                     c.setAttribute("src", paths[i])
-                    c.style.display = "block"
                     c.onload = gallery_img_appear
                 }
             }
@@ -144,13 +155,16 @@
         </script>
         
         <script type="text/javascript" src="../assets/typewriter.js"></script>
-        
-        <div class="images" id="images">
 
+        <div class="loading section" id="loading">
+            <h1 class="pagetitle" text="L"></h1>
+        </div>
+        
+        <div class="images hidden" id="images">
             <!-- CORSICA -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -159,7 +173,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="single film_img" onerror="this.style.display='none'">
+                    <img src="" class="single film_img">
                     <div class="img_description">
                         <p>Marseille
                             <br> <font size="-2">April 2024</font>
@@ -168,7 +182,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -181,7 +195,7 @@
             <!-- CORSICA -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -190,7 +204,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="single film_img" onerror="this.style.display='none'">
+                    <img src="" class="single film_img">
                     <div class="img_description">
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -199,7 +213,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -212,7 +226,7 @@
             <!-- CORSICA -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="single film_img" onerror="this.style.display='none'">
+                    <img src="" class="single film_img">
                     <div class="img_description">
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -225,7 +239,7 @@
             <!-- CORSICA -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -234,7 +248,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -243,7 +257,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Corsica
                             <br> <font size="-2">April 2024</font>
@@ -256,7 +270,7 @@
             <!-- SWITZERLAND -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Switzerland
                             <br> <font size="-2">February 2024</font>
@@ -265,7 +279,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Switzerland
                             <br> <font size="-2">February 2024</font>
@@ -274,7 +288,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Switzerland
                             <br> <font size="-2">February 2024</font>
@@ -287,7 +301,7 @@
             <!-- SWITZERLAND -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Switzerland
                             <br> <font size="-2">February 2024</font>
@@ -296,7 +310,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Switzerland
                             <br> <font size="-2">October 2023</font>
@@ -305,7 +319,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Switzerland
                             <br> <font size="-2">February 2024</font>
@@ -318,7 +332,7 @@
             <!-- JAPAN -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="single film_img" onerror="this.style.display='none'">
+                    <img src="" class="single film_img">
                     <div class="img_description">
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -331,7 +345,7 @@
             <!-- JAPAN -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -340,7 +354,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -350,7 +364,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -363,7 +377,7 @@
             <!-- JAPAN -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -372,7 +386,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -381,7 +395,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Japan
                             <br> <font size="-2">July 2023</font>
@@ -395,7 +409,7 @@
             <!-- MARTINIQUE -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>
                             Guadeloupe <br>
@@ -405,7 +419,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Guadeloupe
                             <br> <font size="-2">March 2023</font>
@@ -414,7 +428,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Guadeloupe
                             <br> <font size="-2">March 2023</font>
@@ -427,7 +441,7 @@
             <!-- GASPESIE -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Gasp&eacute;sie - Qu&eacute;bec
                             <br> <font size="-2">December 2022</font>
@@ -436,7 +450,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Gasp&eacute;sie - Qu&eacute;bec
                             <br> <font size="-2">December 2022</font>
@@ -449,7 +463,7 @@
             <!-- MARTINIQUE -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Montr&eacute;al
                             <br> <font size="-2">November 2022</font>
@@ -458,7 +472,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>St-Hilaire 
                             <br> <font size="-2">October 2022</font>
@@ -467,7 +481,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p> Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -480,7 +494,7 @@
             <!-- MARTINIQUE  -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -489,7 +503,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -502,7 +516,7 @@
             <!-- MARTINIQUE -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>St. Lucia
                             <br> <font size="-2">August 2022</font>
@@ -511,7 +525,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>St. Lucia
                             <br> <font size="-2">August 2022</font>
@@ -520,7 +534,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p> Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -533,7 +547,7 @@
             <!-- MARTINIQUE -->
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -542,7 +556,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -554,7 +568,7 @@
 
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -563,7 +577,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -572,7 +586,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p> Martinique 
                             <br> <font size="-2">August 2022</font>
@@ -584,7 +598,7 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>St. Lucia 
                             <br> <font size="-2">August 2022</font>
@@ -593,7 +607,7 @@
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>St. Lucia 
                             <br> <font size="-2">August 2022</font>
@@ -605,14 +619,14 @@
 
             <!-- <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p> St. Lucia </p>
                         <p><font size="-1">A schooner boat.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p> St. Lucia </p>
                         <p><font size="-1">A sparrow hawk.</font></p>
@@ -623,21 +637,21 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Prince Edward Island </p>
                         <p> <font size="-1">A northen coast beach in Lower Darnley.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Prince Edward Island</p>
                         <p> <font size="-1">View of the confederation bridge from the New Brunswick side.</font>  </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Prince Edward Island</p> 
                         <p> <font size="-1"> The shanty. </font>
@@ -647,7 +661,7 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="single film_img" onerror="this.style.display='none'">
+                    <img src="" class="single film_img">
                     <div class="img_description"> 
                         <p>Ontario</p>
                         <p> <font size="-1"> Vintage Packard from my cousin's wedding.</font> </p>
@@ -657,21 +671,21 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src=""  class="film_img" onerror="this.style.display='none'">
+                    <img src=""  class="film_img">
                     <div class="img_description"> 
                         <p>Ontario</p>
                         <p> <font size="-1"> Nana and Mom at my cousin's wedding. </font> </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Montreal </p>
                         <p> <font size="-1">The Saint-Jean Baptiste Catholic Church in the Plateau. </font> </p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Home </p>
                         <p> <font size="-1">My family and a sunset. </font></p>
@@ -681,14 +695,14 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Martinique</p>
                         <p> <font size="-1"> My brother tidying the main sail. </font></p>
                         </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Le dôme des invalides. Napoleon's tomb. </font></p>
@@ -698,14 +712,14 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description"> 
                         <p>Baie-Saint-Paul</p>
                         <p><font size="-1">Sunset.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Prince Edward Island </p>
                         <p> <font size="-1">the view from a cave in PEI.</font></p>
@@ -716,21 +730,21 @@
             
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Paris </p> 
                         <p> <font size="-1">Les invalides, which contains Napoleon's tomb.</font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Place de la concorde and the Egyptian Obelisk in its center. </font></p>
                     </div>
                 </div>
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p>Paris </p>
                         <p> <font size="-1">Jardin des Tuileries.</font></p>
@@ -740,7 +754,7 @@
             
             <!-- <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p> Montreal </p>
                         <p> <font size="-1" >Duluth street on the Plateau-Mont-Royal.</font></p>
@@ -749,7 +763,7 @@
             </div>
             <div class="row">
                 <div class="img_wrap">
-                    <img src="" class="film_img" onerror="this.style.display='none'">
+                    <img src="" class="film_img">
                     <div class="img_description">
                         <p> St. Lucia </p>
                         <p><font size="-1">A sparrow hawk.</font></p>

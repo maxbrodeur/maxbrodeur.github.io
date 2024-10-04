@@ -70,6 +70,10 @@
         max-height: 100vh;
     }
 
+    .hidden {
+        display: none !important;
+    }
+
     .img_display {
         position: absolute;
         top: 50%;
@@ -200,8 +204,8 @@ img {
 }
 
 .film_img {
-    display: none;
-    opacity: 0;
+    display: block;
+    opacity: 1;
     border: 2px solid  white
 }
 
