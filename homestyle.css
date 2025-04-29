@@ -28,8 +28,6 @@
     height: fit-content;
     position: relative;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
     /* opacity: 0; */
@@ -191,7 +189,7 @@
 }
 
     
-.about_img_wrap, .about_img0, .about_content, .about_section {
+.about_img_wrap, .about_img0, .about_content{
     max-width: 100%;
 }
 

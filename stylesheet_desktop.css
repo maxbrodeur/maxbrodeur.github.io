@@ -1,9 +1,6 @@
-
 body {
-    background: url("./assets/background.jpg");
     height: 100%;
-    max-width: 1200px;
-    
+    background: url("./assets/background.jpg");
     /* width: 100%; */
     margin: 0 auto;
     overflow-x: visible;
@@ -52,7 +49,7 @@ h3 {
 }
 
 .about_text {
-    width: 50%;
+    width: 60%;
 }
 
 .about_content {
@@ -83,4 +80,9 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.about_section, .menu_section, .sections {
+    max-width: 1200px;
+    margin: 0 auto;
 }

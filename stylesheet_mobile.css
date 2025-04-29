@@ -1,3 +1,4 @@
+
 body {
     /* background:rgb(219, 219, 219); */
     /* background: url("./assets/background.jpg"); */
@@ -43,7 +44,7 @@ h3 {
 }
 
 .about_content{
-    height: fit-content;
+    height: 60vh;
 }
 
 .about_section {
@@ -52,6 +53,7 @@ h3 {
 
 .about_content {
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .about_text {
@@ -102,3 +104,7 @@ h3 {
 
 
 
+.sections {
+    margin-left: 5%;
+    margin-right: 5%;
+}
