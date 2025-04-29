@@ -2,8 +2,10 @@
 body {
     background: url("./assets/background.jpg");
     height: 100%;
-    width: 100%;
-    margin: 0;
+    max-width: 1200px;
+    
+    /* width: 100%; */
+    margin: 0 auto;
     overflow-x: visible;
     overflow-y: scroll;
     background-attachment: fixed;
