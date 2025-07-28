@@ -14,9 +14,6 @@
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">Max Brodeur</a>
             <div class="nav-menu">
-                <a href="../about.html" class="nav-link">About</a>
-                <a href="../index.html#projects" class="nav-link">Projects</a>
-                <a href="../index.html#contact" class="nav-link">Contact</a>
                 <button id="slideshow-btn" class="slideshow-btn">Start Slideshow</button>
             </div>
         </div>
@@ -36,12 +33,16 @@
         <div class="lightbox-content">
             <span class="lightbox-close">&times;</span>
             <img class="lightbox-image" id="lightbox-image" src="" alt="">
-            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-caption" id="lightbox-caption">
+                <div class="lightbox-title" id="lightbox-title"></div>
+                <div class="lightbox-description" id="lightbox-description"></div>
+                <div class="lightbox-date" id="lightbox-date"></div>
+            </div>
             <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</button>
             <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</button>
         </div>
     </div>
 
-    <script src="gallery.js"></script>
+    <script src="gallery-fixed.js"></script>
 </body>
 </html>

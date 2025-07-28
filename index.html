@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Brodeur - Researcher & Developer</title>
+    <title>Max Brodeur</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,9 +12,8 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">Max Brodeur</a>
-                        <nav class="nav-menu">
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <nav class="nav-menu">
+                <a href="https://github.com/maxbrodeur" class="nav-link">GitHub</a>
             </nav>
         </div>
     </nav>
@@ -23,13 +22,16 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-text">
-                <h1 class="hero-title">Max Brodeur</h1>
-                <p class="hero-subtitle">Researcher at Max Planck Institute for Brain Research</p>
-                <p class="hero-description">Master's student in Computational Science & Engineering at EPFL. Passionate about Connectomics, Knot Theory, and Reinforcement Learning.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="https://github.com/maxbrodeur" class="btn btn-secondary">GitHub</a>
-                </div>
+                <p class="hero-description">
+                    Hi!
+                </p>
+                <p class="hero-description">
+                    I'm from Montréal, Québec, but now in Germany at the Max Planck Institute for Brain Research in the Neural Systems Department.
+                    I'm currently pursuing a Master's degree in Computational Science & Engineering at EPFL in Switzerland.
+                    My interests mainly revolve around problems requiring mathematical insight and a sturdy algorithmic toolbox.
+                    I've recently been studying topics in NeuroAI, Knot Theory and RL.
+                </p>
+                <!-- Removed hero buttons for projects and GitHub -->
             </div>
             <div class="hero-image">
                 <img src="assets/images/maxbrodeur.jpg" alt="Max Brodeur" class="profile-image">
@@ -41,19 +43,18 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-                        <div class="projects-grid">
-                <div class="project-card">
+            <div class="projects-grid">
+                <div class="project-card" data-hover-gif="assets/images/smk.gif">
                     <div class="project-image">
-                        <img src="assets/images/smk.gif" alt="Smooth Rolling Knots" class="project-img">
+                        <img src="assets/images/smk_thumb.jpg" alt="Smooth Rolling Knots" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Smooth Rolling Knots</h3>
                         <p class="project-date">2024</p>
-                        <p>Mathematical research on knot theory and topology. Investigation of smooth rolling motions and their geometric properties.</p>
+                        <p>Optimizing knots to roll smoothly.</p>
                         <div class="project-links">
-                            <a href="https://www.epfl.ch/labs/gcm/research-projects/smooth-rolling-knots/" class="project-link">Project Website</a>
-                            <a href="http://www.archive.bridgesmathart.org/2025/bridges2025-563.pdf" class="project-link">Publication</a>
+                            <a href="https://www.epfl.ch/labs/gcm/research-projects/smooth-rolling-knots/" class="project-link">project website</a>
+                            <a href="http://www.archive.bridgesmathart.org/2025/bridges2025-563.pdf" class="project-link">publication</a>
                         </div>
                     </div>
                 </div>
@@ -64,24 +65,24 @@
                     </div>
                     <div class="project-content">
                         <h3>Constrained Reinforcement Learning</h3>
-                        <p class="project-date">2023</p>
-                        <p>Research in deep reinforcement learning.</p>
+                        <p class="project-date">2022</p>
+                        <p>Research in RL techniques for navigation tasks.</p>
                         <div class="project-links">
-                            <a href="https://www.ubisoft.com/en-us/studio/laforge/news/3l6xqVYzNUsd8UgfKFQk4G/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey" class="project-link">Blog Post</a>
+                            <a href="https://www.ubisoft.com/en-us/studio/laforge/news/3l6xqVYzNUsd8UgfKFQk4G/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey" class="project-link">blog post</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-hover-gif="assets/images/fractal_backgrounds/fractal-horizontal.gif">
                     <div class="project-image">
-                        <img src="assets/images/mapleleaf.jpg" alt="Fractal Generation">
+                        <img src="assets/images/fractal_backgrounds/fractal-random_chaos-1753712094260.png" alt="Fractal Generation" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Fractal Generation</h3>
                         <p class="project-date">2021</p>
-                        <p>Exploring complex dynamical systems and fractal geometry through computational methods.</p>
+                        <p>Unique fractals from iterative maps.</p>
                         <div class="project-links">
-                            <a href="fractals/" class="project-link">Discover</a>
+                            <a href="https://maxbrodeur.github.io/fractal-generator/" class="project-link">web app</a>
                         </div>
                     </div>
                 </div>
@@ -93,23 +94,23 @@
                     <div class="project-content">
                         <h3>Numerical Knot Untangling</h3>
                         <p class="project-date">2023</p>
-                        <p>Computational approaches to solving knot untangling problems using numerical optimization.</p>
+                        <p>Untangling knots by minimizing the Möbius energy.</p>
                         <div class="project-links">
-                            <a href="https://github.com/maxbrodeur/knot-untangling" class="project-link">Code</a>
-                            <a href="https://go.epfl.ch/knot_untangling_paper" class="project-link">Paper</a>
+                            <a href="https://github.com/maxbrodeur/numerical-knot-untangling" class="project-link">code</a>
+                            <a href="https://github.com/maxbrodeur/numerical-knot-untangling/blob/main/assets/paper/numerical_knot_untangling.pdf" class="project-link">report</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-hover-gif="photography/images/film-vertical-gallery.gif">
                     <div class="project-image">
-                        <img src="assets/images/massif_sunset.jpg" alt="Film Photography">
+                        <img src="photography/images/film-vertical-gallery-thumb.jpeg" alt="Film Photography" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Film Photography</h3>
-                        <p>Capturing moments through analog photography across different countries and cultures.</p>
+                        <p>I take pictures :)</p>
                         <div class="project-links">
-                            <a href="photography/gallery.html" class="project-link">View Gallery</a>
+                            <a href="photography/gallery.html" class="project-link">have a look</a>
                         </div>
                     </div>
                 </div>
@@ -120,23 +121,9 @@
                     </div>
                     <div class="project-content">
                         <h3>Music</h3>
-                        <p>Original compositions and musical explorations across various genres and instruments.</p>
+                        <p>I make music :)</p>
                         <div class="project-links">
-                            <a href="music/" class="project-link">Listen</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/wordle.jpg" alt="Wordle Bot">
-                    </div>
-                    <div class="project-content">
-                        <h3>Wordle Bot</h3>
-                        <p class="project-date">2022</p>
-                        <p>AI-powered Wordle solving algorithm with strategic word selection and analysis.</p>
-                        <div class="project-links">
-                            <a href="wordlebot/" class="project-link">Try It</a>
+                            <a href="music/index.html" class="project-link">have a listen</a>
                         </div>
                     </div>
                 </div>
@@ -148,29 +135,11 @@
                     <div class="project-content">
                         <h3>Game of Life</h3>
                         <p class="project-date">2021</p>
-                        <p>Interactive Conway's Game of Life implementation with customizable rules and patterns.</p>
+                        <p>Interactive Game of Life implementation.</p>
                         <div class="project-links">
-                            <a href="https://maxbrodeur.github.io/game-of-life/" class="project-link">Play</a>
+                            <a href="https://maxbrodeur.github.io/game-of-life/" class="project-link">try it out</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>Interested in collaboration or have a question? Feel free to reach out!</p>
-                <div class="contact-links">
-                    <a href="https://github.com/maxbrodeur" class="contact-link">
-                        <span>GitHub</span>
-                    </a>
-                    <a href="mailto:max.brodeur@epfl.ch" class="contact-link">
-                        <span>Email</span>
-                    </a>
                 </div>
             </div>
         </div>

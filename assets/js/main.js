@@ -1,5 +1,8 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    // Set random fractal background
+    setRandomFractalBackground();
+    
     // Handle navigation clicks
     const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     navLinks.forEach(link => {
@@ -140,4 +143,48 @@ function renderTimeline(data) {
         
         container.appendChild(yearSection);
     });
+}
+
+// Random fractal background functionality
+function setRandomFractalBackground() {
+    const fractalImages = [
+        'fractal-random_chaos-1753709455235.png',
+        'fractal-random_chaos-1753709573585.png',
+        'fractal-random_chaos-1753712094260.png',
+        'fractal-random_chaos-1753713117984.png',
+        'fractal-random_chaos-1753713173352.png',
+        'fractal-random_chaos-1753713219204.png',
+        'fractal-random_chaos-1753719177982.png',
+        'fractal-random_chaos-1753719198940.png',
+        'fractal-random_chaos-1753719219898.png',
+        'fractal-random_chaos-1753719226157.png',
+        'fractal-random_chaos-1753719237141.png',
+        'fractal-random_chaos-1753719248816.png',
+        'fractal-random_chaos-1753719255283.png',
+        'fractal-random_chaos-1753719271037.png',
+        'fractal-random_chaos-1753722756059.png',
+        'fractal-random_chaos-1753729578759.png',
+        'fractal-random_chaos-1753729598930.png',
+        'fractal-random_chaos-1753729869073.png',
+        'fractal-random_chaos-1753734717778.png',
+        'fractal-random_chaos-1753737280840.png'
+    ];
+    
+    // Select a random fractal image
+    const randomIndex = Math.floor(Math.random() * fractalImages.length);
+    const selectedImage = fractalImages[randomIndex];
+    const imagePath = `assets/images/fractal_backgrounds/${selectedImage}`;
+    
+    // Force Safari to repaint the background by clearing it first
+    const cacheBuster = Date.now();
+    document.body.style.backgroundImage = '';
+    setTimeout(() => {
+        document.body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('${imagePath}?v=${cacheBuster}')`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundAttachment = 'fixed';
+    }, 10);
+    
+    console.log(`Applied random fractal background: ${selectedImage}`);
 }

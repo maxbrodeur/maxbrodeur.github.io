@@ -6,39 +6,20 @@ let slideshowInterval = null;
 
 console.log('Gallery.js loaded successfully');
 
-// Load CSV data and display photos
+// Load JSON data and display photos
 async function loadPhotos() {
     try {
         console.log('Starting to load photos...');
-        const response = await fetch('gallery-data.csv');
+        const response = await fetch('gallery-data.json');
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const csvText = await response.text();
-        console.log('CSV loaded successfully, length:', csvText.length);
+        allPhotos = await response.json();
+        console.log('JSON loaded successfully, photos count:', allPhotos.length);
         
-        const lines = csvText.split('\n').filter(line => line.trim() !== '');
-        console.log('Total lines found:', lines.length);
-        
-        // Skip header row and process data
-        for (let i = 1; i < lines.length; i++) {
-            const line = lines[i].trim();
-            if (line) {
-                const columns = line.split(',');
-                if (columns.length >= 4) {
-                    allPhotos.push({
-                        filename: columns[0].trim(),
-                        title: columns[1].trim(),
-                        description: columns[2].trim(),
-                        date: columns[3].trim()
-                    });
-                }
-            }
-        }
-        
-        console.log('Processed photos:', allPhotos.length);
+        console.log('Total photos loaded:', allPhotos.length);
         displayPhotos();
         
     } catch (error) {
@@ -50,33 +31,54 @@ async function loadPhotos() {
     }
 }
 
+// Helper function to get image aspect ratio
+function getImageAspectRatio(src) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = function() {
+            const aspectRatio = this.width / this.height;
+            resolve(aspectRatio > 1.2 ? 'horizontal' : 'vertical');
+        };
+        img.onerror = function() {
+            resolve('vertical'); // Default to vertical if load fails
+        };
+        img.src = src;
+    });
+}
+
 // Display photos in gallery
-function displayPhotos() {
-    const gallery = document.getElementById('gallery-grid');
-    if (!gallery) {
-        console.error('Gallery grid not found');
+async function displayPhotos() {
+    const galleryGrid = document.getElementById('gallery-grid');
+    if (!galleryGrid) {
+        console.error('Gallery grid element not found');
         return;
     }
     
     console.log('Displaying photos in gallery...');
-    gallery.innerHTML = '';
+    galleryGrid.innerHTML = '';
     
-    allPhotos.forEach((photo, index) => {
-        const item = document.createElement('div');
-        item.className = 'gallery-item';
+    // Process photos with proper aspect ratio detection
+    for (let i = 0; i < allPhotos.length; i++) {
+        const photo = allPhotos[i];
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
         
-        item.innerHTML = `
-            <img src="${photo.filename}" alt="${photo.title}" loading="lazy">
-            <div class="photo-info">
-                <h3>${photo.title}</h3>
-                <p>${photo.description}</p>
-                <span class="photo-date">${photo.date}</span>
+        // Get aspect ratio before rendering
+        const orientation = await getImageAspectRatio(photo.src);
+        galleryItem.classList.add(orientation);
+        
+        galleryItem.innerHTML = `
+            <img src="${photo.src}" alt="${photo.location}" loading="lazy">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-title">${photo.location}</div>
+                <div class="gallery-item-caption">${photo.caption}</div>
+                <div class="gallery-item-date">${photo.date}</div>
             </div>
         `;
         
-        item.addEventListener('click', () => openLightbox(index));
-        gallery.appendChild(item);
-    });
+        galleryItem.addEventListener('click', () => openLightbox(i));
+        galleryGrid.appendChild(galleryItem);
+    }
     
     console.log('Gallery populated with', allPhotos.length, 'photos');
 }
@@ -85,30 +87,64 @@ function displayPhotos() {
 function openLightbox(index) {
     currentPhotoIndex = index;
     const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxImg = document.getElementById('lightbox-image');
     const lightboxTitle = document.getElementById('lightbox-title');
-    const lightboxDesc = document.getElementById('lightbox-desc');
+    const lightboxDesc = document.getElementById('lightbox-description');
     const lightboxDate = document.getElementById('lightbox-date');
     
     if (lightbox && lightboxImg) {
         const photo = allPhotos[index];
-        lightboxImg.src = `${photo.filename}`;
-        lightboxImg.alt = photo.title;
         
-        if (lightboxTitle) lightboxTitle.textContent = photo.title;
-        if (lightboxDesc) lightboxDesc.textContent = photo.description;
-        if (lightboxDate) lightboxDate.textContent = photo.date;
+        // Pre-load the image to avoid flashing
+        const newImg = new Image();
+        newImg.onload = function() {
+            lightboxImg.src = this.src;
+            lightboxImg.alt = photo.location;
+            
+            if (lightboxTitle) lightboxTitle.textContent = photo.location;
+            if (lightboxDesc) lightboxDesc.textContent = photo.caption;
+            if (lightboxDate) lightboxDate.textContent = photo.date;
+        };
+        newImg.src = photo.src;
         
-        lightbox.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
+        // Show lightbox if not already visible
+        if (lightbox.style.display !== 'flex') {
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            // Add fade-in animation
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+        }
+        
+        // Update navigation visibility based on slideshow state
+        updateNavigationVisibility();
+    }
+}
+
+function updateNavigationVisibility() {
+    const navElements = document.querySelectorAll('.lightbox-nav');
+    const captionElement = document.querySelector('.lightbox-caption');
+    
+    if (isSlideshow) {
+        navElements.forEach(nav => nav.classList.add('slideshow-hidden'));
+        if (captionElement) captionElement.classList.add('slideshow-hidden');
+    } else {
+        navElements.forEach(nav => nav.classList.remove('slideshow-hidden'));
+        if (captionElement) captionElement.classList.remove('slideshow-hidden');
     }
 }
 
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
-        lightbox.style.display = 'none';
-        document.body.style.overflow = 'auto';
+        lightbox.style.opacity = '0';
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 300);
     }
     if (isSlideshow) {
         stopSlideshow();
@@ -116,13 +152,38 @@ function closeLightbox() {
 }
 
 function nextPhoto() {
+    if (allPhotos.length === 0) return;
     currentPhotoIndex = (currentPhotoIndex + 1) % allPhotos.length;
-    openLightbox(currentPhotoIndex);
+    updateLightboxContent();
 }
 
 function prevPhoto() {
+    if (allPhotos.length === 0) return;
     currentPhotoIndex = (currentPhotoIndex - 1 + allPhotos.length) % allPhotos.length;
-    openLightbox(currentPhotoIndex);
+    updateLightboxContent();
+}
+
+function updateLightboxContent() {
+    const lightboxImg = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-description');
+    const lightboxDate = document.getElementById('lightbox-date');
+    
+    if (lightboxImg && allPhotos[currentPhotoIndex]) {
+        const photo = allPhotos[currentPhotoIndex];
+        
+        // Pre-load the image to avoid flashing
+        const newImg = new Image();
+        newImg.onload = function() {
+            lightboxImg.src = this.src;
+            lightboxImg.alt = photo.location;
+            
+            if (lightboxTitle) lightboxTitle.textContent = photo.location;
+            if (lightboxDesc) lightboxDesc.textContent = photo.caption;
+            if (lightboxDate) lightboxDate.textContent = photo.date;
+        };
+        newImg.src = photo.src;
+    }
 }
 
 // Slideshow functionality
@@ -133,10 +194,17 @@ function startSlideshow() {
     }
     
     isSlideshow = true;
-    currentPhotoIndex = 0;
-    openLightbox(currentPhotoIndex);
     
-    const slideshowBtn = document.querySelector('.slideshow-btn');
+    // If lightbox is not open, start from first photo
+    if (document.getElementById('lightbox').style.display !== 'flex') {
+        currentPhotoIndex = 0;
+        openLightbox(currentPhotoIndex);
+    } else {
+        // Update navigation visibility for current lightbox
+        updateNavigationVisibility();
+    }
+    
+    const slideshowBtn = document.getElementById('slideshow-btn');
     if (slideshowBtn) {
         slideshowBtn.textContent = 'Stop Slideshow';
         slideshowBtn.onclick = stopSlideshow;
@@ -144,7 +212,7 @@ function startSlideshow() {
     
     slideshowInterval = setInterval(() => {
         nextPhoto();
-    }, 3000);
+    }, 4000); // 4 seconds for better viewing
 }
 
 function stopSlideshow() {
@@ -154,7 +222,10 @@ function stopSlideshow() {
         slideshowInterval = null;
     }
     
-    const slideshowBtn = document.querySelector('.slideshow-btn');
+    // Restore navigation visibility
+    updateNavigationVisibility();
+    
+    const slideshowBtn = document.getElementById('slideshow-btn');
     if (slideshowBtn) {
         slideshowBtn.textContent = 'Start Slideshow';
         slideshowBtn.onclick = startSlideshow;
@@ -166,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, initializing gallery...');
     loadPhotos();
     
-    const slideshowBtn = document.querySelector('.slideshow-btn');
+    const slideshowBtn = document.getElementById('slideshow-btn');
     if (slideshowBtn) {
         slideshowBtn.addEventListener('click', startSlideshow);
     }
@@ -176,12 +247,12 @@ document.addEventListener('DOMContentLoaded', function() {
         lightboxClose.addEventListener('click', closeLightbox);
     }
     
-    const lightboxNext = document.querySelector('.lightbox-next');
+    const lightboxNext = document.getElementById('lightbox-next');
     if (lightboxNext) {
         lightboxNext.addEventListener('click', nextPhoto);
     }
     
-    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxPrev = document.getElementById('lightbox-prev');
     if (lightboxPrev) {
         lightboxPrev.addEventListener('click', prevPhoto);
     }
@@ -203,9 +274,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     closeLightbox();
                     break;
                 case 'ArrowRight':
+                    e.preventDefault();
                     nextPhoto();
                     break;
                 case 'ArrowLeft':
+                    e.preventDefault();
                     prevPhoto();
                     break;
                 case ' ':
