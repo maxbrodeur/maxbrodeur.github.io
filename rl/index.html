@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>RL</title>
-    <meta http-equiv="Refresh" content="0; url='https://montreal.ubisoft.com/en/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey/'" />
-    <link rel="stylesheet" href="../stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinforcement Learning - Max Brodeur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="rl.css">
+    <meta http-equiv="Refresh" content="5; url='https://montreal.ubisoft.com/en/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey/'" />
 </head>
+
 <body>
-
-    <div class="menu">
-        <div class="menu_items home_menu_items">
-            <p class="projects_link">
-                <a href="../index.html#sections">Back to Projects</a>
-            </p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Max Brodeur</a>
+            <div class="nav-menu">
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="redirect">
-        <h1 class="pagetitle" text="">Redirecting ...</h1>
-        <a href="https://montreal.ubisoft.com/en/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey/">Link to blog post.</a>
-    </div>
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <h1 class="project-title">Reinforcement Learning</h1>
+            <p class="project-description">Constrained Reinforcement Learning and Self-Driving Cars: An Intern's Journey at Ubisoft</p>
+            <div class="redirect-notice">
+                <p>🔄 Redirecting to blog post in <span id="countdown">5</span> seconds...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-card">
+                        <h2>Research Overview</h2>
+                        <p>This project explores the application of constrained reinforcement learning techniques to autonomous vehicle navigation, developed during my internship at Ubisoft Montreal.</p>
+                        
+                        <div class="key-points">
+                            <h4>Key Research Areas:</h4>
+                            <ul class="styled-list">
+                                <li>Constrained reinforcement learning algorithms</li>
+                                <li>Safe autonomous vehicle control</li>
+                                <li>Real-world constraint satisfaction</li>
+                                <li>Policy optimization under safety constraints</li>
+                            </ul>
+                        </div>
+
+                        <div class="redirect-links">
+                            <a href="https://montreal.ubisoft.com/en/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey/" class="btn btn-primary" target="_blank">Read Full Blog Post</a>
+                            <a href="../index.html#projects" class="btn btn-secondary">Back to Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="project-info">
+                        <h3>Project Details</h3>
+                        <div class="info-item">
+                            <strong>Company:</strong>
+                            <span>Ubisoft Montreal</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Focus:</strong>
+                            <span>Autonomous Vehicles, Safety Constraints</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Methods:</strong>
+                            <span>Reinforcement Learning, Policy Optimization</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Applications:</strong>
+                            <span>Self-Driving Cars, Safe AI</span>
+                        </div>
+                    </div>
+
+                    <div class="quick-links">
+                        <h3>Resources</h3>
+                        <a href="https://montreal.ubisoft.com/en/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey/" class="sidebar-link" target="_blank">📝 Blog Post</a>
+                        <a href="../index.html#projects" class="sidebar-link">← Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Countdown timer
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                countdownElement.textContent = '0';
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>

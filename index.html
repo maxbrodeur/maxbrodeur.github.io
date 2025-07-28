@@ -1,332 +1,188 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./stylesheet.css">
-        <link rel="stylesheet" id="main-style" href="./stylesheet_desktop.css">
-        <link rel="stylesheet" href="./homestyle.css">
-        <link rel="stylesheet" href="./timeline.css">
-        <title>Max Brodeur</title>
-    </head>
-    <body>
-        
-        <div class="menu_section">
-            <div class="menu home_menu">
-                <!-- <div class="title_wrap">
-                    <h1 class="typewriter pagetitle" id="typewriter" text="Hi, I'm Max Brodeur.">>> </h1>
-                </div> -->
-                <div class="menu_items home_menu_items">
-                    <p class="projects_link">
-                        <a class="link" href="https://github.com/maxbrodeur"> GitHub </a>
-                    </p>
-                    <!-- <p class="projects_link">
-                        <a class="link" href="#about"> About </a>
-                    </p> -->
-                    <p class="projects_link">
-                        <a class="link" href="#sections"> Projects </a>
-                    </p>
-                    <p class="projects_link">
-                        <a class="link" href="#timeline"> Timeline </a>
-                    </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Brodeur - Researcher & Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Max Brodeur</a>
+                        <nav class="nav-menu">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Max Brodeur</h1>
+                <p class="hero-subtitle">Researcher at Max Planck Institute for Brain Research</p>
+                <p class="hero-description">Master's student in Computational Science & Engineering at EPFL. Passionate about Connectomics, Knot Theory, and Reinforcement Learning.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/maxbrodeur" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/maxbrodeur.jpg" alt="Max Brodeur" class="profile-image">
+                <p class="profile-caption">Lausanne, Switzerland - 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+                        <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/smk.gif" alt="Smooth Rolling Knots" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Smooth Rolling Knots</h3>
+                        <p class="project-date">2024</p>
+                        <p>Mathematical research on knot theory and topology. Investigation of smooth rolling motions and their geometric properties.</p>
+                        <div class="project-links">
+                            <a href="https://www.epfl.ch/labs/gcm/research-projects/smooth-rolling-knots/" class="project-link">Project Website</a>
+                            <a href="http://www.archive.bridgesmathart.org/2025/bridges2025-563.pdf" class="project-link">Publication</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-hover-gif="assets/images/timeline/cars.gif">
+                    <div class="project-image">
+                        <img src="assets/images/cars_thumb.jpg" alt="Constrained Reinforcement Learning" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Constrained Reinforcement Learning</h3>
+                        <p class="project-date">2023</p>
+                        <p>Research in deep reinforcement learning.</p>
+                        <div class="project-links">
+                            <a href="https://www.ubisoft.com/en-us/studio/laforge/news/3l6xqVYzNUsd8UgfKFQk4G/constrained-reinforcement-learning-and-self-driving-cars-an-interns-journey" class="project-link">Blog Post</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/mapleleaf.jpg" alt="Fractal Generation">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fractal Generation</h3>
+                        <p class="project-date">2021</p>
+                        <p>Exploring complex dynamical systems and fractal geometry through computational methods.</p>
+                        <div class="project-links">
+                            <a href="fractals/" class="project-link">Discover</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-hover-gif="knots/assets/torus.gif">
+                    <div class="project-image">
+                        <img src="assets/images/torus_thumb.jpg" alt="Numerical Knot Untangling" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Numerical Knot Untangling</h3>
+                        <p class="project-date">2023</p>
+                        <p>Computational approaches to solving knot untangling problems using numerical optimization.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/maxbrodeur/knot-untangling" class="project-link">Code</a>
+                            <a href="https://go.epfl.ch/knot_untangling_paper" class="project-link">Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/massif_sunset.jpg" alt="Film Photography">
+                    </div>
+                    <div class="project-content">
+                        <h3>Film Photography</h3>
+                        <p>Capturing moments through analog photography across different countries and cultures.</p>
+                        <div class="project-links">
+                            <a href="photography/gallery.html" class="project-link">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/piano.jpg" alt="Music">
+                    </div>
+                    <div class="project-content">
+                        <h3>Music</h3>
+                        <p>Original compositions and musical explorations across various genres and instruments.</p>
+                        <div class="project-links">
+                            <a href="music/" class="project-link">Listen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/wordle.jpg" alt="Wordle Bot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Wordle Bot</h3>
+                        <p class="project-date">2022</p>
+                        <p>AI-powered Wordle solving algorithm with strategic word selection and analysis.</p>
+                        <div class="project-links">
+                            <a href="wordlebot/" class="project-link">Try It</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-hover-gif="assets/images/gol.gif">
+                    <div class="project-image">
+                        <img src="assets/images/gol_thumb.jpg" alt="Game of Life" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Game of Life</h3>
+                        <p class="project-date">2021</p>
+                        <p>Interactive Conway's Game of Life implementation with customizable rules and patterns.</p>
+                        <div class="project-links">
+                            <a href="https://maxbrodeur.github.io/game-of-life/" class="project-link">Play</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <script> 
+    </section>
 
-        // CONSTANTS
-        const BLINK_SPEED = 400
-        const TYPE_SPEED = 80
-        const COMMA_BLINKS = 0
-        const HOVER_DELAY = 0
-        const OPACITY = 0.30
-        const MAX_OPACITY = 1.00
-        const MID_OPACITY = 0.40
-        const LINK_COLOR = "white"   
-        const SECTION_COLOR = "rgb(85, 85, 85)"
-
-        
-        var paths = [
-            "./assets/rolling.jpg",
-            "./assets/untangle.jpg",
-            "./assets/castle_view_vehicle.jpg",
-            "./assets/mapleleaf.jpg",
-            "./assets/massif_sunset.jpg",
-            "./assets/wordle.jpg",
-            "./assets/piano.jpg",
-            "./assets/game-of-life.jpg"
-        ]
-        
-        var section_image_list_init = document.getElementsByClassName("section_image")
-
-        var section_images_list_init = document.getElementsByClassName("section_images")
-        for (let i = 0; i < section_images_list_init.length; i++) {
-            const section_images_init = section_images_list_init[i];
-            section_images_init.setAttribute("loaded",0)
-        }
-        
-        // This function is called before the typewriter starts typing
-        // Not typewriter anymore, now just load task
-        // It is used to initialize the page
-        var before_task = function() {
-
-            // add sources
-            for (let i = 0; i<paths.length; ++i){
-                let c = section_image_list_init[i]
-                c.setAttribute("src", paths[i])
-                c.style.display = "block"
-                c.onload = function() {
-                    this.style.opacity = MAX_OPACITY
-                }
-            }
-
-            for (let i = 0; i < section_images_list_init.length; i++) {
-                const section_images_init = section_images_list_init[i];
-                section_images_init.setAttribute("loaded",1)
-                if (section_images_init.getAttribute("mouse") === "in"){
-                    section_images_init.onmouseover()
-                }
-            }
-
-            var link_wrap_list_init = document.getElementsByClassName("link_wrap")
-            for (let i = 0; i < link_wrap_list_init.length; i++) {
-                var link_wrap_init = link_wrap_list_init[i]
-                if (link_wrap_init.getAttribute("mouse")!=="in"){
-                    link_wrap_list_init[i].setAttribute("mouse", "out");
-                }
-
-            }
-
-            var sections = document.getElementsByClassName("sections")[0]
-            sections.style.opacity = 1;
-            var sections = document.getElementsByClassName("section")
-            
-
-            // LISTENERS
-            for (let i = 0; i < sections.length; i++) {
-                const section = sections[i];
-                var link_wrap = section.children[0]
-                var link = link_wrap.children[0]
-                var imgs = section.children[1]
-
-                // SECTION LINK
-                link.onmouseover = function() {
-                    var imgs = this.parentElement.parentElement.parentElement.children[1]
-                    if (imgs.getAttribute("loaded")==1) {
-                        imgs.style.opacity = MID_OPACITY 
-                        this.style.color = LINK_COLOR;
-                    }
-                    this.style.textDecoration = "underline";
-                    
-                }
-                link.onmouseout= function() {
-                    this.style.textDecoration = ''
-                }
-
-                // SECTION IMAGES
-                imgs.style.opacity = OPACITY;
-
-                imgs.onmouseover = function() {
-                    this.setAttribute("mouse", "in")
-                    if (this.getAttribute("loaded")==1){
-                        this.style.opacity = MAX_OPACITY
-                        this.parentElement.children[0].children[0].children[0].style.color = "white"
-                        // this.parentElement.children[0].style.border = "2px solid transparent"
-                    }
-                }
-                imgs.onmouseout = function() {
-                    this.setAttribute("mouse","out")
-                    setTimeout(function(link, imgs_var){
-                        var link_wrap = imgs_var.parentElement.children[0]
-                        if (link_wrap.getAttribute("mouse")==="out" && link_wrap.children[0].style.textDecoration === '' && imgs_var.getAttribute("mouse")==="out"){
-                            link_wrap.children[0].children[0].style.color = SECTION_COLOR
-                            imgs_var.style.opacity = OPACITY
-                            // link_wrap.style.border = "2px solid white"
-                        }                   
-                    }, HOVER_DELAY, this.parentElement.children[0].children[0], this)
-                }
-
-                // LINK WRAP
-                link_wrap.onmouseover = function() {
-                    this.setAttribute("mouse", "in")
-                    this.parentElement.children[1].onmouseover()
-                }
-                link_wrap.onmouseout = function() {
-                    this.setAttribute("mouse", "out")
-                }
-            }
-        }
-                    
-        var comma_task = function() {}
-        
-        var after_task = function() {}
-        
-        window.addEventListener('scroll', function() {
-            var arrow = document.querySelector('.arrow-down');
-            if (window.scrollY > 50) { // Adjust scroll threshold as needed
-                arrow.style.opacity = '0'; // Fade out the arrow
-            } else {
-                arrow.style.opacity = '1'; // Restore visibility if user scrolls back up
-            }
-        });
-
-        </script>
-
-        <script type="text/javascript" src="./assets/load.js"></script>
-
-        <!-- ABOUT -->
-        <div class="about_section" id="about">
-            <div class="about_content">
-                <div class="about_text">
-                    <!-- <div class="about_title">
-                        <h2 class="about_title_text" >About me.</h2>
-                    </div> -->
-                    <p class="about_text_text"> 
-                        Hey there! 
-                    </p>
-                    <p class="about_text_text"> 
-                        I'm from Montr&eacute;al, Qu&eacute;bec, but now living in Frankfurt am Main, Germany where I'm working at the Max Planck Institute for Brain Research as a student researcher in the <a href="https://brain.mpg.de/laurent">Neural Systems Department</a>. 
-                        I'm currently pursuing a Master's degree in Computational Science & Engineering at EPFL. 
-                        My interests mainly revolve around problems requiring mathematical insight and a sturdy algorithmic toolbox. 
-                        I've recently been studying topics in Connectomics, Knot Theory and RL.
-                    </p>
-                </div>
-
-                <div class="about_img_wrap">
-                    <a href="https://www.youtube.com/watch?v=k-BBfhWLfAQ" class="about_img_container">
-                        <img class="about_img0" src="./assets/maxbrodeur.jpg" alt="">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in collaboration or have a question? Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="https://github.com/maxbrodeur" class="contact-link">
+                        <span>GitHub</span>
                     </a>
-                    <p class="about_img_descr">View from the Lausanne Cathedral.</p>
+                    <a href="mailto:max.brodeur@epfl.ch" class="contact-link">
+                        <span>Email</span>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="arrow-down"></div>
-
-        <div class="projects_section" id="sections">
-
-            <div class="sections">
-                
-                <div class="projects">
-                    <!-- ROLLING KNOTS -->
-                    <div class="section section3">
-                        <div class="link_wrap">
-                            <h2><a class="link link3 section_link section_title" href="https://go.epfl.ch/smooth_rolling_knots">Smooth Rolling Knots</a></h2>
-                        </div>
-                        <div class="section_images" id="rolling_images">
-                            <div class="img_wrap0">
-                                <img src="" alt="" class="rolling_img section_image " onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- KNOT UNTANGLING -->
-                    <div class="section section3">
-                        <div class="link_wrap">
-                            <h2><a class="link link3 section_link section_title" href="./knots/index.html">Numerical Knot Untangling</a></h2>
-                        </div>
-                        <div class="section_images" id="untangle_images">
-                            <div class="img_wrap0 rl_img_wrap">
-                                <img src="" alt="" class="untangle_img0 section_image " onerror="this.style.display='none'">
-                            </div>
-                            <!-- <div class="img_wrap1">
-                                <img src="" alt="" class="rl_img1 section_image" onerror="this.style.display='none'">
-                            </div>
-                            <div class="img_wrap2">
-                                <img src="" alt="" class="rl_img2 section_image" onerror="this.style.display='none'">
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- RL -->
-                    <div class="section section3">
-                        <div class="link_wrap">
-                            <h2><a class="link link3 section_link section_title" href="./rl/index.html">Reinforcement Learning</a></h2>
-                        </div>
-                        <div class="section_images" id="rl_images">
-                            <div class="img_wrap0 rl_img_wrap">
-                                <img src="" alt="" class="rl_img0 section_image " onerror="this.style.display='none'">
-                            </div>
-                            <!-- <div class="img_wrap1">
-                                <img src="" alt="" class="rl_img1 section_image" onerror="this.style.display='none'">
-                            </div>
-                            <div class="img_wrap2">
-                                <img src="" alt="" class="rl_img2 section_image" onerror="this.style.display='none'">
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- CHAOS -->
-                    <div class="section section2">
-                        <div class="link_wrap" id="chaos_link_wrap">
-                            <h2><a class="link link2 section_link section_title" href="./fractals/index.html" id="chaos_link">Nonlinear Dynamics & Chaos</a></h2>
-                        </div>
-                        <div class="section_images" id="chaos_images">
-                            <div class="img_wrap0 chaos_img_wrap">
-                                <img src="" alt="" class="chaos_img0 section_image" onerror="this.style.display='none'">
-                            </div>
-                            <!-- <div class="img_wrap1">
-                                <img src="" alt="" class="chaos_img1 section_image" onerror="this.style.display='none'">
-                            </div>
-                            <div class="img_wrap2">
-                                <img src="" alt="" class="chaos_img2 section_image" onerror="this.style.display='none'">
-                            </div> -->
-                        </div> 
-                    </div>
-                    <!-- FILM -->
-                    <div class="section section1" id="film_section">
-                        <div class="link_wrap">
-                            <h2><a class="link link1 section_link section_title" href="./photography/index.html" id="film_link">Film Photography</a></h2>
-                        </div>
-                        <div class="section_images" id="film_images">
-                            <div class="img_wrap0 film_img_wrap">
-                                <img src="" alt="" class="film_img0 section_image" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- WORDLE -->
-                    <div class="section section1" id="">
-                        <div class="link_wrap">
-                            <h2><a class="link link1 section_link section_title" href="./wordlebot/index.html" id="">Wordle Bot</a></h2>
-                        </div>
-                        <div class="section_images" id="">
-                            <div class="img_wrap0 film_img_wrap">
-                                <img src="" alt="" class="section_image wordle_img" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- MUSIC -->
-                    <div class="section section1" id="">
-                        <div class="link_wrap">
-                            <h2><a class="link link1 section_link section_title" href="./music/index.html" id="">Music</a></h2>
-                        </div>
-                        <div class="section_images" id="">
-                            <div class="img_wrap0 film_img_wrap">
-                                <img src="" alt="" class="section_image wordle_img" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- GAME OF LIFE -->
-                    <div class="section">
-                        <div class="link_wrap">
-                            <h2><a class="link link1 section_link section_title" href="https://maxbrodeur.github.io/game-of-life/">Game of Life</a></h2>
-                        </div>
-                        <div class="section_images">
-                            <div class="img_wrap0">
-                                <img src="" alt="" class="section_image" onerror="this.style.display='none'">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Max Brodeur. All rights reserved.</p>
         </div>
-        <!-- TIMELINE -->
-        <div class="timeline_section" id="timeline">
-            <!-- <div class="timeline_title">
-                <h2 class="timeline_title_text">Timeline.</h2>
-            </div> -->
-        </div>
+    </footer>
 
-        <!-- <script type="text/json" src="./timeline.json" id="timeline-data"></script> -->
-        <script type="text/javascript" src="./timeline.js"></script>
-
-    </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

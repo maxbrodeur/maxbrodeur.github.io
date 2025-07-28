@@ -1,12 +1,49 @@
-.redirect {
-    position: absolute;
-    top: 45vh;
-    left: 50vw;
-    transform: translate(-50%,-50%);
+/* RL Project Specific Styles */
+
+/* Redirect Notice */
+.redirect-notice {
+    background: rgba(255, 193, 7, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
-.pagetitle {
-    width: auto !important;
-    text-align: center;
+.redirect-notice p {
+    color: #ffc107;
+    font-weight: 500;
+    margin: 0;
+}
+
+#countdown {
+    font-weight: 700;
+    color: #ff9800;
+}
+
+/* Key Points */
+.key-points {
+    margin: 2rem 0;
+}
+
+.key-points h4 {
+    color: #a855f7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Redirect Links */
+.redirect-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .redirect-links {
+        flex-direction: column;
+    }
 }

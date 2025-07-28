@@ -1,4 +1,5 @@
-
-.DS_Store
-.vscode/launch.json
-*compressed*
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

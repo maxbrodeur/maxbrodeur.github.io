@@ -1,41 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Knot Untangling - Max Brodeur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="knots.css">
+</head>
 
-    <head>
-        <title>Knots</title>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <link rel="stylesheet" href="../stylesheet.css">
-        <link rel="stylesheet" id="main-style" href="../stylesheet_desktop.css">
-        <link rel="stylesheet" href="./knots.css">
-    </head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Max Brodeur</a>
+            <div class="nav-menu">
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <script>
-        before_task = function() {
-        }
-    </script>
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <h1 class="project-title">Numerical Knot Untangling</h1>
+            <p class="project-description">Computational approach to knot theory using numerical methods to analyze and untangle complex topological structures.</p>
+        </div>
+    </section>
 
-    <script type="text/javascript" src="../assets/typewriter.js"></script>
-
-    <body>
-        <div class="section">
-            <div class="card">
-                <div class="content">
-                    <div class="fractal_title">
-                        <h1>Numerical Knot Untangling.</h1>
+    <!-- Content Section -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="content-card">
+                        <h2>Project Overview</h2>
+                        <p>This project explores computational methods for analyzing and manipulating knot structures using numerical algorithms. The work focuses on developing efficient techniques for knot recognition, simplification, and untangling processes.</p>
+                        
+                        <div class="project-links-inline">
+                            <a href="./assets/numerical_knot_untangling.pdf" class="btn btn-primary" target="_blank">View Research Paper</a>
+                            <a href="https://github.com/maxbrodeur/numerical-knot-untangling" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                        </div>
                     </div>
-                    <div class="link_items">
-                        <p class="menu_link">
-                            <p> Link to the <a class="link" href="./assets/numerical_knot_untangling.pdf">paper</a>. </p>
-                        </p>
-                        <p class="menu_link">
-                            <p> Link to the <a class="link" href="https://github.com/maxbrodeur/numerical-knot-untangling">Github repository</a>. </p>
-                        </p>
+
+                    <div class="content-card">
+                        <h2>Key Features</h2>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Topological Analysis</h4>
+                                <p>Advanced algorithms for analyzing the topological properties of complex knot structures.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <h4>Numerical Methods</h4>
+                                <p>Implementation of computational techniques for knot manipulation and simplification.</p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <h4>Visualization</h4>
+                                <p>Interactive 3D visualization of knot structures and untangling processes.</p>
+                            </div>
+                        </div>
                     </div>
-                    <img class="fractal_img" src="./assets/torus.gif">
+
+                    <div class="content-card">
+                        <h2>Methodology</h2>
+                        <p>The research employs a combination of differential geometry, numerical optimization, and computational topology to develop effective knot untangling algorithms. The approach focuses on minimizing knot complexity while preserving essential topological properties.</p>
+                        
+                        <div class="methodology-points">
+                            <ul class="styled-list">
+                                <li>Discrete knot representation using polygonal approximations</li>
+                                <li>Energy minimization techniques for knot simplification</li>
+                                <li>Gradient descent algorithms for optimal knot configurations</li>
+                                <li>Topological invariant preservation during manipulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="project-info">
+                        <h3>Project Details</h3>
+                        <div class="info-item">
+                            <strong>Focus Area:</strong>
+                            <span>Computational Topology</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Methods:</strong>
+                            <span>Numerical Analysis, Differential Geometry</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Tools:</strong>
+                            <span>Python, NumPy, Matplotlib</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Applications:</strong>
+                            <span>Knot Theory, Mathematical Modeling</span>
+                        </div>
+                    </div>
+
+                    <div class="quick-links">
+                        <h3>Resources</h3>
+                        <a href="./assets/numerical_knot_untangling.pdf" class="sidebar-link" target="_blank">📄 Research Paper</a>
+                        <a href="https://github.com/maxbrodeur/numerical-knot-untangling" class="sidebar-link" target="_blank">💻 Source Code</a>
+                        <a href="../index.html#projects" class="sidebar-link">← Back to Projects</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-    
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="section-title">Knot Untangling Visualization</h2>
+            <div class="demo-container">
+                <img src="./assets/torus.gif" alt="Knot untangling animation" class="demo-gif">
+                <div class="demo-description">
+                    <h4>Interactive Knot Manipulation</h4>
+                    <p>This animation demonstrates the numerical untangling process, showing how complex knot structures can be systematically simplified while preserving their essential topological characteristics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
 </html>
-        
