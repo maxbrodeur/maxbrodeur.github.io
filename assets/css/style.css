@@ -1,3 +1,10 @@
+@media (max-width: 700px) {
+  body {
+    background: url('../images/fractal_backgrounds/fractal-vertical-1.png') repeat-y center top, url('../images/fractal_backgrounds/fractal-vertical-2.png') repeat-y center 50vh;
+    background-size: cover auto, cover auto;
+    background-attachment: scroll;
+  }
+}
 /* Reset and Base Styles */
 * {
     margin: 0;

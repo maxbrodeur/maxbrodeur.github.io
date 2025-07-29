@@ -177,8 +177,8 @@ function setRandomFractalBackground() {
         'fractal-random_chaos-1753719271037.png',
         'fractal-random_chaos-1753722756059.png',
         'fractal-random_chaos-1753729578759.png',
-        'fractal-random_chaos-1753729598930.png',
-        'fractal-random_chaos-1753729869073.png',
+        'fractal-vertical-1.png',
+        'fractal-vertical-2.png',
         'fractal-random_chaos-1753734717778.png',
         'fractal-random_chaos-1753737280840.png'
     ];
