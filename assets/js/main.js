@@ -71,20 +71,33 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transform = 'translateY(20px)';
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
-        
-        // Add hover effects for GIF animation
+
+        // Add hover effects for GIF animation or video
         const img = card.querySelector('.project-img');
+        const video = card.querySelector('.project-gif');
         const hoverGif = card.getAttribute('data-hover-gif');
-        
-        if (img && hoverGif) {
+
+        if (img && hoverGif && !video) {
+            // Standard GIF swap for image
             const originalSrc = img.src;
-            
             card.addEventListener('mouseenter', function() {
                 img.src = hoverGif;
             });
-            
             card.addEventListener('mouseleave', function() {
                 img.src = originalSrc;
+            });
+        } else if (img && video && hoverGif) {
+            // For cards with a video (fractal, torus)
+            card.addEventListener('mouseenter', function() {
+                img.style.display = 'none';
+                video.style.display = 'block';
+                video.currentTime = 0;
+                video.play();
+            });
+            card.addEventListener('mouseleave', function() {
+                video.pause();
+                video.style.display = 'none';
+                img.style.display = '';
             });
         }
     });

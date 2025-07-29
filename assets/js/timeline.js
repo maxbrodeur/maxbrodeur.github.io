@@ -86,7 +86,7 @@ class Timeline {
                         "media": [
                             {
                                 "type": "image",
-                                "image": "./assets/images/timeline/cars.gif",
+                                "image": "./assets/thumbnails/cars.gif",
                                 "description": "The framework in action! (© Ubisoft Entertainment)"
                             }
                         ]
