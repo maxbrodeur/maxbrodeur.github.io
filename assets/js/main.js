@@ -207,6 +207,9 @@ function setRandomFractalBackground() {
             document.body.style.backgroundPosition = 'center';
             document.body.style.backgroundRepeat = 'no-repeat';
             document.body.style.backgroundAttachment = 'fixed';
+            // Force Safari repaint
+            void document.body.offsetHeight;
+            document.body.style.webkitTransform = 'scale(1)';
         }, 10);
         console.log(`Applied random fractal background: ${selectedImage}${ext}`);
     });
