@@ -199,7 +199,7 @@ function setRandomFractalBackground() {
     document.body.style.backgroundImage = '';
 
     supportsWebP(function (isSupported) {
-        const ext = isSupported ? '.png.webp' : '.png';
+        const ext = isSupported ? '.webp' : '.png';
         const imagePath = `${basePath}${ext}`;
         setTimeout(() => {
             document.body.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('${imagePath}?v=${cacheBuster}')`;
