@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Gallery - Max Brodeur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Max Brodeur</a>
+            <div class="nav-center">
+                <span class="nav-page-title">Fractal Gallery</span>
+            </div>
+            <nav class="nav-menu">
+                <button id="fullscreen-btn" class="fullscreen-btn">Fullscreen Slideshow</button>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Gallery Header (Hidden by default, shown on initial load) -->
+    <section class="gallery-header" id="gallery-header" style="display: none;">
+        <div class="container">
+            <h1 class="gallery-title">Fractal Gallery</h1>
+            <p class="gallery-intro">
+                This is a collection of attractors obtained from randomly searching the coefficient space of iterative maps. For more information, please see Sprott's work on polynomial maps and neural networks.
+                My inbox is always open for questions or collaborations: <u>ma</u><span style="display:none;">xbrodeur</span>@<u>g</u><span style="display:none;">mail</span>.<u>c</u><span style="display:none;">om</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Method Filters (Desktop) / Tabs (Mobile) -->
+    <div class="method-controls" id="method-controls">
+        <div class="container">
+            <div class="method-tabs" id="method-tabs">
+                <!-- Tabs will be generated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Method Description (shown for all views) -->
+    <div class="method-description-section" id="method-description-section">
+        <div class="container">
+            <h2 class="method-title" id="method-description-title"></h2>
+            <div class="method-text" id="method-description-text"></div>
+            <button id="shuffle-btn" class="shuffle-btn" title="Shuffle Gallery">Shuffle</button>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Desktop & Mobile: Unified Gallery Grid -->
+            <div class="gallery-grid-container" id="gallery-grid-container">
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" id="lightbox-image" src="" alt="">
+            <div class="lightbox-info" id="lightbox-info">
+                <div class="lightbox-method" id="lightbox-method"></div>
+                <div class="lightbox-index" id="lightbox-index"></div>
+            </div>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Fullscreen Slideshow -->
+    <div class="fullscreen-slideshow" id="fullscreen-slideshow">
+        <img class="slideshow-image" id="slideshow-image" src="" alt="">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

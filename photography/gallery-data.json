@@ -2,31 +2,31 @@
   {
     "src": "images/italy/tower.JPG",
     "location": "Pisa",
-    "caption": "Some nice looking Italian architecture",
+    "caption": "the tower of pisa — but not the leaning one!",
     "date": "May 2024"
   },
   {
     "src": "images/italy/pisa.JPG",
     "location": "Pisa",
-    "caption": "It actually leans !!!",
+    "caption": "it actually leans !!!",
     "date": "May 2024"
   },
   {
     "src": "images/italy/window.JPG",
     "location": "Florence",
-    "caption": "Window framing of the Ponte Vecchio, from the Uffizi gallery",
+    "caption": "Ponte Vecchio, from the Uffizi gallery",
     "date": "May 2024"
   },
   {
     "src": "images/london/ldn_beef.jpeg",
     "location": "London",
-    "caption": "Posing with the beefeaters guarding the crown jewels at the tower of London",
+    "caption": "guarding the crown jewels at the tower of London",
     "date": "September 2024"
   },
   {
     "src": "images/london/ldn_mirror.jpeg",
     "location": "London",
-    "caption": "Convex mirror in one the old book-filled hiddens rooms of the Royal Instituion, where Faraday used to live and work",
+    "caption": "one the old book-filled hidden rooms of the Royal Institute, where Faraday used to live and work",
     "date": "September 2024"
   },
   {
@@ -38,19 +38,19 @@
   {
     "src": "images/london/ldn_contrast.jpeg",
     "location": "London",
-    "caption": "Contrasting view of the City skyline from the tower of London",
+    "caption": "skyline from the tower of London",
     "date": "September 2024"
   },
   {
     "src": "images/london/ldn_clock.jpeg",
     "location": "London",
-    "caption": "One of the several clocks sticking out of walls in the City of London, with the \"Walkie Talkie\" in the background",
+    "caption": "a wall clock in the City of London, with the \"Walkie Talkie\" in the background",
     "date": "September 2024"
   },
   {
     "src": "images/london/ldn_market.jpeg",
     "location": "London",
-    "caption": "Walking through Borough Market afterhours",
+    "caption": "Borough Market",
     "date": "September 2024"
   },
   {
@@ -62,145 +62,145 @@
   {
     "src": "images/london/ldn_window.jpeg",
     "location": "London",
-    "caption": "Window framing of the tower bridge, from the tower of London",
+    "caption": "tower bridge, from the tower of London",
     "date": "September 2024"
   },
   {
     "src": "images/corsica/lying.jpg",
     "location": "Corsica",
-    "caption": "Sunbathing in the flowers after a long exhausting hike. That's the life!",
+    "caption": "That's the life!",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/house_sunset.jpg",
     "location": "Marseille",
-    "caption": "Dramatic seaside house in Marseille",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/tree.jpg",
     "location": "Corsica",
-    "caption": "How is this tree real!? There's gotta be a bug in the simulation",
+    "caption": "How is this tree real!? There's a bug in the simulation",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/goat.jpg",
     "location": "Corsica",
-    "caption": "A goat on the side of the road",
+    "caption": "goat",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/tower.jpg",
     "location": "Corsica",
-    "caption": "Genoese tower",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/house.jpg",
     "location": "Corsica",
-    "caption": "A house in the mountains",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/gang.jpg",
     "location": "Corsica",
-    "caption": "Group photo",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/climbing_in_sunset.jpg",
     "location": "Corsica",
-    "caption": "Climbing at sunset",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/window.jpg",
     "location": "Corsica",
-    "caption": "Window view",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/climbing.jpg",
     "location": "Corsica",
-    "caption": "Rock climbing",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/boat_church.jpg",
     "location": "Corsica",
-    "caption": "Coastal church",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/church_statue.jpg",
     "location": "Corsica",
-    "caption": "Church interior",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/corsican_walls.jpg",
     "location": "Corsica",
-    "caption": "Ancient stone walls",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/corsica/wave.jpg",
     "location": "Corsica",
-    "caption": "Mediterranean waves",
+    "caption": "",
     "date": "April 2024"
   },
   {
     "src": "images/switzerland/sw_st_bernard_3.jpg",
     "location": "St. Bernard Pass",
-    "caption": "Backcountry skiing in the Great St. Bernard pass",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland/sw_st_bernard_2.jpg",
     "location": "St. Bernard Pass",
-    "caption": "The Great St. Bernard Hospice, where we drank and ate some well deserved wine and cheese",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland/sw_st_bernard_4.jpg",
     "location": "St. Bernard Pass",
-    "caption": "Backcountry skiing in the Great St. Bernard pass",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland/sw_lauterbrunnen.jpg",
     "location": "Lauterbrunnen",
-    "caption": "Lauterbrunnen valley",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland/sw_matterhorn.jpg",
     "location": "Zermatt",
-    "caption": "Sunset on the Matterhorn",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland/sw_lausanne_view_from_church.jpg",
     "location": "Lausanne",
-    "caption": "View of Lausanne and lake Geneva from the top of the Notre-Dame cathedral",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/switzerland_fall24/evian.jpeg",
     "location": "Évian",
-    "caption": "The Cachat spring supposedly the first source for the famous Evian water is the reference for water quality measurements around the world. I swear it tasted good!",
+    "caption": "The Cachat spring — supposedly the first source for the famous Evian water. I swear it tasted good!",
     "date": "Fall 2024"
   },
   {
     "src": "images/massif_sunset.JPG",
     "location": "Swiss Alps",
-    "caption": "Alpine sunset",
+    "caption": "",
     "date": "February 2024"
   },
   {
     "src": "images/japan/jp_arch.jpg",
     "location": "Japan",
-    "caption": "Sights on the Nakasendo trail",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
@@ -212,7 +212,7 @@
   {
     "src": "images/japan/jp_monkey.jpg",
     "location": "Japan",
-    "caption": "Baby monkey in the Iwatayama Monkey Park in Kyoto",
+    "caption": "Iwatayama Monkey Park in Kyoto",
     "date": "Summer 2023"
   },
   {
@@ -224,7 +224,7 @@
   {
     "src": "images/japan/jp_wood_temple.jpg",
     "location": "Kyoto",
-    "caption": "Daitoku-ji temple in Kyoto",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
@@ -236,31 +236,31 @@
   {
     "src": "images/japan/jp_magome.jpg",
     "location": "Magome",
-    "caption": "Calm street in Narai",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
     "src": "images/japan/jp_family.jpg",
     "location": "Japan",
-    "caption": "Family portrait",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
     "src": "images/japan/jp_lantern.jpg",
     "location": "Japan",
-    "caption": "Paper lantern",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
     "src": "images/japan/jp_restaurant.jpg",
     "location": "Japan",
-    "caption": "Traditional restaurant",
+    "caption": "",
     "date": "Summer 2023"
   },
   {
     "src": "images/guadeloupe_waves.jpg",
     "location": "Guadeloupe",
-    "caption": "The rocky waves on the atlantic coast",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
@@ -290,19 +290,19 @@
   {
     "src": "images/mtl_sunset.jpg",
     "location": "Montreal",
-    "caption": "The view from my apartment",
+    "caption": "The view from my apartment in mtl",
     "date": "Ongoing"
   },
   {
     "src": "images/sthilaire_apple.jpg",
     "location": "Mont-Saint-Hilaire",
-    "caption": "An apple from an orchard in St-Hilaire",
+    "caption": "apple from an orchard in St-Hilaire",
     "date": "Fall 2022"
   },
   {
     "src": "images/martinique_stpierre.jpg",
     "location": "Martinique",
-    "caption": "Walking around Saint-Pierre",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
@@ -320,43 +320,43 @@
   {
     "src": "images/caribbean_lily.jpg",
     "location": "Caribbean",
-    "caption": "Water lily",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_python.jpg",
     "location": "Caribbean",
-    "caption": "Tree python",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_bird.JPG",
     "location": "Caribbean",
-    "caption": "Tropical bird",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_mommy_bird.JPG",
     "location": "Caribbean",
-    "caption": "Bird with chick",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_pigeon1.JPG",
     "location": "Caribbean",
-    "caption": "Caribbean dove",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_pigeon2.JPG",
     "location": "Caribbean",
-    "caption": "Tropical pigeon",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_boat.JPG",
     "location": "Caribbean",
-    "caption": "Fishing boat",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
@@ -368,85 +368,85 @@
   {
     "src": "images/caribbean_leo.JPG",
     "location": "St. Lucia",
-    "caption": "St. Lucia's mountains from the boat",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/martinique_balata.jpg",
     "location": "Martinique",
-    "caption": "The Balata Gardens",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/martinique_balata_lily.jpg",
     "location": "Martinique",
-    "caption": "The Balata gardens",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/martinique_beach.jpg",
     "location": "Martinique",
-    "caption": "Petite Anse des Salines – A nude beach we accidentally went to",
+    "caption": "Petite Anse des Salines",
     "date": "Winter 2022"
   },
   {
     "src": "images/martinique_sunset2.jpg",
     "location": "Martinique",
-    "caption": "Caribbean sunset",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/caribbean_sailboat.JPG",
     "location": "Caribbean",
-    "caption": "Sailboat at anchor",
+    "caption": "",
     "date": "Winter 2022"
   },
   {
     "src": "images/PEI_beach.JPG",
     "location": "Prince Edward Island",
-    "caption": "Red sand beach",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
     "src": "images/PEI_beach_horizontal.JPG",
     "location": "Prince Edward Island",
-    "caption": "PEI coastline",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
     "src": "images/PEI_bridge.JPG",
     "location": "Prince Edward Island",
-    "caption": "Confederation Bridge",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
     "src": "images/PEI_rocks.JPG",
     "location": "Prince Edward Island",
-    "caption": "Coastal rocks",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
     "src": "images/PEI_shack.JPG",
     "location": "Prince Edward Island",
-    "caption": "Fisherman's shack",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
     "src": "images/mtl_church.JPG",
     "location": "Montreal",
-    "caption": "Notre-Dame Basilica",
-    "date": "Ongoing"
+    "caption": "",
+    "date": ""
   },
   {
     "src": "images/mtl_duluth.JPG",
     "location": "Montreal",
     "caption": "Duluth Avenue",
-    "date": "Ongoing"
+    "date": ""
   },
   {
     "src": "images/sunset_family.JPG",
     "location": "Canada",
-    "caption": "Family sunset",
+    "caption": "",
     "date": "Summer 2022"
   },
   {
@@ -475,14 +475,14 @@
   },
   {
     "src": "images/wedding_car.JPG",
-    "location": "Special Occasions",
-    "caption": "Wedding day",
+    "location": "",
+    "caption": "",
     "date": "2023"
   },
   {
     "src": "images/wedding_nana.JPG",
-    "location": "Special Occasions",
-    "caption": "Family celebration",
+    "location": "",
+    "caption": "",
     "date": "2023"
   }
 ]

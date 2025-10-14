@@ -1,0 +1,471 @@
+/* Fractal Gallery Styles */
+body {
+    background: #000000 !important;
+    min-height: 100vh;
+}
+
+body::before {
+    display: none; /* Remove the overlay */
+}
+
+/* Nav Center Title */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.nav-page-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Gallery Header (hidden by default) */
+.gallery-header {
+    padding: 100px 0 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.gallery-header.hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.gallery-intro {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Method Description (for all views) */
+.method-description-section {
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.method-description-section .container {
+    position: relative;
+}
+
+.method-description-section .method-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.method-description-section .method-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 900px;
+    margin: 0 auto 15px;
+    line-height: 1.5;
+}
+
+.method-description-section .method-text strong {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.method-description-section .method-text a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.method-description-section .method-text a:hover {
+    color: #ffffff;
+}
+
+/* Shuffle Button (in description section, aligned right) */
+.method-description-section .shuffle-btn {
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.method-description-section .shuffle-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.method-description-section .shuffle-btn:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .method-description-section .shuffle-btn {
+        position: static;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
+
+/* Method Controls */
+.method-controls {
+    position: sticky;
+    top: 70px;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 100;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.method-tabs {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.method-tab {
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.method-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.method-tab.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Fullscreen Button */
+.fullscreen-btn {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 30px 0 80px;
+    background: #000000;
+}
+
+/* Unified Gallery Grid */
+.gallery-grid-container {
+    width: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+/* Adjust minimum size for smaller screens */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+    }
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .nav-page-title {
+        font-size: 0.95rem;
+    }
+    
+    .method-tabs {
+        gap: 10px;
+    }
+    
+    .method-tab {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .method-description-section .method-title {
+        font-size: 1.5rem;
+    }
+    
+    .method-description-section .method-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(20px);
+}
+
+.lightbox-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 120px;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    font-size: 48px;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 2001;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-info {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2001;
+}
+
+.lightbox-method {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.lightbox-index {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .gallery-columns {
+        gap: 20px;
+    }
+    
+    .column-header {
+        padding: 15px;
+    }
+    
+    .column-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .lightbox-nav {
+        font-size: 36px;
+        padding: 15px 10px;
+    }
+    
+    .lightbox-prev {
+        left: 15px;
+    }
+    
+    .lightbox-next {
+        right: 15px;
+    }
+    
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+    }
+}
+
+/* Fullscreen Slideshow */
+.fullscreen-slideshow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 3000;
+    cursor: pointer;
+}
+
+.fullscreen-slideshow.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-image {
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slideshow-image.loaded {
+    opacity: 1;
+}
+
+.slideshow-hint {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}

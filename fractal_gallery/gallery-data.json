@@ -1,0 +1,5557 @@
+[
+  {
+    "method": "Polynomial Map",
+    "index": 0,
+    "src": "images/poly/fractal_0000.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 1,
+    "src": "images/poly/fractal_0003.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 2,
+    "src": "images/poly/fractal_0005.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 3,
+    "src": "images/poly/fractal_0006.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 4,
+    "src": "images/poly/fractal_0009.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 5,
+    "src": "images/poly/fractal_0010.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 6,
+    "src": "images/poly/fractal_0011.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 7,
+    "src": "images/poly/fractal_0012.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 8,
+    "src": "images/poly/fractal_0013.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 9,
+    "src": "images/poly/fractal_0014.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 10,
+    "src": "images/poly/fractal_0016.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 11,
+    "src": "images/poly/fractal_0017.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 12,
+    "src": "images/poly/fractal_0018.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 13,
+    "src": "images/poly/fractal_0020.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 14,
+    "src": "images/poly/fractal_0024.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 15,
+    "src": "images/poly/fractal_0025.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 16,
+    "src": "images/poly/fractal_0027.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 17,
+    "src": "images/poly/fractal_0028.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 18,
+    "src": "images/poly/fractal_0031.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 19,
+    "src": "images/poly/fractal_0033.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 20,
+    "src": "images/poly/fractal_0034.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 21,
+    "src": "images/poly/fractal_0035.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 22,
+    "src": "images/poly/fractal_0036.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 23,
+    "src": "images/poly/fractal_0037.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 24,
+    "src": "images/poly/fractal_0039.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 25,
+    "src": "images/poly/fractal_0040.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 26,
+    "src": "images/poly/fractal_0054.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 27,
+    "src": "images/poly/fractal_0056.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 28,
+    "src": "images/poly/fractal_0059.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 29,
+    "src": "images/poly/fractal_0060.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 30,
+    "src": "images/poly/fractal_0061.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 31,
+    "src": "images/poly/fractal_0062.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 32,
+    "src": "images/poly/fractal_0065.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 33,
+    "src": "images/poly/fractal_0066.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 34,
+    "src": "images/poly/fractal_0070.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 35,
+    "src": "images/poly/fractal_0073.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 36,
+    "src": "images/poly/fractal_0074.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 37,
+    "src": "images/poly/fractal_0075.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 38,
+    "src": "images/poly/fractal_0082.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 39,
+    "src": "images/poly/fractal_0083.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 40,
+    "src": "images/poly/fractal_0084.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 41,
+    "src": "images/poly/fractal_0086.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 42,
+    "src": "images/poly/fractal_0088.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 43,
+    "src": "images/poly/fractal_0090.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 44,
+    "src": "images/poly/fractal_0092.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 45,
+    "src": "images/poly/fractal_0094.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 46,
+    "src": "images/poly/fractal_0101.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 47,
+    "src": "images/poly/fractal_0102.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 48,
+    "src": "images/poly/fractal_0105.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 49,
+    "src": "images/poly/fractal_0106.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 50,
+    "src": "images/poly/fractal_0108.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 51,
+    "src": "images/poly/fractal_0110.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 52,
+    "src": "images/poly/fractal_0111.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 53,
+    "src": "images/poly/fractal_0112.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 54,
+    "src": "images/poly/fractal_0114.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 55,
+    "src": "images/poly/fractal_0117.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 56,
+    "src": "images/poly/fractal_0120.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 57,
+    "src": "images/poly/fractal_0123.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 58,
+    "src": "images/poly/fractal_0125.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 59,
+    "src": "images/poly/fractal_0129.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 60,
+    "src": "images/poly/fractal_0131.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 61,
+    "src": "images/poly/fractal_0132.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 62,
+    "src": "images/poly/fractal_0139.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 63,
+    "src": "images/poly/fractal_0140.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 64,
+    "src": "images/poly/fractal_0141.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 65,
+    "src": "images/poly/fractal_0143.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 66,
+    "src": "images/poly/fractal_0144.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 67,
+    "src": "images/poly/fractal_0145.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 68,
+    "src": "images/poly/fractal_0146.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 69,
+    "src": "images/poly/fractal_0147.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 70,
+    "src": "images/poly/fractal_0152.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 71,
+    "src": "images/poly/fractal_0154.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 72,
+    "src": "images/poly/fractal_0161.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 73,
+    "src": "images/poly/fractal_0162.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 74,
+    "src": "images/poly/fractal_0167.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 75,
+    "src": "images/poly/fractal_0168.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 76,
+    "src": "images/poly/fractal_0170.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 77,
+    "src": "images/poly/fractal_0178.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 78,
+    "src": "images/poly/fractal_0179.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 79,
+    "src": "images/poly/fractal_0180.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 80,
+    "src": "images/poly/fractal_0181.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 81,
+    "src": "images/poly/fractal_0182.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 82,
+    "src": "images/poly/fractal_0183.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 83,
+    "src": "images/poly/fractal_0184.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 84,
+    "src": "images/poly/fractal_0185.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 85,
+    "src": "images/poly/fractal_0186.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 86,
+    "src": "images/poly/fractal_0189.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 87,
+    "src": "images/poly/fractal_0192.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 88,
+    "src": "images/poly/fractal_0193.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 89,
+    "src": "images/poly/fractal_0195.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 90,
+    "src": "images/poly/fractal_0197.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 91,
+    "src": "images/poly/fractal_0198.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 92,
+    "src": "images/poly/fractal_0199.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 93,
+    "src": "images/poly/fractal_0200.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 94,
+    "src": "images/poly/fractal_0202.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 95,
+    "src": "images/poly/fractal_0209.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 96,
+    "src": "images/poly/fractal_0212.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 97,
+    "src": "images/poly/fractal_0216.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 98,
+    "src": "images/poly/fractal_0219.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 99,
+    "src": "images/poly/fractal_0221.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 100,
+    "src": "images/poly/fractal_0222.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 101,
+    "src": "images/poly/fractal_0225.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 102,
+    "src": "images/poly/fractal_0226.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 103,
+    "src": "images/poly/fractal_0228.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 104,
+    "src": "images/poly/fractal_0230.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 105,
+    "src": "images/poly/fractal_0231.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 106,
+    "src": "images/poly/fractal_0232.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 107,
+    "src": "images/poly/fractal_0235.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 108,
+    "src": "images/poly/fractal_0237.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 109,
+    "src": "images/poly/fractal_0238.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 110,
+    "src": "images/poly/fractal_0240.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 111,
+    "src": "images/poly/fractal_0241.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 112,
+    "src": "images/poly/fractal_0242.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 113,
+    "src": "images/poly/fractal_0243.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 114,
+    "src": "images/poly/fractal_0245.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 115,
+    "src": "images/poly/fractal_0246.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 116,
+    "src": "images/poly/fractal_0248.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 117,
+    "src": "images/poly/fractal_0249.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 118,
+    "src": "images/poly/fractal_0251.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 119,
+    "src": "images/poly/fractal_0253.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 120,
+    "src": "images/poly/fractal_0257.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 121,
+    "src": "images/poly/fractal_0258.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 122,
+    "src": "images/poly/fractal_0259.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 123,
+    "src": "images/poly/fractal_0261.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 124,
+    "src": "images/poly/fractal_0262.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 125,
+    "src": "images/poly/fractal_0263.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 126,
+    "src": "images/poly/fractal_0264.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 127,
+    "src": "images/poly/fractal_0274.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 128,
+    "src": "images/poly/fractal_0275.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 129,
+    "src": "images/poly/fractal_0276.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 130,
+    "src": "images/poly/fractal_0277.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 131,
+    "src": "images/poly/fractal_0278.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 132,
+    "src": "images/poly/fractal_0281.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 133,
+    "src": "images/poly/fractal_0283.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 134,
+    "src": "images/poly/fractal_0284.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 135,
+    "src": "images/poly/fractal_0285.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 136,
+    "src": "images/poly/fractal_0286.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 137,
+    "src": "images/poly/fractal_0287.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 138,
+    "src": "images/poly/fractal_0288.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 139,
+    "src": "images/poly/fractal_0289.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 140,
+    "src": "images/poly/fractal_0290.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 141,
+    "src": "images/poly/fractal_0291.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 142,
+    "src": "images/poly/fractal_0295.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 143,
+    "src": "images/poly/fractal_0297.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 144,
+    "src": "images/poly/fractal_0303.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 145,
+    "src": "images/poly/fractal_0306.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 146,
+    "src": "images/poly/fractal_0307.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 147,
+    "src": "images/poly/fractal_0308.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 148,
+    "src": "images/poly/fractal_0312.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 149,
+    "src": "images/poly/fractal_0313.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 150,
+    "src": "images/poly/fractal_0314.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 151,
+    "src": "images/poly/fractal_0315.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 152,
+    "src": "images/poly/fractal_0317.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 153,
+    "src": "images/poly/fractal_0320.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 154,
+    "src": "images/poly/fractal_0321.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 155,
+    "src": "images/poly/fractal_0323.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 156,
+    "src": "images/poly/fractal_0324.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 157,
+    "src": "images/poly/fractal_0326.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 158,
+    "src": "images/poly/fractal_0332.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 159,
+    "src": "images/poly/fractal_0334.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 160,
+    "src": "images/poly/fractal_0336.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 161,
+    "src": "images/poly/fractal_0337.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 162,
+    "src": "images/poly/fractal_0338.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 163,
+    "src": "images/poly/fractal_0339.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 164,
+    "src": "images/poly/fractal_0340.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 165,
+    "src": "images/poly/fractal_0342.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 166,
+    "src": "images/poly/fractal_0344.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 167,
+    "src": "images/poly/fractal_0348.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 168,
+    "src": "images/poly/fractal_0352.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 169,
+    "src": "images/poly/fractal_0354.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 170,
+    "src": "images/poly/fractal_0355.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 171,
+    "src": "images/poly/fractal_0356.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 172,
+    "src": "images/poly/fractal_0360.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 173,
+    "src": "images/poly/fractal_0361.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 174,
+    "src": "images/poly/fractal_0362.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 175,
+    "src": "images/poly/fractal_0364.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 176,
+    "src": "images/poly/fractal_0370.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 177,
+    "src": "images/poly/fractal_0371.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 178,
+    "src": "images/poly/fractal_0374.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 179,
+    "src": "images/poly/fractal_0376.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 180,
+    "src": "images/poly/fractal_0377.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 181,
+    "src": "images/poly/fractal_0378.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 182,
+    "src": "images/poly/fractal_0379.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 183,
+    "src": "images/poly/fractal_0381.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 184,
+    "src": "images/poly/fractal_0383.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 185,
+    "src": "images/poly/fractal_0386.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 186,
+    "src": "images/poly/fractal_0388.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 187,
+    "src": "images/poly/fractal_0389.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 188,
+    "src": "images/poly/fractal_0391.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 189,
+    "src": "images/poly/fractal_0393.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 190,
+    "src": "images/poly/fractal_0394.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 191,
+    "src": "images/poly/fractal_0395.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 192,
+    "src": "images/poly/fractal_0402.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 193,
+    "src": "images/poly/fractal_0403.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 194,
+    "src": "images/poly/fractal_0407.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 195,
+    "src": "images/poly/fractal_0408.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 196,
+    "src": "images/poly/fractal_0410.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 197,
+    "src": "images/poly/fractal_0413.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 198,
+    "src": "images/poly/fractal_0422.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 199,
+    "src": "images/poly/fractal_0423.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 200,
+    "src": "images/poly/fractal_0429.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 201,
+    "src": "images/poly/fractal_0435.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 202,
+    "src": "images/poly/fractal_0436.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 203,
+    "src": "images/poly/fractal_0440.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 204,
+    "src": "images/poly/fractal_0441.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 205,
+    "src": "images/poly/fractal_0442.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 206,
+    "src": "images/poly/fractal_0445.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 207,
+    "src": "images/poly/fractal_0446.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 208,
+    "src": "images/poly/fractal_0449.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 209,
+    "src": "images/poly/fractal_0451.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 210,
+    "src": "images/poly/fractal_0452.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 211,
+    "src": "images/poly/fractal_0453.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 212,
+    "src": "images/poly/fractal_0455.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 213,
+    "src": "images/poly/fractal_0457.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 214,
+    "src": "images/poly/fractal_0458.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 215,
+    "src": "images/poly/fractal_0460.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 216,
+    "src": "images/poly/fractal_0461.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 217,
+    "src": "images/poly/fractal_0466.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 218,
+    "src": "images/poly/fractal_0472.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 219,
+    "src": "images/poly/fractal_0474.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 220,
+    "src": "images/poly/fractal_0476.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 221,
+    "src": "images/poly/fractal_0477.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 222,
+    "src": "images/poly/fractal_0478.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 223,
+    "src": "images/poly/fractal_0480.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 224,
+    "src": "images/poly/fractal_0481.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 225,
+    "src": "images/poly/fractal_0482.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 226,
+    "src": "images/poly/fractal_0483.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 227,
+    "src": "images/poly/fractal_0484.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 228,
+    "src": "images/poly/fractal_0487.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 229,
+    "src": "images/poly/fractal_0488.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 230,
+    "src": "images/poly/fractal_0494.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 231,
+    "src": "images/poly/fractal_0498.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 232,
+    "src": "images/poly/fractal_0499.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 233,
+    "src": "images/poly/fractal_0500.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 234,
+    "src": "images/poly/fractal_0502.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 235,
+    "src": "images/poly/fractal_0504.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 236,
+    "src": "images/poly/fractal_0506.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 237,
+    "src": "images/poly/fractal_0509.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 238,
+    "src": "images/poly/fractal_0510.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 239,
+    "src": "images/poly/fractal_0516.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 240,
+    "src": "images/poly/fractal_0518.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 241,
+    "src": "images/poly/fractal_0519.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 242,
+    "src": "images/poly/fractal_0520.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 243,
+    "src": "images/poly/fractal_0524.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 244,
+    "src": "images/poly/fractal_0525.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 245,
+    "src": "images/poly/fractal_0527.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 246,
+    "src": "images/poly/fractal_0529.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 247,
+    "src": "images/poly/fractal_0530.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 248,
+    "src": "images/poly/fractal_0531.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 249,
+    "src": "images/poly/fractal_0535.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 250,
+    "src": "images/poly/fractal_0536.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 251,
+    "src": "images/poly/fractal_0542.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 252,
+    "src": "images/poly/fractal_0546.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 253,
+    "src": "images/poly/fractal_0547.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 254,
+    "src": "images/poly/fractal_0548.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 255,
+    "src": "images/poly/fractal_0551.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 256,
+    "src": "images/poly/fractal_0553.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 257,
+    "src": "images/poly/fractal_0554.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 258,
+    "src": "images/poly/fractal_0556.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 259,
+    "src": "images/poly/fractal_0557.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 260,
+    "src": "images/poly/fractal_0559.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 261,
+    "src": "images/poly/fractal_0566.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 262,
+    "src": "images/poly/fractal_0568.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 263,
+    "src": "images/poly/fractal_0570.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 264,
+    "src": "images/poly/fractal_0575.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 265,
+    "src": "images/poly/fractal_0581.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 266,
+    "src": "images/poly/fractal_0582.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 267,
+    "src": "images/poly/fractal_0583.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 268,
+    "src": "images/poly/fractal_0585.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 269,
+    "src": "images/poly/fractal_0586.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 270,
+    "src": "images/poly/fractal_0587.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 271,
+    "src": "images/poly/fractal_0588.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 272,
+    "src": "images/poly/fractal_0590.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 273,
+    "src": "images/poly/fractal_0592.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 274,
+    "src": "images/poly/fractal_0596.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 275,
+    "src": "images/poly/fractal_0599.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 276,
+    "src": "images/poly/fractal_0601.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 277,
+    "src": "images/poly/fractal_0602.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 278,
+    "src": "images/poly/fractal_0603.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 279,
+    "src": "images/poly/fractal_0604.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 280,
+    "src": "images/poly/fractal_0606.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 281,
+    "src": "images/poly/fractal_0607.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 282,
+    "src": "images/poly/fractal_0608.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 283,
+    "src": "images/poly/fractal_0609.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 284,
+    "src": "images/poly/fractal_0610.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 285,
+    "src": "images/poly/fractal_0611.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 286,
+    "src": "images/poly/fractal_0612.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 287,
+    "src": "images/poly/fractal_0614.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 288,
+    "src": "images/poly/fractal_0617.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 289,
+    "src": "images/poly/fractal_0619.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 290,
+    "src": "images/poly/fractal_0620.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 291,
+    "src": "images/poly/fractal_0622.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 292,
+    "src": "images/poly/fractal_0625.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 293,
+    "src": "images/poly/fractal_0630.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 294,
+    "src": "images/poly/fractal_0633.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 295,
+    "src": "images/poly/fractal_0641.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 296,
+    "src": "images/poly/fractal_0642.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 297,
+    "src": "images/poly/fractal_0647.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 298,
+    "src": "images/poly/fractal_0648.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 299,
+    "src": "images/poly/fractal_0649.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 300,
+    "src": "images/poly/fractal_0651.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 301,
+    "src": "images/poly/fractal_0655.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 302,
+    "src": "images/poly/fractal_0658.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 303,
+    "src": "images/poly/fractal_0661.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 304,
+    "src": "images/poly/fractal_0662.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 305,
+    "src": "images/poly/fractal_0664.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 306,
+    "src": "images/poly/fractal_0665.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 307,
+    "src": "images/poly/fractal_0666.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 308,
+    "src": "images/poly/fractal_0667.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 309,
+    "src": "images/poly/fractal_0674.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 310,
+    "src": "images/poly/fractal_0675.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 311,
+    "src": "images/poly/fractal_0678.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 312,
+    "src": "images/poly/fractal_0679.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 313,
+    "src": "images/poly/fractal_0680.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 314,
+    "src": "images/poly/fractal_0683.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 315,
+    "src": "images/poly/fractal_0686.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 316,
+    "src": "images/poly/fractal_0690.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 317,
+    "src": "images/poly/fractal_0693.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 318,
+    "src": "images/poly/fractal_0696.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 319,
+    "src": "images/poly/fractal_0697.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 320,
+    "src": "images/poly/fractal_0699.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 321,
+    "src": "images/poly/fractal_0702.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 322,
+    "src": "images/poly/fractal_0706.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 323,
+    "src": "images/poly/fractal_0711.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 324,
+    "src": "images/poly/fractal_0712.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 325,
+    "src": "images/poly/fractal_0716.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 326,
+    "src": "images/poly/fractal_0717.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 327,
+    "src": "images/poly/fractal_0718.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 328,
+    "src": "images/poly/fractal_0722.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 329,
+    "src": "images/poly/fractal_0724.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 330,
+    "src": "images/poly/fractal_0726.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 331,
+    "src": "images/poly/fractal_0731.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 332,
+    "src": "images/poly/fractal_0733.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 333,
+    "src": "images/poly/fractal_0734.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 334,
+    "src": "images/poly/fractal_0735.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 335,
+    "src": "images/poly/fractal_0738.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 336,
+    "src": "images/poly/fractal_0742.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 337,
+    "src": "images/poly/fractal_0747.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 338,
+    "src": "images/poly/fractal_0748.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 339,
+    "src": "images/poly/fractal_0751.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 340,
+    "src": "images/poly/fractal_0752.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 341,
+    "src": "images/poly/fractal_0755.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 342,
+    "src": "images/poly/fractal_0756.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 343,
+    "src": "images/poly/fractal_0759.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 344,
+    "src": "images/poly/fractal_0761.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 345,
+    "src": "images/poly/fractal_0763.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 346,
+    "src": "images/poly/fractal_0764.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 347,
+    "src": "images/poly/fractal_0769.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 348,
+    "src": "images/poly/fractal_0772.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 349,
+    "src": "images/poly/fractal_0775.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 350,
+    "src": "images/poly/fractal_0776.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 351,
+    "src": "images/poly/fractal_0777.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 352,
+    "src": "images/poly/fractal_0778.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 353,
+    "src": "images/poly/fractal_0779.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 354,
+    "src": "images/poly/fractal_0780.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 355,
+    "src": "images/poly/fractal_0781.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 356,
+    "src": "images/poly/fractal_0783.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 357,
+    "src": "images/poly/fractal_0786.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 358,
+    "src": "images/poly/fractal_0787.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 359,
+    "src": "images/poly/fractal_0788.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 360,
+    "src": "images/poly/fractal_0794.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 361,
+    "src": "images/poly/fractal_0795.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 362,
+    "src": "images/poly/fractal_0796.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 363,
+    "src": "images/poly/fractal_0797.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 364,
+    "src": "images/poly/fractal_0801.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 365,
+    "src": "images/poly/fractal_0803.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 366,
+    "src": "images/poly/fractal_0815.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 367,
+    "src": "images/poly/fractal_0816.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 368,
+    "src": "images/poly/fractal_0817.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 369,
+    "src": "images/poly/fractal_0818.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 370,
+    "src": "images/poly/fractal_0823.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 371,
+    "src": "images/poly/fractal_0824.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 372,
+    "src": "images/poly/fractal_0826.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 373,
+    "src": "images/poly/fractal_0832.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 374,
+    "src": "images/poly/fractal_0834.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 375,
+    "src": "images/poly/fractal_0836.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 376,
+    "src": "images/poly/fractal_0840.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 377,
+    "src": "images/poly/fractal_0845.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 378,
+    "src": "images/poly/fractal_0852.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 379,
+    "src": "images/poly/fractal_0854.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 380,
+    "src": "images/poly/fractal_0855.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 381,
+    "src": "images/poly/fractal_0856.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 382,
+    "src": "images/poly/fractal_0859.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 383,
+    "src": "images/poly/fractal_0861.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 384,
+    "src": "images/poly/fractal_0863.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 385,
+    "src": "images/poly/fractal_0867.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 386,
+    "src": "images/poly/fractal_0869.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 387,
+    "src": "images/poly/fractal_0871.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 388,
+    "src": "images/poly/fractal_0873.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 389,
+    "src": "images/poly/fractal_0876.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 390,
+    "src": "images/poly/fractal_0879.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 391,
+    "src": "images/poly/fractal_0880.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 392,
+    "src": "images/poly/fractal_0885.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 393,
+    "src": "images/poly/fractal_0887.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 394,
+    "src": "images/poly/fractal_0888.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 395,
+    "src": "images/poly/fractal_0890.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 396,
+    "src": "images/poly/fractal_0897.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 397,
+    "src": "images/poly/fractal_0899.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 398,
+    "src": "images/poly/fractal_0901.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 399,
+    "src": "images/poly/fractal_0903.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 400,
+    "src": "images/poly/fractal_0904.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 401,
+    "src": "images/poly/fractal_0905.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 402,
+    "src": "images/poly/fractal_0909.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 403,
+    "src": "images/poly/fractal_0914.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 404,
+    "src": "images/poly/fractal_0917.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 405,
+    "src": "images/poly/fractal_0919.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 406,
+    "src": "images/poly/fractal_0920.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 407,
+    "src": "images/poly/fractal_0921.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 408,
+    "src": "images/poly/fractal_0925.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 409,
+    "src": "images/poly/fractal_0929.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 410,
+    "src": "images/poly/fractal_0932.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 411,
+    "src": "images/poly/fractal_0934.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 412,
+    "src": "images/poly/fractal_0935.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 413,
+    "src": "images/poly/fractal_0938.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 414,
+    "src": "images/poly/fractal_0940.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 415,
+    "src": "images/poly/fractal_0946.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 416,
+    "src": "images/poly/fractal_0951.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 417,
+    "src": "images/poly/fractal_0954.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 418,
+    "src": "images/poly/fractal_0956.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 419,
+    "src": "images/poly/fractal_0959.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 420,
+    "src": "images/poly/fractal_0961.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 421,
+    "src": "images/poly/fractal_0965.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 422,
+    "src": "images/poly/fractal_0966.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 423,
+    "src": "images/poly/fractal_0970.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 424,
+    "src": "images/poly/fractal_0973.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 425,
+    "src": "images/poly/fractal_0975.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 426,
+    "src": "images/poly/fractal_0976.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 427,
+    "src": "images/poly/fractal_0977.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 428,
+    "src": "images/poly/fractal_0986.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 429,
+    "src": "images/poly/fractal_0988.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 430,
+    "src": "images/poly/fractal_0991.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 431,
+    "src": "images/poly/fractal_0992.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 432,
+    "src": "images/poly/fractal_0996.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 433,
+    "src": "images/poly/fractal_0997.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 434,
+    "src": "images/poly/fractal_0998.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 435,
+    "src": "images/poly/fractal_0999.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 436,
+    "src": "images/poly/fractal_1003.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 437,
+    "src": "images/poly/fractal_1005.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 438,
+    "src": "images/poly/fractal_1007.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 439,
+    "src": "images/poly/fractal_1008.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 440,
+    "src": "images/poly/fractal_1009.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 441,
+    "src": "images/poly/fractal_1012.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 442,
+    "src": "images/poly/fractal_1014.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 443,
+    "src": "images/poly/fractal_1016.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 444,
+    "src": "images/poly/fractal_1017.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 445,
+    "src": "images/poly/fractal_1020.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 446,
+    "src": "images/poly/fractal_1021.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 447,
+    "src": "images/poly/fractal_1022.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 448,
+    "src": "images/poly/fractal_1024.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 449,
+    "src": "images/poly/fractal_1025.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 450,
+    "src": "images/poly/fractal_1028.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 451,
+    "src": "images/poly/fractal_1031.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 452,
+    "src": "images/poly/fractal_1032.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 453,
+    "src": "images/poly/fractal_1034.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 454,
+    "src": "images/poly/fractal_1039.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 455,
+    "src": "images/poly/fractal_1042.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 456,
+    "src": "images/poly/fractal_1049.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 457,
+    "src": "images/poly/fractal_1051.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 458,
+    "src": "images/poly/fractal_1052.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 459,
+    "src": "images/poly/fractal_1053.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 460,
+    "src": "images/poly/fractal_1054.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 461,
+    "src": "images/poly/fractal_1056.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 462,
+    "src": "images/poly/fractal_1057.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 463,
+    "src": "images/poly/fractal_1058.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 464,
+    "src": "images/poly/fractal_1060.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 465,
+    "src": "images/poly/fractal_1072.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 466,
+    "src": "images/poly/fractal_1074.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 467,
+    "src": "images/poly/fractal_1080.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 468,
+    "src": "images/poly/fractal_1084.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 469,
+    "src": "images/poly/fractal_1087.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 470,
+    "src": "images/poly/fractal_1089.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 471,
+    "src": "images/poly/fractal_1090.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 472,
+    "src": "images/poly/fractal_1091.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 473,
+    "src": "images/poly/fractal_1092.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 474,
+    "src": "images/poly/fractal_1093.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 475,
+    "src": "images/poly/fractal_1094.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 476,
+    "src": "images/poly/fractal_1098.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 477,
+    "src": "images/poly/fractal_1107.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 478,
+    "src": "images/poly/fractal_1110.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 479,
+    "src": "images/poly/fractal_1116.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 480,
+    "src": "images/poly/fractal_1117.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 481,
+    "src": "images/poly/fractal_1119.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 482,
+    "src": "images/poly/fractal_1121.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 483,
+    "src": "images/poly/fractal_1122.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 484,
+    "src": "images/poly/fractal_1125.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 485,
+    "src": "images/poly/fractal_1127.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 486,
+    "src": "images/poly/fractal_1128.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 487,
+    "src": "images/poly/fractal_1130.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 488,
+    "src": "images/poly/fractal_1132.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 489,
+    "src": "images/poly/fractal_1134.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 490,
+    "src": "images/poly/fractal_1135.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 491,
+    "src": "images/poly/fractal_1136.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 492,
+    "src": "images/poly/fractal_1138.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 493,
+    "src": "images/poly/fractal_1139.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 494,
+    "src": "images/poly/fractal_1143.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 495,
+    "src": "images/poly/fractal_1150.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 496,
+    "src": "images/poly/fractal_1154.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 497,
+    "src": "images/poly/fractal_1155.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 498,
+    "src": "images/poly/fractal_1159.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 499,
+    "src": "images/poly/fractal_1161.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 500,
+    "src": "images/poly/fractal_1167.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 501,
+    "src": "images/poly/fractal_1169.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 502,
+    "src": "images/poly/fractal_1170.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 503,
+    "src": "images/poly/fractal_1178.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 504,
+    "src": "images/poly/fractal_1181.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 505,
+    "src": "images/poly/fractal_1183.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 506,
+    "src": "images/poly/fractal_1185.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 507,
+    "src": "images/poly/fractal_1186.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 508,
+    "src": "images/poly/fractal_1188.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 509,
+    "src": "images/poly/fractal_1194.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 510,
+    "src": "images/poly/fractal_1200.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 511,
+    "src": "images/poly/fractal_1209.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 512,
+    "src": "images/poly/fractal_1210.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 513,
+    "src": "images/poly/fractal_1213.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 514,
+    "src": "images/poly/fractal_1217.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 515,
+    "src": "images/poly/fractal_1218.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 516,
+    "src": "images/poly/fractal_1221.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 517,
+    "src": "images/poly/fractal_1222.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 518,
+    "src": "images/poly/fractal_1223.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 519,
+    "src": "images/poly/fractal_1227.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 520,
+    "src": "images/poly/fractal_1229.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 521,
+    "src": "images/poly/fractal_1231.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 522,
+    "src": "images/poly/fractal_1234.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 523,
+    "src": "images/poly/fractal_1236.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 524,
+    "src": "images/poly/fractal_1238.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 525,
+    "src": "images/poly/fractal_1239.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 526,
+    "src": "images/poly/fractal_1240.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 527,
+    "src": "images/poly/fractal_1242.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 528,
+    "src": "images/poly/fractal_1243.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 529,
+    "src": "images/poly/fractal_1246.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 530,
+    "src": "images/poly/fractal_1252.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 531,
+    "src": "images/poly/fractal_1255.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 532,
+    "src": "images/poly/fractal_1258.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 533,
+    "src": "images/poly/fractal_1259.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 534,
+    "src": "images/poly/fractal_1260.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 535,
+    "src": "images/poly/fractal_1261.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 536,
+    "src": "images/poly/fractal_1272.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 537,
+    "src": "images/poly/fractal_1275.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 538,
+    "src": "images/poly/fractal_1278.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 539,
+    "src": "images/poly/fractal_1281.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 540,
+    "src": "images/poly/fractal_1285.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 541,
+    "src": "images/poly/fractal_1288.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 542,
+    "src": "images/poly/fractal_1290.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 543,
+    "src": "images/poly/fractal_1291.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 544,
+    "src": "images/poly/fractal_1293.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 545,
+    "src": "images/poly/fractal_1296.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 546,
+    "src": "images/poly/fractal_1299.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 547,
+    "src": "images/poly/fractal_1305.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 548,
+    "src": "images/poly/fractal_1307.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 549,
+    "src": "images/poly/fractal_1308.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 550,
+    "src": "images/poly/fractal_1310.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 551,
+    "src": "images/poly/fractal_1312.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 552,
+    "src": "images/poly/fractal_1314.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 553,
+    "src": "images/poly/fractal_1315.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 554,
+    "src": "images/poly/fractal_1316.png"
+  },
+  {
+    "method": "Polynomial Map",
+    "index": 555,
+    "src": "images/poly/fractal_1326.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 0,
+    "src": "images/reservoir/fractal_0002.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 1,
+    "src": "images/reservoir/fractal_0003.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 2,
+    "src": "images/reservoir/fractal_0006.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 3,
+    "src": "images/reservoir/fractal_0008.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 4,
+    "src": "images/reservoir/fractal_0011.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 5,
+    "src": "images/reservoir/fractal_0014.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 6,
+    "src": "images/reservoir/fractal_0015.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 7,
+    "src": "images/reservoir/fractal_0016.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 8,
+    "src": "images/reservoir/fractal_0017.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 9,
+    "src": "images/reservoir/fractal_0020.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 10,
+    "src": "images/reservoir/fractal_0021.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 11,
+    "src": "images/reservoir/fractal_0022.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 12,
+    "src": "images/reservoir/fractal_0024.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 13,
+    "src": "images/reservoir/fractal_0025.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 14,
+    "src": "images/reservoir/fractal_0027.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 15,
+    "src": "images/reservoir/fractal_0028.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 16,
+    "src": "images/reservoir/fractal_0031.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 17,
+    "src": "images/reservoir/fractal_0032.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 18,
+    "src": "images/reservoir/fractal_0033.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 19,
+    "src": "images/reservoir/fractal_0034.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 20,
+    "src": "images/reservoir/fractal_0036.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 21,
+    "src": "images/reservoir/fractal_0038.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 22,
+    "src": "images/reservoir/fractal_0039.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 23,
+    "src": "images/reservoir/fractal_0040.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 24,
+    "src": "images/reservoir/fractal_0042.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 25,
+    "src": "images/reservoir/fractal_0043.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 26,
+    "src": "images/reservoir/fractal_0044.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 27,
+    "src": "images/reservoir/fractal_0045.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 28,
+    "src": "images/reservoir/fractal_0046.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 29,
+    "src": "images/reservoir/fractal_0047.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 30,
+    "src": "images/reservoir/fractal_0050.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 31,
+    "src": "images/reservoir/fractal_0051.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 32,
+    "src": "images/reservoir/fractal_0052.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 33,
+    "src": "images/reservoir/fractal_0053.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 34,
+    "src": "images/reservoir/fractal_0057.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 35,
+    "src": "images/reservoir/fractal_0058.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 36,
+    "src": "images/reservoir/fractal_0059.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 37,
+    "src": "images/reservoir/fractal_0060.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 38,
+    "src": "images/reservoir/fractal_0061.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 39,
+    "src": "images/reservoir/fractal_0063.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 40,
+    "src": "images/reservoir/fractal_0064.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 41,
+    "src": "images/reservoir/fractal_0065.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 42,
+    "src": "images/reservoir/fractal_0066.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 43,
+    "src": "images/reservoir/fractal_0068.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 44,
+    "src": "images/reservoir/fractal_0072.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 45,
+    "src": "images/reservoir/fractal_0073.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 46,
+    "src": "images/reservoir/fractal_0074.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 47,
+    "src": "images/reservoir/fractal_0076.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 48,
+    "src": "images/reservoir/fractal_0078.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 49,
+    "src": "images/reservoir/fractal_0080.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 50,
+    "src": "images/reservoir/fractal_0081.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 51,
+    "src": "images/reservoir/fractal_0082.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 52,
+    "src": "images/reservoir/fractal_0083.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 53,
+    "src": "images/reservoir/fractal_0084.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 54,
+    "src": "images/reservoir/fractal_0085.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 55,
+    "src": "images/reservoir/fractal_0087.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 56,
+    "src": "images/reservoir/fractal_0089.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 57,
+    "src": "images/reservoir/fractal_0090.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 58,
+    "src": "images/reservoir/fractal_0092.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 59,
+    "src": "images/reservoir/fractal_0093.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 60,
+    "src": "images/reservoir/fractal_0094.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 61,
+    "src": "images/reservoir/fractal_0095.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 62,
+    "src": "images/reservoir/fractal_0096.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 63,
+    "src": "images/reservoir/fractal_0097.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 64,
+    "src": "images/reservoir/fractal_0101.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 65,
+    "src": "images/reservoir/fractal_0103.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 66,
+    "src": "images/reservoir/fractal_0104.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 67,
+    "src": "images/reservoir/fractal_0105.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 68,
+    "src": "images/reservoir/fractal_0107.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 69,
+    "src": "images/reservoir/fractal_0109.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 70,
+    "src": "images/reservoir/fractal_0110.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 71,
+    "src": "images/reservoir/fractal_0113.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 72,
+    "src": "images/reservoir/fractal_0114.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 73,
+    "src": "images/reservoir/fractal_0116.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 74,
+    "src": "images/reservoir/fractal_0117.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 75,
+    "src": "images/reservoir/fractal_0118.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 76,
+    "src": "images/reservoir/fractal_0119.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 77,
+    "src": "images/reservoir/fractal_0121.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 78,
+    "src": "images/reservoir/fractal_0123.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 79,
+    "src": "images/reservoir/fractal_0125.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 80,
+    "src": "images/reservoir/fractal_0127.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 81,
+    "src": "images/reservoir/fractal_0128.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 82,
+    "src": "images/reservoir/fractal_0130.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 83,
+    "src": "images/reservoir/fractal_0133.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 84,
+    "src": "images/reservoir/fractal_0136.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 85,
+    "src": "images/reservoir/fractal_0137.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 86,
+    "src": "images/reservoir/fractal_0138.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 87,
+    "src": "images/reservoir/fractal_0139.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 88,
+    "src": "images/reservoir/fractal_0140.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 89,
+    "src": "images/reservoir/fractal_0141.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 90,
+    "src": "images/reservoir/fractal_0146.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 91,
+    "src": "images/reservoir/fractal_0148.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 92,
+    "src": "images/reservoir/fractal_0149.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 93,
+    "src": "images/reservoir/fractal_0150.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 94,
+    "src": "images/reservoir/fractal_0152.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 95,
+    "src": "images/reservoir/fractal_0153.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 96,
+    "src": "images/reservoir/fractal_0157.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 97,
+    "src": "images/reservoir/fractal_0158.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 98,
+    "src": "images/reservoir/fractal_0159.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 99,
+    "src": "images/reservoir/fractal_0160.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 100,
+    "src": "images/reservoir/fractal_0161.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 101,
+    "src": "images/reservoir/fractal_0162.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 102,
+    "src": "images/reservoir/fractal_0165.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 103,
+    "src": "images/reservoir/fractal_0166.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 104,
+    "src": "images/reservoir/fractal_0168.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 105,
+    "src": "images/reservoir/fractal_0170.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 106,
+    "src": "images/reservoir/fractal_0171.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 107,
+    "src": "images/reservoir/fractal_0173.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 108,
+    "src": "images/reservoir/fractal_0175.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 109,
+    "src": "images/reservoir/fractal_0176.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 110,
+    "src": "images/reservoir/fractal_0177.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 111,
+    "src": "images/reservoir/fractal_0178.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 112,
+    "src": "images/reservoir/fractal_0179.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 113,
+    "src": "images/reservoir/fractal_0181.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 114,
+    "src": "images/reservoir/fractal_0182.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 115,
+    "src": "images/reservoir/fractal_0183.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 116,
+    "src": "images/reservoir/fractal_0184.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 117,
+    "src": "images/reservoir/fractal_0186.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 118,
+    "src": "images/reservoir/fractal_0189.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 119,
+    "src": "images/reservoir/fractal_0191.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 120,
+    "src": "images/reservoir/fractal_0192.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 121,
+    "src": "images/reservoir/fractal_0193.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 122,
+    "src": "images/reservoir/fractal_0195.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 123,
+    "src": "images/reservoir/fractal_0196.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 124,
+    "src": "images/reservoir/fractal_0198.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 125,
+    "src": "images/reservoir/fractal_0200.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 126,
+    "src": "images/reservoir/fractal_0201.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 127,
+    "src": "images/reservoir/fractal_0202.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 128,
+    "src": "images/reservoir/fractal_0204.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 129,
+    "src": "images/reservoir/fractal_0205.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 130,
+    "src": "images/reservoir/fractal_0206.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 131,
+    "src": "images/reservoir/fractal_0208.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 132,
+    "src": "images/reservoir/fractal_0211.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 133,
+    "src": "images/reservoir/fractal_0213.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 134,
+    "src": "images/reservoir/fractal_0214.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 135,
+    "src": "images/reservoir/fractal_0215.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 136,
+    "src": "images/reservoir/fractal_0217.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 137,
+    "src": "images/reservoir/fractal_0218.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 138,
+    "src": "images/reservoir/fractal_0219.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 139,
+    "src": "images/reservoir/fractal_0220.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 140,
+    "src": "images/reservoir/fractal_0221.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 141,
+    "src": "images/reservoir/fractal_0222.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 142,
+    "src": "images/reservoir/fractal_0224.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 143,
+    "src": "images/reservoir/fractal_0227.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 144,
+    "src": "images/reservoir/fractal_0228.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 145,
+    "src": "images/reservoir/fractal_0229.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 146,
+    "src": "images/reservoir/fractal_0230.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 147,
+    "src": "images/reservoir/fractal_0231.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 148,
+    "src": "images/reservoir/fractal_0232.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 149,
+    "src": "images/reservoir/fractal_0233.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 150,
+    "src": "images/reservoir/fractal_0234.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 151,
+    "src": "images/reservoir/fractal_0235.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 152,
+    "src": "images/reservoir/fractal_0236.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 153,
+    "src": "images/reservoir/fractal_0237.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 154,
+    "src": "images/reservoir/fractal_0240.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 155,
+    "src": "images/reservoir/fractal_0241.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 156,
+    "src": "images/reservoir/fractal_0242.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 157,
+    "src": "images/reservoir/fractal_0243.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 158,
+    "src": "images/reservoir/fractal_0244.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 159,
+    "src": "images/reservoir/fractal_0245.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 160,
+    "src": "images/reservoir/fractal_0246.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 161,
+    "src": "images/reservoir/fractal_0248.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 162,
+    "src": "images/reservoir/fractal_0249.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 163,
+    "src": "images/reservoir/fractal_0253.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 164,
+    "src": "images/reservoir/fractal_0254.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 165,
+    "src": "images/reservoir/fractal_0255.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 166,
+    "src": "images/reservoir/fractal_0256.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 167,
+    "src": "images/reservoir/fractal_0257.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 168,
+    "src": "images/reservoir/fractal_0258.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 169,
+    "src": "images/reservoir/fractal_0260.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 170,
+    "src": "images/reservoir/fractal_0261.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 171,
+    "src": "images/reservoir/fractal_0262.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 172,
+    "src": "images/reservoir/fractal_0263.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 173,
+    "src": "images/reservoir/fractal_0266.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 174,
+    "src": "images/reservoir/fractal_0267.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 175,
+    "src": "images/reservoir/fractal_0268.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 176,
+    "src": "images/reservoir/fractal_0269.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 177,
+    "src": "images/reservoir/fractal_0270.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 178,
+    "src": "images/reservoir/fractal_0271.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 179,
+    "src": "images/reservoir/fractal_0275.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 180,
+    "src": "images/reservoir/fractal_0277.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 181,
+    "src": "images/reservoir/fractal_0278.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 182,
+    "src": "images/reservoir/fractal_0280.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 183,
+    "src": "images/reservoir/fractal_0283.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 184,
+    "src": "images/reservoir/fractal_0284.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 185,
+    "src": "images/reservoir/fractal_0285.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 186,
+    "src": "images/reservoir/fractal_0291.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 187,
+    "src": "images/reservoir/fractal_0293.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 188,
+    "src": "images/reservoir/fractal_0294.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 189,
+    "src": "images/reservoir/fractal_0295.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 190,
+    "src": "images/reservoir/fractal_0297.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 191,
+    "src": "images/reservoir/fractal_0298.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 192,
+    "src": "images/reservoir/fractal_0302.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 193,
+    "src": "images/reservoir/fractal_0304.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 194,
+    "src": "images/reservoir/fractal_0305.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 195,
+    "src": "images/reservoir/fractal_0306.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 196,
+    "src": "images/reservoir/fractal_0307.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 197,
+    "src": "images/reservoir/fractal_0308.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 198,
+    "src": "images/reservoir/fractal_0309.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 199,
+    "src": "images/reservoir/fractal_0313.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 200,
+    "src": "images/reservoir/fractal_0314.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 201,
+    "src": "images/reservoir/fractal_0316.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 202,
+    "src": "images/reservoir/fractal_0317.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 203,
+    "src": "images/reservoir/fractal_0318.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 204,
+    "src": "images/reservoir/fractal_0320.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 205,
+    "src": "images/reservoir/fractal_0321.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 206,
+    "src": "images/reservoir/fractal_0322.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 207,
+    "src": "images/reservoir/fractal_0323.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 208,
+    "src": "images/reservoir/fractal_0326.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 209,
+    "src": "images/reservoir/fractal_0328.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 210,
+    "src": "images/reservoir/fractal_0330.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 211,
+    "src": "images/reservoir/fractal_0332.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 212,
+    "src": "images/reservoir/fractal_0336.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 213,
+    "src": "images/reservoir/fractal_0337.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 214,
+    "src": "images/reservoir/fractal_0339.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 215,
+    "src": "images/reservoir/fractal_0340.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 216,
+    "src": "images/reservoir/fractal_0342.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 217,
+    "src": "images/reservoir/fractal_0346.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 218,
+    "src": "images/reservoir/fractal_0347.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 219,
+    "src": "images/reservoir/fractal_0348.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 220,
+    "src": "images/reservoir/fractal_0349.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 221,
+    "src": "images/reservoir/fractal_0350.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 222,
+    "src": "images/reservoir/fractal_0352.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 223,
+    "src": "images/reservoir/fractal_0354.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 224,
+    "src": "images/reservoir/fractal_0355.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 225,
+    "src": "images/reservoir/fractal_0356.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 226,
+    "src": "images/reservoir/fractal_0358.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 227,
+    "src": "images/reservoir/fractal_0359.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 228,
+    "src": "images/reservoir/fractal_0360.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 229,
+    "src": "images/reservoir/fractal_0362.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 230,
+    "src": "images/reservoir/fractal_0363.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 231,
+    "src": "images/reservoir/fractal_0365.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 232,
+    "src": "images/reservoir/fractal_0369.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 233,
+    "src": "images/reservoir/fractal_0370.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 234,
+    "src": "images/reservoir/fractal_0371.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 235,
+    "src": "images/reservoir/fractal_0376.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 236,
+    "src": "images/reservoir/fractal_0378.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 237,
+    "src": "images/reservoir/fractal_0379.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 238,
+    "src": "images/reservoir/fractal_0382.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 239,
+    "src": "images/reservoir/fractal_0383.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 240,
+    "src": "images/reservoir/fractal_0384.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 241,
+    "src": "images/reservoir/fractal_0385.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 242,
+    "src": "images/reservoir/fractal_0386.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 243,
+    "src": "images/reservoir/fractal_0387.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 244,
+    "src": "images/reservoir/fractal_0388.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 245,
+    "src": "images/reservoir/fractal_0392.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 246,
+    "src": "images/reservoir/fractal_0395.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 247,
+    "src": "images/reservoir/fractal_0399.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 248,
+    "src": "images/reservoir/fractal_0400.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 249,
+    "src": "images/reservoir/fractal_0402.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 250,
+    "src": "images/reservoir/fractal_0404.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 251,
+    "src": "images/reservoir/fractal_0406.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 252,
+    "src": "images/reservoir/fractal_0407.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 253,
+    "src": "images/reservoir/fractal_0408.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 254,
+    "src": "images/reservoir/fractal_0409.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 255,
+    "src": "images/reservoir/fractal_0411.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 256,
+    "src": "images/reservoir/fractal_0413.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 257,
+    "src": "images/reservoir/fractal_0414.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 258,
+    "src": "images/reservoir/fractal_0415.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 259,
+    "src": "images/reservoir/fractal_0417.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 260,
+    "src": "images/reservoir/fractal_0418.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 261,
+    "src": "images/reservoir/fractal_0419.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 262,
+    "src": "images/reservoir/fractal_0421.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 263,
+    "src": "images/reservoir/fractal_0423.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 264,
+    "src": "images/reservoir/fractal_0424.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 265,
+    "src": "images/reservoir/fractal_0425.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 266,
+    "src": "images/reservoir/fractal_0428.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 267,
+    "src": "images/reservoir/fractal_0430.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 268,
+    "src": "images/reservoir/fractal_0431.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 269,
+    "src": "images/reservoir/fractal_0432.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 270,
+    "src": "images/reservoir/fractal_0433.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 271,
+    "src": "images/reservoir/fractal_0434.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 272,
+    "src": "images/reservoir/fractal_0435.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 273,
+    "src": "images/reservoir/fractal_0436.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 274,
+    "src": "images/reservoir/fractal_0437.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 275,
+    "src": "images/reservoir/fractal_0438.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 276,
+    "src": "images/reservoir/fractal_0439.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 277,
+    "src": "images/reservoir/fractal_0440.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 278,
+    "src": "images/reservoir/fractal_0442.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 279,
+    "src": "images/reservoir/fractal_0443.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 280,
+    "src": "images/reservoir/fractal_0445.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 281,
+    "src": "images/reservoir/fractal_0446.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 282,
+    "src": "images/reservoir/fractal_0448.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 283,
+    "src": "images/reservoir/fractal_0449.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 284,
+    "src": "images/reservoir/fractal_0451.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 285,
+    "src": "images/reservoir/fractal_0454.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 286,
+    "src": "images/reservoir/fractal_0456.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 287,
+    "src": "images/reservoir/fractal_0459.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 288,
+    "src": "images/reservoir/fractal_0460.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 289,
+    "src": "images/reservoir/fractal_0463.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 290,
+    "src": "images/reservoir/fractal_0466.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 291,
+    "src": "images/reservoir/fractal_0468.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 292,
+    "src": "images/reservoir/fractal_0471.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 293,
+    "src": "images/reservoir/fractal_0474.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 294,
+    "src": "images/reservoir/fractal_0475.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 295,
+    "src": "images/reservoir/fractal_0476.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 296,
+    "src": "images/reservoir/fractal_0478.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 297,
+    "src": "images/reservoir/fractal_0479.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 298,
+    "src": "images/reservoir/fractal_0480.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 299,
+    "src": "images/reservoir/fractal_0481.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 300,
+    "src": "images/reservoir/fractal_0482.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 301,
+    "src": "images/reservoir/fractal_0485.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 302,
+    "src": "images/reservoir/fractal_0486.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 303,
+    "src": "images/reservoir/fractal_0487.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 304,
+    "src": "images/reservoir/fractal_0489.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 305,
+    "src": "images/reservoir/fractal_0491.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 306,
+    "src": "images/reservoir/fractal_0494.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 307,
+    "src": "images/reservoir/fractal_0495.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 308,
+    "src": "images/reservoir/fractal_0496.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 309,
+    "src": "images/reservoir/fractal_0500.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 310,
+    "src": "images/reservoir/fractal_0504.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 311,
+    "src": "images/reservoir/fractal_0505.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 312,
+    "src": "images/reservoir/fractal_0506.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 313,
+    "src": "images/reservoir/fractal_0509.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 314,
+    "src": "images/reservoir/fractal_0511.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 315,
+    "src": "images/reservoir/fractal_0513.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 316,
+    "src": "images/reservoir/fractal_0514.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 317,
+    "src": "images/reservoir/fractal_0515.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 318,
+    "src": "images/reservoir/fractal_0517.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 319,
+    "src": "images/reservoir/fractal_0518.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 320,
+    "src": "images/reservoir/fractal_0519.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 321,
+    "src": "images/reservoir/fractal_0526.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 322,
+    "src": "images/reservoir/fractal_0528.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 323,
+    "src": "images/reservoir/fractal_0529.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 324,
+    "src": "images/reservoir/fractal_0530.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 325,
+    "src": "images/reservoir/fractal_0533.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 326,
+    "src": "images/reservoir/fractal_0534.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 327,
+    "src": "images/reservoir/fractal_0536.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 328,
+    "src": "images/reservoir/fractal_0538.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 329,
+    "src": "images/reservoir/fractal_0539.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 330,
+    "src": "images/reservoir/fractal_0542.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 331,
+    "src": "images/reservoir/fractal_0543.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 332,
+    "src": "images/reservoir/fractal_0545.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 333,
+    "src": "images/reservoir/fractal_0547.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 334,
+    "src": "images/reservoir/fractal_0549.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 335,
+    "src": "images/reservoir/fractal_0550.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 336,
+    "src": "images/reservoir/fractal_0551.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 337,
+    "src": "images/reservoir/fractal_0553.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 338,
+    "src": "images/reservoir/fractal_0554.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 339,
+    "src": "images/reservoir/fractal_0556.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 340,
+    "src": "images/reservoir/fractal_0558.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 341,
+    "src": "images/reservoir/fractal_0564.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 342,
+    "src": "images/reservoir/fractal_0567.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 343,
+    "src": "images/reservoir/fractal_0568.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 344,
+    "src": "images/reservoir/fractal_0570.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 345,
+    "src": "images/reservoir/fractal_0572.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 346,
+    "src": "images/reservoir/fractal_0575.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 347,
+    "src": "images/reservoir/fractal_0577.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 348,
+    "src": "images/reservoir/fractal_0579.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 349,
+    "src": "images/reservoir/fractal_0580.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 350,
+    "src": "images/reservoir/fractal_0583.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 351,
+    "src": "images/reservoir/fractal_0585.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 352,
+    "src": "images/reservoir/fractal_0586.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 353,
+    "src": "images/reservoir/fractal_0587.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 354,
+    "src": "images/reservoir/fractal_0590.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 355,
+    "src": "images/reservoir/fractal_0593.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 356,
+    "src": "images/reservoir/fractal_0597.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 357,
+    "src": "images/reservoir/fractal_0600.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 358,
+    "src": "images/reservoir/fractal_0601.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 359,
+    "src": "images/reservoir/fractal_0602.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 360,
+    "src": "images/reservoir/fractal_0603.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 361,
+    "src": "images/reservoir/fractal_0605.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 362,
+    "src": "images/reservoir/fractal_0608.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 363,
+    "src": "images/reservoir/fractal_0610.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 364,
+    "src": "images/reservoir/fractal_0614.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 365,
+    "src": "images/reservoir/fractal_0615.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 366,
+    "src": "images/reservoir/fractal_0616.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 367,
+    "src": "images/reservoir/fractal_0617.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 368,
+    "src": "images/reservoir/fractal_0618.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 369,
+    "src": "images/reservoir/fractal_0619.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 370,
+    "src": "images/reservoir/fractal_0620.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 371,
+    "src": "images/reservoir/fractal_0625.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 372,
+    "src": "images/reservoir/fractal_0632.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 373,
+    "src": "images/reservoir/fractal_0634.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 374,
+    "src": "images/reservoir/fractal_0638.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 375,
+    "src": "images/reservoir/fractal_0641.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 376,
+    "src": "images/reservoir/fractal_0642.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 377,
+    "src": "images/reservoir/fractal_0649.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 378,
+    "src": "images/reservoir/fractal_0650.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 379,
+    "src": "images/reservoir/fractal_0652.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 380,
+    "src": "images/reservoir/fractal_0653.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 381,
+    "src": "images/reservoir/fractal_0654.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 382,
+    "src": "images/reservoir/fractal_0656.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 383,
+    "src": "images/reservoir/fractal_0657.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 384,
+    "src": "images/reservoir/fractal_0660.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 385,
+    "src": "images/reservoir/fractal_0661.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 386,
+    "src": "images/reservoir/fractal_0662.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 387,
+    "src": "images/reservoir/fractal_0664.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 388,
+    "src": "images/reservoir/fractal_0665.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 389,
+    "src": "images/reservoir/fractal_0666.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 390,
+    "src": "images/reservoir/fractal_0669.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 391,
+    "src": "images/reservoir/fractal_0672.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 392,
+    "src": "images/reservoir/fractal_0675.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 393,
+    "src": "images/reservoir/fractal_0680.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 394,
+    "src": "images/reservoir/fractal_0683.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 395,
+    "src": "images/reservoir/fractal_0684.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 396,
+    "src": "images/reservoir/fractal_0685.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 397,
+    "src": "images/reservoir/fractal_0688.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 398,
+    "src": "images/reservoir/fractal_0689.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 399,
+    "src": "images/reservoir/fractal_0690.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 400,
+    "src": "images/reservoir/fractal_0691.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 401,
+    "src": "images/reservoir/fractal_0692.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 402,
+    "src": "images/reservoir/fractal_0693.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 403,
+    "src": "images/reservoir/fractal_0694.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 404,
+    "src": "images/reservoir/fractal_0695.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 405,
+    "src": "images/reservoir/fractal_0696.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 406,
+    "src": "images/reservoir/fractal_0698.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 407,
+    "src": "images/reservoir/fractal_0701.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 408,
+    "src": "images/reservoir/fractal_0703.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 409,
+    "src": "images/reservoir/fractal_0704.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 410,
+    "src": "images/reservoir/fractal_0705.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 411,
+    "src": "images/reservoir/fractal_0706.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 412,
+    "src": "images/reservoir/fractal_0709.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 413,
+    "src": "images/reservoir/fractal_0711.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 414,
+    "src": "images/reservoir/fractal_0712.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 415,
+    "src": "images/reservoir/fractal_0714.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 416,
+    "src": "images/reservoir/fractal_0715.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 417,
+    "src": "images/reservoir/fractal_0716.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 418,
+    "src": "images/reservoir/fractal_0724.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 419,
+    "src": "images/reservoir/fractal_0726.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 420,
+    "src": "images/reservoir/fractal_0727.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 421,
+    "src": "images/reservoir/fractal_0729.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 422,
+    "src": "images/reservoir/fractal_0730.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 423,
+    "src": "images/reservoir/fractal_0732.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 424,
+    "src": "images/reservoir/fractal_0734.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 425,
+    "src": "images/reservoir/fractal_0737.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 426,
+    "src": "images/reservoir/fractal_0739.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 427,
+    "src": "images/reservoir/fractal_0740.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 428,
+    "src": "images/reservoir/fractal_0743.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 429,
+    "src": "images/reservoir/fractal_0744.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 430,
+    "src": "images/reservoir/fractal_0748.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 431,
+    "src": "images/reservoir/fractal_0749.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 432,
+    "src": "images/reservoir/fractal_0752.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 433,
+    "src": "images/reservoir/fractal_0753.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 434,
+    "src": "images/reservoir/fractal_0754.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 435,
+    "src": "images/reservoir/fractal_0755.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 436,
+    "src": "images/reservoir/fractal_0756.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 437,
+    "src": "images/reservoir/fractal_0759.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 438,
+    "src": "images/reservoir/fractal_0760.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 439,
+    "src": "images/reservoir/fractal_0761.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 440,
+    "src": "images/reservoir/fractal_0764.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 441,
+    "src": "images/reservoir/fractal_0766.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 442,
+    "src": "images/reservoir/fractal_0768.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 443,
+    "src": "images/reservoir/fractal_0769.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 444,
+    "src": "images/reservoir/fractal_0770.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 445,
+    "src": "images/reservoir/fractal_0771.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 446,
+    "src": "images/reservoir/fractal_0773.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 447,
+    "src": "images/reservoir/fractal_0776.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 448,
+    "src": "images/reservoir/fractal_0777.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 449,
+    "src": "images/reservoir/fractal_0778.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 450,
+    "src": "images/reservoir/fractal_0779.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 451,
+    "src": "images/reservoir/fractal_0782.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 452,
+    "src": "images/reservoir/fractal_0783.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 453,
+    "src": "images/reservoir/fractal_0785.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 454,
+    "src": "images/reservoir/fractal_0786.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 455,
+    "src": "images/reservoir/fractal_0787.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 456,
+    "src": "images/reservoir/fractal_0788.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 457,
+    "src": "images/reservoir/fractal_0789.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 458,
+    "src": "images/reservoir/fractal_0791.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 459,
+    "src": "images/reservoir/fractal_0792.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 460,
+    "src": "images/reservoir/fractal_0798.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 461,
+    "src": "images/reservoir/fractal_0799.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 462,
+    "src": "images/reservoir/fractal_0801.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 463,
+    "src": "images/reservoir/fractal_0806.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 464,
+    "src": "images/reservoir/fractal_0809.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 465,
+    "src": "images/reservoir/fractal_0810.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 466,
+    "src": "images/reservoir/fractal_0811.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 467,
+    "src": "images/reservoir/fractal_0812.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 468,
+    "src": "images/reservoir/fractal_0817.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 469,
+    "src": "images/reservoir/fractal_0819.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 470,
+    "src": "images/reservoir/fractal_0820.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 471,
+    "src": "images/reservoir/fractal_0821.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 472,
+    "src": "images/reservoir/fractal_0823.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 473,
+    "src": "images/reservoir/fractal_0825.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 474,
+    "src": "images/reservoir/fractal_0828.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 475,
+    "src": "images/reservoir/fractal_0830.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 476,
+    "src": "images/reservoir/fractal_0831.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 477,
+    "src": "images/reservoir/fractal_0835.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 478,
+    "src": "images/reservoir/fractal_0837.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 479,
+    "src": "images/reservoir/fractal_0838.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 480,
+    "src": "images/reservoir/fractal_0840.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 481,
+    "src": "images/reservoir/fractal_0845.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 482,
+    "src": "images/reservoir/fractal_0847.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 483,
+    "src": "images/reservoir/fractal_0849.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 484,
+    "src": "images/reservoir/fractal_0850.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 485,
+    "src": "images/reservoir/fractal_0851.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 486,
+    "src": "images/reservoir/fractal_0853.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 487,
+    "src": "images/reservoir/fractal_0854.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 488,
+    "src": "images/reservoir/fractal_0855.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 489,
+    "src": "images/reservoir/fractal_0862.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 490,
+    "src": "images/reservoir/fractal_0866.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 491,
+    "src": "images/reservoir/fractal_0868.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 492,
+    "src": "images/reservoir/fractal_0872.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 493,
+    "src": "images/reservoir/fractal_0873.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 494,
+    "src": "images/reservoir/fractal_0875.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 495,
+    "src": "images/reservoir/fractal_0876.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 496,
+    "src": "images/reservoir/fractal_0877.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 497,
+    "src": "images/reservoir/fractal_0879.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 498,
+    "src": "images/reservoir/fractal_0880.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 499,
+    "src": "images/reservoir/fractal_0881.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 500,
+    "src": "images/reservoir/fractal_0882.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 501,
+    "src": "images/reservoir/fractal_0887.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 502,
+    "src": "images/reservoir/fractal_0889.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 503,
+    "src": "images/reservoir/fractal_0892.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 504,
+    "src": "images/reservoir/fractal_0897.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 505,
+    "src": "images/reservoir/fractal_0899.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 506,
+    "src": "images/reservoir/fractal_0900.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 507,
+    "src": "images/reservoir/fractal_0901.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 508,
+    "src": "images/reservoir/fractal_0902.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 509,
+    "src": "images/reservoir/fractal_0903.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 510,
+    "src": "images/reservoir/fractal_0904.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 511,
+    "src": "images/reservoir/fractal_0906.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 512,
+    "src": "images/reservoir/fractal_0907.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 513,
+    "src": "images/reservoir/fractal_0908.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 514,
+    "src": "images/reservoir/fractal_0909.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 515,
+    "src": "images/reservoir/fractal_0910.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 516,
+    "src": "images/reservoir/fractal_0912.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 517,
+    "src": "images/reservoir/fractal_0914.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 518,
+    "src": "images/reservoir/fractal_0916.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 519,
+    "src": "images/reservoir/fractal_0921.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 520,
+    "src": "images/reservoir/fractal_0923.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 521,
+    "src": "images/reservoir/fractal_0929.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 522,
+    "src": "images/reservoir/fractal_0935.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 523,
+    "src": "images/reservoir/fractal_0939.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 524,
+    "src": "images/reservoir/fractal_0940.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 525,
+    "src": "images/reservoir/fractal_0946.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 526,
+    "src": "images/reservoir/fractal_0947.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 527,
+    "src": "images/reservoir/fractal_0950.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 528,
+    "src": "images/reservoir/fractal_0951.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 529,
+    "src": "images/reservoir/fractal_0956.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 530,
+    "src": "images/reservoir/fractal_0960.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 531,
+    "src": "images/reservoir/fractal_0961.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 532,
+    "src": "images/reservoir/fractal_0962.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 533,
+    "src": "images/reservoir/fractal_0963.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 534,
+    "src": "images/reservoir/fractal_0966.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 535,
+    "src": "images/reservoir/fractal_0967.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 536,
+    "src": "images/reservoir/fractal_0969.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 537,
+    "src": "images/reservoir/fractal_0971.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 538,
+    "src": "images/reservoir/fractal_0972.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 539,
+    "src": "images/reservoir/fractal_0973.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 540,
+    "src": "images/reservoir/fractal_0974.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 541,
+    "src": "images/reservoir/fractal_0976.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 542,
+    "src": "images/reservoir/fractal_0977.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 543,
+    "src": "images/reservoir/fractal_0978.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 544,
+    "src": "images/reservoir/fractal_0980.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 545,
+    "src": "images/reservoir/fractal_0983.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 546,
+    "src": "images/reservoir/fractal_0984.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 547,
+    "src": "images/reservoir/fractal_0985.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 548,
+    "src": "images/reservoir/fractal_0986.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 549,
+    "src": "images/reservoir/fractal_0993.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 550,
+    "src": "images/reservoir/fractal_0994.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 551,
+    "src": "images/reservoir/fractal_0995.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 552,
+    "src": "images/reservoir/fractal_0997.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 553,
+    "src": "images/reservoir/fractal_0998.png"
+  },
+  {
+    "method": "Reservoir Map",
+    "index": 554,
+    "src": "images/reservoir/fractal_0999.png"
+  }
+]
