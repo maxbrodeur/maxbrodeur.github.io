@@ -5553,5 +5553,55 @@
     "method": "Reservoir Map",
     "index": 554,
     "src": "images/reservoir/fractal_0999.png"
+  },
+  {
+    "method": "RNN Map",
+    "index": 555,
+    "src": "images/edge/rnn_1.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 556,
+    "src": "images/edge/rnn_2.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 557,
+    "src": "images/edge/rnn_3.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 558,
+    "src": "images/edge/rnn_4.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 559,
+    "src": "images/edge/rnn_5.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 560,
+    "src": "images/edge/rnn_6.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 561,
+    "src": "images/edge/rnn_7.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 562,
+    "src": "images/edge/rnn_8.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 563,
+    "src": "images/edge/rnn_9.jpg"
+  },
+  {
+    "method": "RNN Map",
+    "index": 564,
+    "src": "images/edge/rnn_10.jpg"
   }
 ]

@@ -1,6 +1,7 @@
 // Fractal Gallery JavaScript
 let fractals = [];
 let shuffledFractals = []; // Random mix for gallery view
+let shuffledMethodFractals = {}; // Store shuffled versions per method
 let displayedFractals = []; // Currently displayed fractals for lightbox navigation
 let currentFractalIndex = 0;
 let currentMethod = 'gallery'; // Changed from 'all'
@@ -16,7 +17,16 @@ const SLIDESHOW_INTERVAL = 10000; // 10 seconds
 const methodDescriptions = {
     "gallery": 'This is a collection of attractors obtained from randomly searching the coefficient space of iterative maps for chaos. To get in touch for research or artistic inquiries, you can reach me at: maxbrodeur at epfl dot ch',
     "Polynomial Map": 'These attractors are generated using 2D quadratic polynomial iterative maps (12 coefficients) as described in <a href="https://paulbourke.net/fractals/sprott/paper203.pdf" target="_blank">Sprott\'s work on polynomial maps</a>. To generate some yourself, please visit <a href="https://maxbrodeur.github.io/fractal-generator/" target="_blank">this web app I made</a>.',
-    "Reservoir Map": 'Reservoir computing leverages the chaotic dynamics of randomly connected recurrent networks to learn tasks. Here we explore their attractors.',
+    "Reservoir Map": 'Reservoir computing leverages the dynamics of randomly connected recurrent networks to learn tasks. Here we explore their attractors.',
+    "RNN Map": 'We visualize the attractors of activity in recurrent neural networks at the <em>edge of chaos</em>, as described by <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.61.259" target="_blank">Sompolinsky et al.</a> Below, we see these high-dimensional structures through the first twenty principal components (in pairs).'
+};
+
+// Special methods that should be excluded from the main gallery
+const excludedFromGallery = ["RNN Map"];
+
+// Tab display names (method -> display name)
+const tabDisplayNames = {
+    "RNN Map": "Edge of Chaos"
 };
 
 // Utility: Shuffle array (Fisher-Yates)
@@ -37,10 +47,17 @@ async function loadFractals() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         fractals = await response.json();
-        
-        // Create shuffled version for gallery view
-        shuffledFractals = shuffleArray(fractals);
-        
+
+        // Create shuffled version for gallery view (excluding special methods)
+        const galleryFractals = fractals.filter(f => !excludedFromGallery.includes(f.method));
+        shuffledFractals = shuffleArray(galleryFractals);
+
+        // Initialize shuffled versions for special methods (Edge of Chaos)
+        excludedFromGallery.forEach(method => {
+            const methodFractals = fractals.filter(f => f.method === method);
+            shuffledMethodFractals[method] = shuffleArray(methodFractals);
+        });
+
         console.log('Fractals loaded:', fractals.length);
         console.log('Gallery view will show:', Math.min(GALLERY_DISPLAY_COUNT, fractals.length), 'fractals');
         
@@ -55,7 +72,16 @@ async function loadFractals() {
 // Initialize gallery
 function initializeGallery() {
     createMethodTabs();
-    renderGallery();
+
+    // Check for method URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const methodParam = urlParams.get('method');
+    if (methodParam && fractals.some(f => f.method === methodParam)) {
+        switchMethod(methodParam);
+    } else {
+        renderGallery();
+    }
+
     setupEventListeners();
 }
 
@@ -63,14 +89,25 @@ function initializeGallery() {
 function createMethodTabs() {
     const tabsContainer = document.getElementById('method-tabs');
     const methods = [...new Set(fractals.map(f => f.method))];
-    
-    // Add "Gallery" tab (shows all fractals)
+
+    // Separate regular methods from excluded (special) methods
+    const regularMethods = methods.filter(m => !excludedFromGallery.includes(m));
+    const specialMethods = methods.filter(m => excludedFromGallery.includes(m));
+
+    // Add "Gallery" tab (shows all fractals except special ones)
     const galleryTab = createTab('gallery', 'Gallery', true);
     tabsContainer.appendChild(galleryTab);
-    
-    // Add method tabs
-    methods.forEach(method => {
+
+    // Add regular method tabs
+    regularMethods.forEach(method => {
         const tab = createTab(method, method, false);
+        tabsContainer.appendChild(tab);
+    });
+
+    // Add special method tabs (e.g., Edge of Chaos) at the end
+    specialMethods.forEach(method => {
+        const displayName = tabDisplayNames[method] || method;
+        const tab = createTab(method, displayName, false);
         tabsContainer.appendChild(tab);
     });
 }
@@ -86,7 +123,7 @@ function createTab(method, label, isActive) {
 
 function switchMethod(method) {
     currentMethod = method;
-    
+
     // Update active tab
     document.querySelectorAll('.method-tab').forEach(tab => {
         if (tab.dataset.method === method) {
@@ -95,10 +132,17 @@ function switchMethod(method) {
             tab.classList.remove('active');
         }
     });
-    
+
+    // Toggle inverted mode for special methods (Edge of Chaos)
+    if (excludedFromGallery.includes(method)) {
+        document.body.classList.add('inverted');
+    } else {
+        document.body.classList.remove('inverted');
+    }
+
     // Show/hide shuffle button based on method
     updateShuffleButtonVisibility();
-    
+
     // Re-render gallery
     renderGallery();
 }
@@ -106,7 +150,7 @@ function switchMethod(method) {
 // Update shuffle button visibility
 function updateShuffleButtonVisibility() {
     const shuffleBtn = document.getElementById('shuffle-btn');
-    if (currentMethod === 'gallery') {
+    if (currentMethod === 'gallery' || excludedFromGallery.includes(currentMethod)) {
         shuffleBtn.style.display = 'inline-block';
     } else {
         shuffleBtn.style.display = 'none';
@@ -123,7 +167,7 @@ function renderGallery() {
 function updateMethodDescription() {
     const titleEl = document.getElementById('method-description-title');
     const textEl = document.getElementById('method-description-text');
-    
+
     if (currentMethod === 'gallery') {
         const displayCount = Math.min(GALLERY_DISPLAY_COUNT, fractals.length);
         titleEl.textContent = 'Gallery';
@@ -131,7 +175,8 @@ function updateMethodDescription() {
     } else {
         const methodFractals = fractals.filter(f => f.method === currentMethod);
         const displayCount = Math.min(METHOD_DISPLAY_COUNT, methodFractals.length);
-        titleEl.textContent = currentMethod;
+        // Use display name if available
+        titleEl.textContent = tabDisplayNames[currentMethod] || currentMethod;
         textEl.innerHTML = `${methodDescriptions[currentMethod] || 'Mathematical fractal generation method.'}`;
     }
 }
@@ -140,15 +185,16 @@ function updateMethodDescription() {
 function renderGalleryGrid() {
     const galleryContainer = document.getElementById('gallery-grid');
     galleryContainer.innerHTML = '';
-    
+
     let sourceFractals;
-    
+
     if (currentMethod === 'gallery') {
         // Show random mix of all fractals
         sourceFractals = shuffledFractals.slice(0, GALLERY_DISPLAY_COUNT);
     } else {
-        // Show specific method fractals
-        const methodFractals = fractals.filter(f => f.method === currentMethod);
+        // Show specific method fractals (use shuffled if available)
+        const methodFractals = shuffledMethodFractals[currentMethod]
+            || fractals.filter(f => f.method === currentMethod);
         sourceFractals = methodFractals.slice(0, METHOD_DISPLAY_COUNT);
     }
     
@@ -211,9 +257,14 @@ function navigateLightbox(direction) {
 // Shuffle functionality
 function shuffleGallery() {
     if (currentMethod === 'gallery') {
-        shuffledFractals = shuffleArray(fractals);
-        renderGallery();
+        const galleryFractals = fractals.filter(f => !excludedFromGallery.includes(f.method));
+        shuffledFractals = shuffleArray(galleryFractals);
+    } else {
+        // Shuffle for specific method
+        const methodFractals = fractals.filter(f => f.method === currentMethod);
+        shuffledMethodFractals[currentMethod] = shuffleArray(methodFractals);
     }
+    renderGallery();
 }
 
 // Fullscreen Slideshow
