@@ -18,7 +18,7 @@ const methodDescriptions = {
     "gallery": 'This is a collection of attractors obtained from randomly searching the coefficient space of iterative maps for chaos. To get in touch for research or artistic inquiries, you can reach me at: maxbrodeur at epfl dot ch',
     "Polynomial Map": 'These attractors are generated using 2D quadratic polynomial iterative maps (12 coefficients) as described in <a href="https://paulbourke.net/fractals/sprott/paper203.pdf" target="_blank">Sprott\'s work on polynomial maps</a>. To generate some yourself, please visit <a href="https://maxbrodeur.github.io/fractal-generator/" target="_blank">this web app I made</a>.',
     "Reservoir Map": 'Reservoir computing leverages the dynamics of randomly connected recurrent networks to learn tasks. Here we explore their attractors.',
-    "RNN Map": 'We visualize the attractors of activity in recurrent neural networks at the <em>edge of chaos</em>, as described by <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.61.259" target="_blank">Sompolinsky et al.</a> Below, we see these high-dimensional structures through the first twenty principal components (in pairs).'
+    "RNN Map": 'Attractors of activity in recurrent neural networks at the <em>edge of chaos</em>, as described by <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.61.259" target="_blank">Sompolinsky et al.</a> Below, we visualize these high-dimensional structures through the first twenty principal components (in pairs).'
 };
 
 // Special methods that should be excluded from the main gallery
